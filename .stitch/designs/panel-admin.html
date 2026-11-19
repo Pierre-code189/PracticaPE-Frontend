@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"inverse-primary":"#7bd7bd","dark-border":"#243833","bg-warm":"#FAF9F4","border-soft":"#E3E0D5","secondary-fixed":"#ffddb6","surface-tint":"#006b57","on-tertiary-container":"#ffeeea","surface-variant":"#dfe3e0","primary-container":"#D7F0E7","on-background":"#181d1b","dark-surface-elevated":"#1A2E27","secondary-fixed-dim":"#ffb959","inverse-on-surface":"#eef2ee","on-tertiary":"#ffffff","tertiary-container":"#a75748","secondary":"#845400","surface-container-highest":"#dfe3e0","on-surface-variant":"#3e4945","dark-primary":"#4FC3A7","error":"#C0392B","outline":"#6e7a75","primary":"#00614f","on-tertiary-fixed":"#3d0702","surface-container":"#ebefeb","surface-container-high":"#e5e9e6","surface-bright":"#f6faf7","dark-surface":"#12201B","on-primary-fixed-variant":"#005141","on-tertiary-fixed-variant":"#763125","on-secondary-container":"#6f4600","dark-primary-deep":"#2E9B85","surface-container-low":"#f0f5f1","accent-container":"#FBEBCB","dark-primary-container":"#14382F","ink-primary":"#14201B","tertiary-fixed-dim":"#ffb4a6","primary-deep":"#0A5C4D","on-primary-container":"#bcffe9","primary-fixed-dim":"#7bd7bd","on-secondary":"#ffffff","on-secondary-fixed":"#2a1800","surface-dim":"#d7dbd8","on-surface":"#181d1b","on-primary":"#ffffff","background":"#f6faf7","surface-container-lowest":"#ffffff","dark-ink-secondary":"#9DB3AA","dark-ink-primary":"#EAF4EF","inverse-surface":"#2d312f","on-error":"#ffffff","on-error-container":"#93000a","on-primary-fixed":"#002019","secondary-container":"#fcb24a","ink-secondary":"#5A6B63","on-secondary-fixed-variant":"#643f00","error-container":"#ffdad6","outline-variant":"#bdc9c4","surface":"#FFFFFF","tertiary":"#894032","tertiary-fixed":"#ffdad3","dark-accent":"#F2B85C","surface-elevated":"#F1EFE6","dark-bg":"#0B1512","primary-fixed":"#97f4d9"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-lg":"24px","space-xl":"32px","space-xs":"4px","space-md":"16px","gutter":"24px","space-2xl":"48px","space-sm":"8px","margin":"24px","space-3xl":"64px"},fontFamily:{"headline-l":["Plus Jakarta Sans"],"body-s":["Inter"],"label":["Inter"],"body-m":["Inter"],"headline-m":["Plus Jakarta Sans"],"display":["Plus Jakarta Sans"],"body-l":["Inter"],"headline-s":["Plus Jakarta Sans"]},fontSize:{"headline-l":["32px",{"lineHeight":"1.10","letterSpacing":"-0.02em","fontWeight":"700"}],"body-s":["12px",{"lineHeight":"1.4","letterSpacing":"0.01em","fontWeight":"400"}],"label":["11px",{"lineHeight":"1.2","letterSpacing":"0.06em","fontWeight":"700"}],"body-m":["14px",{"lineHeight":"1.5","letterSpacing":"0","fontWeight":"400"}],"headline-m":["24px",{"lineHeight":"1.15","letterSpacing":"-0.015em","fontWeight":"700"}],"display":["40px",{"lineHeight":"1.05","letterSpacing":"-0.03em","fontWeight":"800"}],"body-l":["16px",{"lineHeight":"1.5","letterSpacing":"0","fontWeight":"400"}],"headline-s":["18px",{"lineHeight":"1.25","letterSpacing":"0","fontWeight":"700"}]}}}};</script></head><body class="bg-background font-body-m text-body-m text-on-surface min-h-screen"><header class="fixed top-0 left-0 right-0 h-16 bg-surface/90 backdrop-blur-xl z-50 shadow-[0_1px_8px_rgba(20,32,27,0.05)]"><div class="w-full h-16 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">hub</span></div><div class="flex flex-col"><span class="font-headline-s text-headline-s text-primary leading-tight">Practicape <span class="text-secondary font-headline-s text-headline-s">Piura</span></span><span class="font-label text-label uppercase tracking-wider text-ink-secondary">Supervisión Global / Admin</span></div></div><div class="hidden xl:flex items-center ml-space-md pl-space-md bg-surface-container-low px-space-sm py-1 rounded-full"><span class="w-2 h-2 rounded-full bg-primary animate-pulse mr-2"></span><span class="font-label text-label text-on-surface-variant uppercase tracking-wider">Región Piura Activa</span></div></div><nav class="hidden lg:flex items-center gap-1 bg-surface-container-low p-1 rounded-xl" data-active-classes="bg-primary-container text-on-surface font-headline-s rounded-lg shadow-sm"><a class="px-space-md py-1.5 rounded-lg font-body-m text-body-m text-on-surface-variant hover:text-on-surface transition-colors" data-path="metricas-kpis" href="#">Métricas &amp; KPIs</a><a class="px-space-md py-1.5 rounded-lg font-body-m text-body-m text-on-surface-variant hover:text-on-surface transition-colors" data-path="usuarios" href="#">Usuarios</a><a class="px-space-md py-1.5 rounded-lg font-body-m text-body-m text-on-surface-variant hover:text-on-surface transition-colors" data-path="empresas" href="#">Empresas</a><a class="px-space-md py-1.5 rounded-lg font-body-m text-body-m text-on-surface-variant hover:text-on-surface transition-colors" data-path="moderacion" href="#">Moderación</a><a class="px-space-md py-1.5 rounded-lg font-body-m text-body-m text-on-surface-variant hover:text-on-surface transition-colors" data-path="leads" href="#">Leads</a></nav><div class="flex items-center gap-space-sm"><button class="w-9 h-9 rounded-xl bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" id="theme-toggle-btn" onclick="document.documentElement.classList.toggle('dark'); const isDark = document.documentElement.classList.contains('dark'); document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light'); this.querySelector('#theme-icon').textContent = isDark ? 'light_mode' : 'dark_mode';" title="Alternar modo claro/oscuro" type="button"><span class="material-symbols-outlined text-[19px]" id="theme-icon">dark_mode</span></button><div class="hidden sm:flex flex-col text-right pl-space-xs"><span class="font-headline-s text-headline-s text-ink-primary leading-tight">Admin Regional Piura</span><span class="font-label text-label text-ink-secondary">Supervisor General</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest z-40 hidden md:flex flex-col justify-between p-space-md shadow-[0_1px_8px_rgba(20,32,27,0.03)]"><div class="flex flex-col gap-space-sm"><span class="px-space-sm font-label text-label uppercase tracking-wider text-ink-secondary">Navegación Maestro</span><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-surface font-headline-s rounded-xl"><a class="flex items-center gap-space-sm px-space-sm py-2.5 rounded-xl font-body-m text-body-m text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="metricas-kpis" href="#"><span class="material-symbols-outlined text-[20px] text-primary">monitoring</span>Métricas &amp; KPIs</a><a class="flex items-center gap-space-sm px-space-sm py-2.5 rounded-xl font-body-m text-body-m text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="usuarios" href="#"><span class="material-symbols-outlined text-[20px] text-primary">group</span>Usuarios</a><a class="flex items-center gap-space-sm px-space-sm py-2.5 rounded-xl font-body-m text-body-m text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="empresas" href="#"><span class="material-symbols-outlined text-[20px] text-primary">corporate_fare</span>Empresas</a><a class="flex items-center gap-space-sm px-space-sm py-2.5 rounded-xl font-body-m text-body-m text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="moderacion" href="#"><span class="material-symbols-outlined text-[20px] text-secondary">verified_user</span>Moderación</a><a class="flex items-center gap-space-sm px-space-sm py-2.5 rounded-xl font-body-m text-body-m text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="leads" href="#"><span class="material-symbols-outlined text-[20px] text-secondary">campaign</span>Leads</a></nav></div><div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col gap-1"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-primary"></span><span class="font-label text-label uppercase text-on-surface">Nodo Piura Centro</span></div><p class="font-body-s text-body-s text-ink-secondary">Monitoreando UDEP, UNP y ecosistema empleador.</p></div></aside><div class="md:pl-64 flex flex-col min-h-screen"><main class="flex-1 pt-16 w-full px-space-md md:px-space-lg bg-background"><div class="flex flex-col w-full pb-space-3xl">
+<!-- ==================== HEADER OPERACIONAL ==================== -->
+<section class="w-full flex flex-col xl:flex-row xl:items-end justify-between gap-space-lg mb-space-2xl">
+<div class="flex flex-col gap-1 max-w-3xl">
+<div class="flex items-center gap-space-sm mb-1">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container text-primary font-label text-label uppercase tracking-widest">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+          Consola Central de Operaciones
+        </span>
+<span class="text-ink-secondary text-body-s font-body-s">Actualizado hace 3 min</span>
+</div>
+<h1 class="font-display text-display text-ink-primary tracking-tight">Panel de Supervisión Global</h1>
+<p class="font-body-l text-body-l text-ink-secondary">
+        Control operacional, estadísticas territoriales y moderación de Practicape en Piura Metropolitana, Talara y el Bajo Piura.
+      </p>
+</div>
+<!-- Acciones Rápidas de Cabecera -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="relative bg-surface rounded-xl shadow-sm">
+<select class="appearance-none bg-transparent pl-4 pr-10 py-2.5 font-body-m text-body-m font-semibold text-ink-primary focus:outline-none cursor-pointer">
+<option value="30d">Últimos 30 días</option>
+<option selected="" value="month">Este mes (Marzo 2025)</option>
+<option value="2025">Año completo 2025</option>
+<option value="custom">Rango personalizado...</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-3 top-3 text-[18px] text-ink-secondary">expand_more</span>
+</div>
+<button class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-surface hover:bg-surface-container-low text-ink-primary font-headline-s text-headline-s text-sm shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[19px] text-primary">download</span>
+<span>Descargar Reporte (PDF/Excel)</span>
+</button>
+<div class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-primary text-on-primary font-headline-s text-headline-s text-sm shadow-sm">
+<span class="material-symbols-outlined text-[19px]">sync</span>
+<span class="hidden sm:inline">Sincronizado: UDEP • UNP • SUNAT</span>
+<span class="sm:hidden">Sincronizado</span>
+</div>
+</div>
+</section>
+<!-- ==================== SECCIÓN 1: KPIS GLOBALES (GRID 6 COLUMNAS) ==================== -->
+<section class="w-full mb-space-2xl" id="metricas-kpis">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<h2 class="font-headline-s text-headline-s text-ink-primary uppercase tracking-wider">Métricas Clave del Territorio</h2>
+</div>
+<span class="font-label text-label uppercase tracking-widest text-ink-secondary">Región Piura • Nodo Norperuano</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-space-md">
+<!-- KPI 1 -->
+<div class="bg-surface rounded-2xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label text-label uppercase tracking-wider text-ink-secondary">Usuarios Totales</span>
+<span class="w-8 h-8 rounded-xl bg-primary-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">group</span>
+</span>
+</div>
+<div class="my-space-sm">
+<div class="font-headline-l text-headline-l text-ink-primary tabular-nums">12,480</div>
+<div class="inline-flex items-center text-primary font-label text-label gap-0.5 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">arrow_upward</span> +14% este mes
+          </div>
+</div>
+<p class="font-body-s text-body-s text-ink-secondary pt-2 bg-surface-container-low/50 -mx-space-md -mb-space-md px-space-md pb-space-sm rounded-b-2xl">
+          11,200 estudiantes/egresados • 1,280 reclutadores
+        </p>
+</div>
+<!-- KPI 2 -->
+<div class="bg-surface rounded-2xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label text-label uppercase tracking-wider text-ink-secondary">Ofertas Totales</span>
+<span class="w-8 h-8 rounded-xl bg-accent-container text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">work</span>
+</span>
+</div>
+<div class="my-space-sm">
+<div class="font-headline-l text-headline-l text-ink-primary tabular-nums">842</div>
+<div class="inline-flex items-center text-primary font-label text-label gap-0.5 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">add_circle</span> +28 nuevas esta semana
+          </div>
+</div>
+<p class="font-body-s text-body-s text-ink-secondary pt-2 bg-surface-container-low/50 -mx-space-md -mb-space-md px-space-md pb-space-sm rounded-b-2xl">
+          Acumulado anual desde Enero 2025
+        </p>
+</div>
+<!-- KPI 3 -->
+<div class="bg-surface rounded-2xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label text-label uppercase tracking-wider text-ink-secondary">Publicadas y Activas</span>
+<span class="w-8 h-8 rounded-xl bg-primary-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</span>
+</div>
+<div class="my-space-sm">
+<div class="font-headline-l text-headline-l text-primary tabular-nums">348</div>
+<div class="inline-flex items-center text-secondary font-label text-label gap-0.5 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">school</span> 89% con convenio UDEP/UNP
+          </div>
+</div>
+<p class="font-body-s text-body-s text-ink-secondary pt-2 bg-surface-container-low/50 -mx-space-md -mb-space-md px-space-md pb-space-sm rounded-b-2xl">
+          Vigentes con postulación abierta hoy
+        </p>
+</div>
+<!-- KPI 4 -->
+<div class="bg-surface rounded-2xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label text-label uppercase tracking-wider text-ink-secondary">Postulaciones Totales</span>
+<span class="w-8 h-8 rounded-xl bg-surface-container-high text-ink-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">send</span>
+</span>
+</div>
+<div class="my-space-sm">
+<div class="font-headline-l text-headline-l text-ink-primary tabular-nums">4,620</div>
+<div class="inline-flex items-center text-primary font-label text-label gap-0.5 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">schedule</span> Resp: 4.2 días hábiles
+          </div>
+</div>
+<p class="font-body-s text-body-s text-ink-secondary pt-2 bg-surface-container-low/50 -mx-space-md -mb-space-md px-space-md pb-space-sm rounded-b-2xl">
+          Promedio 13.2 postulantes por vacante
+        </p>
+</div>
+<!-- KPI 5 -->
+<div class="bg-surface rounded-2xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label text-label uppercase tracking-wider text-ink-secondary">Empresas Registradas</span>
+<span class="w-8 h-8 rounded-xl bg-accent-container text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">corporate_fare</span>
+</span>
+</div>
+<div class="my-space-sm">
+<div class="font-headline-l text-headline-l text-ink-primary tabular-nums">215</div>
+<div class="inline-flex items-center text-primary font-label text-label gap-0.5 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> 85 RUC Piura validados
+          </div>
+</div>
+<p class="font-body-s text-body-s text-ink-secondary pt-2 bg-surface-container-low/50 -mx-space-md -mb-space-md px-space-md pb-space-sm rounded-b-2xl">
+          Agroindustria, retail, finanzas y servicios
+        </p>
+</div>
+<!-- KPI 6 -->
+<div class="bg-surface rounded-2xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label text-label uppercase tracking-wider text-ink-secondary">Visitas Mensuales</span>
+<span class="w-8 h-8 rounded-xl bg-primary-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</span>
+</div>
+<div class="my-space-sm">
+<div class="font-headline-l text-headline-l text-ink-primary tabular-nums">48,920</div>
+<div class="inline-flex items-center text-primary font-label text-label gap-0.5 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">trending_up</span> +32% vs mes anterior
+          </div>
+</div>
+<p class="font-body-s text-body-s text-ink-secondary pt-2 bg-surface-container-low/50 -mx-space-md -mb-space-md px-space-md pb-space-sm rounded-b-2xl">
+          Tráfico líder en Piura Metrop. y Talara
+        </p>
+</div>
+</div>
+</section>
+<!-- ==================== SECCIÓN 2: ANALÍTICAS Y GRÁFICOS VISUALES (GRID DE 4) ==================== -->
+<section class="w-full mb-space-2xl">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<h2 class="font-headline-s text-headline-s text-ink-primary uppercase tracking-wider">Visualizaciones Analíticas Regionales</h2>
+</div>
+<span class="font-label text-label uppercase tracking-widest text-ink-secondary">Desglose Modalidades • Distritos • Flujos</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Gráfico A: Ofertas por Modalidad -->
+<div class="bg-surface rounded-2xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-1">
+<h3 class="font-headline-s text-headline-s text-ink-primary">Ofertas por Modalidad</h3>
+<span class="font-label text-label text-ink-secondary uppercase">348 Activas</span>
+</div>
+<p class="font-body-s text-body-s text-ink-secondary mb-space-md">Distribución formal según el marco de Ley de Modalidades Formativas.</p>
+<div class="flex flex-col gap-space-md">
+<!-- Item 1 -->
+<div>
+<div class="flex justify-between items-center text-body-m font-body-m mb-1">
+<span class="font-medium text-ink-primary">Prácticas Preprofesionales</span>
+<span class="font-bold text-primary tabular-nums">58% <span class="font-normal text-ink-secondary text-body-s">(202 ofertas)</span></span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-700" style="width: 58%"></div>
+</div>
+</div>
+<!-- Item 2 -->
+<div>
+<div class="flex justify-between items-center text-body-m font-body-m mb-1">
+<span class="font-medium text-ink-primary">Prácticas Profesionales</span>
+<span class="font-bold text-secondary tabular-nums">24% <span class="font-normal text-ink-secondary text-body-s">(84 ofertas)</span></span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full transition-all duration-700" style="width: 24%"></div>
+</div>
+</div>
+<!-- Item 3 -->
+<div>
+<div class="flex justify-between items-center text-body-m font-body-m mb-1">
+<span class="font-medium text-ink-primary">Empleo Part-time / Técnico Dual</span>
+<span class="font-bold text-ink-primary tabular-nums">18% <span class="font-normal text-ink-secondary text-body-s">(62 ofertas)</span></span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-dark-primary-deep rounded-full transition-all duration-700" style="width: 18%"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-sm bg-surface-container-low rounded-xl p-space-sm flex items-center justify-between text-body-s font-body-s text-ink-secondary">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">gavel</span> Ley 28518 fiscalizada</span>
+<span class="font-medium text-ink-primary">100% cumplen subvención reglamentaria</span>
+</div>
+</div>
+<!-- Gráfico B: Distribución por Distrito de Piura -->
+<div class="bg-surface rounded-2xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-1">
+<h3 class="font-headline-s text-headline-s text-ink-primary">Distribución por Distrito de Piura</h3>
+<span class="font-label text-label text-ink-secondary uppercase">Territorio 2025</span>
+</div>
+<p class="font-body-s text-body-s text-ink-secondary mb-space-md">Concentración física del puesto o centro de operaciones.</p>
+<div class="flex flex-col gap-3">
+<!-- Distrito 1 -->
+<div class="flex items-center gap-3">
+<span class="w-36 font-body-m text-body-m text-ink-primary truncate">Piura Centro</span>
+<div class="flex-1 h-3 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 41%"></div>
+</div>
+<span class="w-24 text-right font-body-s text-body-s font-bold text-ink-primary tabular-nums">142 <span class="text-ink-secondary font-normal">(41%)</span></span>
+</div>
+<!-- Distrito 2 -->
+<div class="flex items-center gap-3">
+<span class="w-36 font-body-m text-body-m text-ink-primary truncate">Veintiséis de Octubre</span>
+<div class="flex-1 h-3 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary-fixed-dim rounded-full" style="width: 25%"></div>
+</div>
+<span class="w-24 text-right font-body-s text-body-s font-bold text-ink-primary tabular-nums">86 <span class="text-ink-secondary font-normal">(25%)</span></span>
+</div>
+<!-- Distrito 3 -->
+<div class="flex items-center gap-3">
+<span class="w-36 font-body-m text-body-m text-ink-primary truncate">Castilla</span>
+<div class="flex-1 h-3 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary-container rounded-full" style="width: 18%"></div>
+</div>
+<span class="w-24 text-right font-body-s text-body-s font-bold text-ink-primary tabular-nums">64 <span class="text-ink-secondary font-normal">(18%)</span></span>
+</div>
+<!-- Distrito 4 -->
+<div class="flex items-center gap-3">
+<span class="w-36 font-body-m text-body-m text-ink-primary truncate">Catacaos &amp; Bajo Piura</span>
+<div class="flex-1 h-3 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-accent-container rounded-full" style="width: 9%"></div>
+</div>
+<span class="w-24 text-right font-body-s text-body-s font-bold text-ink-primary tabular-nums">32 <span class="text-ink-secondary font-normal">(9%)</span></span>
+</div>
+<!-- Distrito 5 -->
+<div class="flex items-center gap-3">
+<span class="w-36 font-body-m text-body-m text-ink-primary truncate">Sullana &amp; Talara</span>
+<div class="flex-1 h-3 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-surface-variant rounded-full" style="width: 7%"></div>
+</div>
+<span class="w-24 text-right font-body-s text-body-s font-bold text-ink-primary tabular-nums">24 <span class="text-ink-secondary font-normal">(7%)</span></span>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-sm flex items-center justify-between text-body-s font-body-s text-ink-secondary">
+<span>Corredor Agroindustrial y Comercial</span>
+<a class="text-primary font-medium hover:underline inline-flex items-center gap-1" href="#empresas">Ver empresas por sede <span class="material-symbols-outlined text-[14px]">arrow_forward</span></a>
+</div>
+</div>
+<!-- Gráfico C: Ofertas por Estado -->
+<div class="bg-surface rounded-2xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-1">
+<h3 class="font-headline-s text-headline-s text-ink-primary">Ofertas por Estado</h3>
+<span class="font-label text-label text-ink-secondary uppercase">Ciclo de Vida</span>
+</div>
+<p class="font-body-s text-body-s text-ink-secondary mb-space-md">512 ofertas procesadas en la plataforma durante el período vigente.</p>
+<div class="grid grid-cols-2 gap-3 mb-space-md">
+<div class="p-space-sm bg-primary-container/40 rounded-xl">
+<span class="font-label text-label uppercase text-primary font-bold">Publicadas</span>
+<div class="font-headline-m text-headline-m text-primary tabular-nums mt-0.5">348</div>
+<span class="font-body-s text-body-s text-ink-secondary">68% del pipeline</span>
+</div>
+<div class="p-space-sm bg-accent-container/40 rounded-xl">
+<span class="font-label text-label uppercase text-secondary font-bold">En Revisión</span>
+<div class="font-headline-m text-headline-m text-secondary tabular-nums mt-0.5">42</div>
+<span class="font-body-s text-body-s text-ink-secondary">8% pendientes cola</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-xl">
+<span class="font-label text-label uppercase text-ink-secondary font-bold">Borradores</span>
+<div class="font-headline-m text-headline-m text-ink-primary tabular-nums mt-0.5">76</div>
+<span class="font-body-s text-body-s text-ink-secondary">15% en edición empresa</span>
+</div>
+<div class="p-space-sm bg-surface-container rounded-xl">
+<span class="font-label text-label uppercase text-on-surface-variant font-bold">Cerradas / Concluidas</span>
+<div class="font-headline-m text-headline-m text-on-surface-variant tabular-nums mt-0.5">46</div>
+<span class="font-body-s text-body-s text-ink-secondary">9% vacantes cubiertas</span>
+</div>
+</div>
+<!-- Barra apilada segmentada -->
+<div class="w-full h-3 rounded-full overflow-hidden flex bg-surface-container">
+<div class="bg-primary h-full" style="width: 68%" title="Publicadas: 68%"></div>
+<div class="bg-secondary h-full" style="width: 8%" title="En Revisión: 8%"></div>
+<div class="bg-ink-secondary h-full" style="width: 15%" title="Borradores: 15%"></div>
+<div class="bg-outline h-full" style="width: 9%" title="Cerradas: 9%"></div>
+</div>
+</div>
+<div class="mt-space-lg flex items-center justify-between text-body-s font-body-s text-ink-secondary pt-2">
+<span>Tiempo de moderación promedio: <strong>4.8 horas</strong></span>
+<span class="text-primary font-bold">Meta &lt; 12h ✓</span>
+</div>
+</div>
+<!-- Gráfico D: Postulaciones Diarias (Última semana) -->
+<div class="bg-surface rounded-2xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-1">
+<h3 class="font-headline-s text-headline-s text-ink-primary">Postulaciones Diarias (Última semana)</h3>
+<span class="font-label text-label text-primary font-bold uppercase">Lun a Dom</span>
+</div>
+<p class="font-body-s text-body-s text-ink-secondary mb-space-md">Picos de postulación correlacionados con horarios de clases universitarias.</p>
+<!-- Gráfico de barras verticales estilizadas -->
+<div class="h-44 w-full flex items-end justify-between gap-2 pt-6 pb-2 px-2">
+<!-- Lunes -->
+<div class="flex-1 flex flex-col items-center gap-1.5 h-full justify-end group">
+<span class="font-body-s text-body-s text-ink-secondary font-bold tabular-nums opacity-0 group-hover:opacity-100 transition-opacity">185</span>
+<div class="w-full max-w-[32px] bg-primary/70 group-hover:bg-primary rounded-t-lg transition-all" style="height: 60%"></div>
+<span class="font-label text-label text-ink-secondary">Lun</span>
+</div>
+<!-- Martes -->
+<div class="flex-1 flex flex-col items-center gap-1.5 h-full justify-end group">
+<span class="font-body-s text-body-s text-ink-secondary font-bold tabular-nums opacity-0 group-hover:opacity-100 transition-opacity">240</span>
+<div class="w-full max-w-[32px] bg-primary/80 group-hover:bg-primary rounded-t-lg transition-all" style="height: 77%"></div>
+<span class="font-label text-label text-ink-secondary">Mar</span>
+</div>
+<!-- Miércoles (Pico) -->
+<div class="flex-1 flex flex-col items-center gap-1.5 h-full justify-end group">
+<span class="font-body-s text-body-s text-primary font-bold tabular-nums">310</span>
+<div class="w-full max-w-[32px] bg-primary rounded-t-lg transition-all shadow-sm" style="height: 100%"></div>
+<span class="font-label text-label font-bold text-primary">Mié</span>
+</div>
+<!-- Jueves -->
+<div class="flex-1 flex flex-col items-center gap-1.5 h-full justify-end group">
+<span class="font-body-s text-body-s text-ink-secondary font-bold tabular-nums opacity-0 group-hover:opacity-100 transition-opacity">295</span>
+<div class="w-full max-w-[32px] bg-primary/90 group-hover:bg-primary rounded-t-lg transition-all" style="height: 95%"></div>
+<span class="font-label text-label text-ink-secondary">Jue</span>
+</div>
+<!-- Viernes -->
+<div class="flex-1 flex flex-col items-center gap-1.5 h-full justify-end group">
+<span class="font-body-s text-body-s text-ink-secondary font-bold tabular-nums opacity-0 group-hover:opacity-100 transition-opacity">220</span>
+<div class="w-full max-w-[32px] bg-primary/75 group-hover:bg-primary rounded-t-lg transition-all" style="height: 71%"></div>
+<span class="font-label text-label text-ink-secondary">Vie</span>
+</div>
+<!-- Sábado -->
+<div class="flex-1 flex flex-col items-center gap-1.5 h-full justify-end group">
+<span class="font-body-s text-body-s text-ink-secondary font-bold tabular-nums opacity-0 group-hover:opacity-100 transition-opacity">115</span>
+<div class="w-full max-w-[32px] bg-secondary-container/70 group-hover:bg-secondary-container rounded-t-lg transition-all" style="height: 37%"></div>
+<span class="font-label text-label text-ink-secondary">Sáb</span>
+</div>
+<!-- Domingo -->
+<div class="flex-1 flex flex-col items-center gap-1.5 h-full justify-end group">
+<span class="font-body-s text-body-s text-ink-secondary font-bold tabular-nums opacity-0 group-hover:opacity-100 transition-opacity">95</span>
+<div class="w-full max-w-[32px] bg-secondary-container/50 group-hover:bg-secondary-container rounded-t-lg transition-all" style="height: 30%"></div>
+<span class="font-label text-label text-ink-secondary">Dom</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low rounded-xl p-space-sm flex items-center justify-between text-body-s font-body-s">
+<span class="text-ink-secondary">Promedio diario semanal:</span>
+<span class="font-bold text-ink-primary tabular-nums">208 postulaciones / día</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== SECCIÓN 3: TABLA DE USUARIOS ==================== -->
+<section class="w-full mb-space-2xl" id="usuarios">
+<div class="bg-surface rounded-2xl p-space-lg shadow-sm">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-lg">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<h2 class="font-headline-s text-headline-s text-ink-primary">Directorio General de Usuarios</h2>
+</div>
+<p class="font-body-s text-body-s text-ink-secondary">Alumnos, egresados y reclutadores registrados con cuenta verificada.</p>
+</div>
+<!-- Filtros Rápidos y Buscador -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="relative min-w-[280px]">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-ink-secondary text-[20px]">search</span>
+<input class="w-full bg-surface-container-low pl-10 pr-4 py-2 rounded-xl text-body-m font-body-m text-ink-primary placeholder:text-ink-secondary focus:outline-none focus:ring-2 focus:ring-primary/20" id="user-search-input" placeholder="Buscar por nombre, correo o universidad..." type="text"/>
+</div>
+<select class="bg-surface-container-low px-3 py-2 rounded-xl text-body-m font-body-m text-ink-primary focus:outline-none">
+<option>Todos los roles</option>
+<option>Estudiante UDEP</option>
+<option>Estudiante UNP</option>
+<option>Egresado UCV</option>
+<option>Gestor Empresa</option>
+</select>
+<button class="px-3.5 py-2 rounded-xl bg-primary text-on-primary font-headline-s text-headline-s text-sm inline-flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+<span>Invitar Usuario</span>
+</button>
+</div>
+</div>
+<!-- Tabla Responsive -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low/70 text-ink-secondary font-label text-label uppercase tracking-wider">
+<th class="py-3 px-space-md rounded-l-xl">Usuario &amp; Contacto</th>
+<th class="py-3 px-space-md">Rol Académico / Corporativo</th>
+<th class="py-3 px-space-md">Estado</th>
+<th class="py-3 px-space-md">Último Acceso</th>
+<th class="py-3 px-space-md text-right rounded-r-xl">Acciones</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container text-body-m font-body-m text-ink-primary">
+<!-- Fila 1 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container text-primary font-bold flex items-center justify-center text-sm shadow-sm">
+                    VM
+                  </div>
+<div>
+<div class="font-semibold text-ink-primary">Valeria Morales Córdova</div>
+<div class="text-body-s font-body-s text-ink-secondary">valeria.morales@udep.pe</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-container text-primary font-label text-label">
+<span class="material-symbols-outlined text-[14px]">school</span> Estudiante UDEP (8vo ciclo)
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-primary-container text-primary font-label text-label font-bold">
+<span class="w-2 h-2 rounded-full bg-primary"></span> Activo
+                </span>
+</td>
+<td class="py-space-md px-space-md text-ink-secondary font-body-s">Hace 2 horas</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-ink-secondary hover:text-primary" title="Ver perfil"><span class="material-symbols-outlined text-[18px]">visibility</span></button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-ink-secondary hover:text-primary" title="Enviar mensaje"><span class="material-symbols-outlined text-[18px]">mail</span></button>
+<button class="w-8 h-8 rounded-lg hover:bg-error-container flex items-center justify-center text-ink-secondary hover:text-error" title="Suspender"><span class="material-symbols-outlined text-[18px]">block</span></button>
+</div>
+</td>
+</tr>
+<!-- Fila 2 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-accent-container text-secondary font-bold flex items-center justify-center text-sm shadow-sm">
+                    CM
+                  </div>
+<div>
+<div class="font-semibold text-ink-primary">Carlos Mendoza Albán</div>
+<div class="text-body-s font-body-s text-ink-secondary">carlos.mendoza@unp.edu.pe</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-ink-primary font-label text-label">
+<span class="material-symbols-outlined text-[14px]">stars</span> Estudiante UNP (Tercio Superior)
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-primary-container text-primary font-label text-label font-bold">
+<span class="w-2 h-2 rounded-full bg-primary"></span> Activo
+                </span>
+</td>
+<td class="py-space-md px-space-md text-ink-secondary font-body-s">Hace 5 horas</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-ink-secondary hover:text-primary" title="Ver perfil"><span class="material-symbols-outlined text-[18px]">visibility</span></button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-ink-secondary hover:text-primary" title="Enviar mensaje"><span class="material-symbols-outlined text-[18px]">mail</span></button>
+<button class="w-8 h-8 rounded-lg hover:bg-error-container flex items-center justify-center text-ink-secondary hover:text-error" title="Suspender"><span class="material-symbols-outlined text-[18px]">block</span></button>
+</div>
+</td>
+</tr>
+<!-- Fila 3 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface-variant font-bold flex items-center justify-center text-sm shadow-sm">
+                    LS
+                  </div>
+<div>
+<div class="font-semibold text-ink-primary">Lucía Seminario Farfán</div>
+<div class="text-body-s font-body-s text-ink-secondary">lseminario@ucvvirtual.edu.pe</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-low text-ink-secondary font-label text-label">
+<span class="material-symbols-outlined text-[14px]">history_edu</span> Egresada UCV
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-primary-container text-primary font-label text-label font-bold">
+<span class="w-2 h-2 rounded-full bg-primary"></span> Activo
+                </span>
+</td>
+<td class="py-space-md px-space-md text-ink-secondary font-body-s">Ayer, 18:40</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-ink-secondary hover:text-primary" title="Ver perfil"><span class="material-symbols-outlined text-[18px]">visibility</span></button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-ink-secondary hover:text-primary" title="Enviar mensaje"><span class="material-symbols-outlined text-[18px]">mail</span></button>
+<button class="w-8 h-8 rounded-lg hover:bg-error-container flex items-center justify-center text-ink-secondary hover:text-error" title="Suspender"><span class="material-symbols-outlined text-[18px]">block</span></button>
+</div>
+</td>
+</tr>
+<!-- Fila 4 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary font-bold flex items-center justify-center text-sm shadow-sm">
+                    RC
+                  </div>
+<div>
+<div class="font-semibold text-ink-primary">Ing. Roberto Chunga</div>
+<div class="text-body-s font-body-s text-ink-secondary">rchunga@agropiura.pe</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-accent-container text-secondary font-label text-label font-bold">
+<span class="material-symbols-outlined text-[14px]">business</span> Empresa (AgroPiura Export)
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-primary-container text-primary font-label text-label font-bold">
+<span class="w-2 h-2 rounded-full bg-primary"></span> Activo
+                </span>
+</td>
+<td class="py-space-md px-space-md text-ink-secondary font-body-s">Hace 30 min</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-ink-secondary hover:text-primary" title="Ver perfil"><span class="material-symbols-outlined text-[18px]">visibility</span></button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-ink-secondary hover:text-primary" title="Enviar mensaje"><span class="material-symbols-outlined text-[18px]">mail</span></button>
+<button class="w-8 h-8 rounded-lg hover:bg-error-container flex items-center justify-center text-ink-secondary hover:text-error" title="Suspender"><span class="material-symbols-outlined text-[18px]">block</span></button>
+</div>
+</td>
+</tr>
+<!-- Fila 5 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container text-ink-secondary font-bold flex items-center justify-center text-sm shadow-sm">
+                    PV
+                  </div>
+<div>
+<div class="font-semibold text-ink-primary">Patricia Vilela</div>
+<div class="text-body-s font-body-s text-ink-secondary">pvilela@cajapiura.pe</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-low text-ink-secondary font-label text-label">
+<span class="material-symbols-outlined text-[14px]">domain</span> Empresa (Caja Piura Aliados)
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary-fixed/50 text-secondary font-label text-label font-bold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Pendiente validación
+                </span>
+</td>
+<td class="py-space-md px-space-md text-ink-secondary font-body-s">Hace 3 días</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2.5 py-1 rounded-lg bg-primary-container text-primary font-label text-label hover:bg-primary hover:text-on-primary transition-colors" title="Validar cuenta">Validar</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-ink-secondary" title="Más opciones"><span class="material-symbols-outlined text-[18px]">more_vert</span></button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="flex items-center justify-between mt-space-md pt-space-sm text-body-s font-body-s text-ink-secondary">
+<span>Mostrando 5 de 12,480 usuarios activos</span>
+<div class="flex items-center gap-1">
+<button class="px-3 py-1 rounded-lg bg-surface-container text-ink-secondary hover:text-ink-primary font-medium">Anterior</button>
+<span class="px-2 font-bold text-ink-primary">Pág 1 de 2,496</span>
+<button class="px-3 py-1 rounded-lg bg-primary text-on-primary font-medium">Siguiente</button>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== SECCIÓN 4: TABLA DE EMPRESAS ==================== -->
+<section class="w-full mb-space-2xl" id="empresas">
+<div class="bg-surface rounded-2xl p-space-lg shadow-sm">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-lg">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<h2 class="font-headline-s text-headline-s text-ink-primary">Empresas Aliadas y Empleadores</h2>
+</div>
+<p class="font-body-s text-body-s text-ink-secondary">Supervisión tributaria SUNAT, convenios académicos y vacantes activas en Piura.</p>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-3.5 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-ink-primary font-headline-s text-headline-s text-sm inline-flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[18px]">filter_list</span>
+<span>Filtrar por RUC / Sector</span>
+</button>
+<button class="px-3.5 py-2 rounded-xl bg-primary text-on-primary font-headline-s text-headline-s text-sm inline-flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">add_business</span>
+<span>Registrar Empresa</span>
+</button>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low/70 text-ink-secondary font-label text-label uppercase tracking-wider">
+<th class="py-3 px-space-md rounded-l-xl">Empresa y RUC Piura</th>
+<th class="py-3 px-space-md">Sector Económico</th>
+<th class="py-3 px-space-md">Distrito Sede</th>
+<th class="py-3 px-space-md">Estado Verificación</th>
+<th class="py-3 px-space-md">Convocatorias</th>
+<th class="py-3 px-space-md text-right rounded-r-xl">Acción</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container text-body-m font-body-m text-ink-primary">
+<!-- Empresa 1 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="font-semibold text-ink-primary">AgroPiura Export S.A.C.</div>
+<div class="font-label text-label text-ink-secondary tracking-wider">RUC 20601894231</div>
+</td>
+<td class="py-space-md px-space-md text-ink-secondary">
+                Agroindustria &amp; Frutas de Exportación
+              </td>
+<td class="py-space-md px-space-md font-medium text-ink-primary">
+                Veintiséis de Octubre
+              </td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-container text-primary font-label text-label font-bold">
+<span class="material-symbols-outlined text-[15px]">verified</span> Verificada UDEP/UNP
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-bold text-primary tabular-nums">5 activas</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-3.5 py-1.5 rounded-xl bg-primary text-on-primary font-headline-s text-headline-s text-xs shadow-sm hover:bg-primary-deep transition-all">
+                  Gestionar
+                </button>
+</td>
+</tr>
+<!-- Empresa 2 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="font-semibold text-ink-primary">Supermercados del Norte S.A.</div>
+<div class="font-label text-label text-ink-secondary tracking-wider">RUC 20481239102</div>
+</td>
+<td class="py-space-md px-space-md text-ink-secondary">
+                Retail &amp; Consumo Masivo
+              </td>
+<td class="py-space-md px-space-md font-medium text-ink-primary">
+                Piura Centro
+              </td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-container text-primary font-label text-label font-bold">
+<span class="material-symbols-outlined text-[15px]">check_circle</span> Verificada SUNAT
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-bold text-primary tabular-nums">3 activas</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-3.5 py-1.5 rounded-xl bg-primary text-on-primary font-headline-s text-headline-s text-xs shadow-sm hover:bg-primary-deep transition-all">
+                  Gestionar
+                </button>
+</td>
+</tr>
+<!-- Empresa 3 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="font-semibold text-ink-primary">TechPiura Solutions E.I.R.L.</div>
+<div class="font-label text-label text-ink-secondary tracking-wider">RUC 20563412984</div>
+</td>
+<td class="py-space-md px-space-md text-ink-secondary">
+                Tecnología y Software Cloud
+              </td>
+<td class="py-space-md px-space-md font-medium text-ink-primary">
+                Piura Centro
+              </td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-accent-container text-secondary font-label text-label font-bold">
+<span class="material-symbols-outlined text-[15px]">pending</span> Pendiente de Validación
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-medium text-ink-secondary tabular-nums">1 borrador</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-3.5 py-1.5 rounded-xl bg-secondary text-on-secondary font-headline-s text-headline-s text-xs shadow-sm hover:opacity-90 transition-all">
+                  Verificar RUC
+                </button>
+</td>
+</tr>
+<!-- Empresa 4 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="font-semibold text-ink-primary">Distribuidora Grau S.A.C.</div>
+<div class="font-label text-label text-ink-secondary tracking-wider">RUC 20129481923</div>
+</td>
+<td class="py-space-md px-space-md text-ink-secondary">
+                Logística, Cadena de Frío &amp; Transporte
+              </td>
+<td class="py-space-md px-space-md font-medium text-ink-primary">
+                Catacaos
+              </td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-container text-primary font-label text-label font-bold">
+<span class="material-symbols-outlined text-[15px]">verified</span> Verificada
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-bold text-primary tabular-nums">2 activas</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-3.5 py-1.5 rounded-xl bg-primary text-on-primary font-headline-s text-headline-s text-xs shadow-sm hover:bg-primary-deep transition-all">
+                  Gestionar
+                </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- ==================== SECCIÓN 5: COLA DE MODERACIÓN ==================== -->
+<section class="w-full mb-space-2xl" id="moderacion">
+<div class="flex flex-col gap-space-md">
+<!-- Alerta Destacada Legal -->
+<div class="p-space-md rounded-2xl bg-accent-container text-secondary flex items-start sm:items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-3">
+<span class="w-10 h-10 rounded-xl bg-surface/80 flex items-center justify-center text-secondary shadow-xs">
+<span class="material-symbols-outlined text-[24px]">gavel</span>
+</span>
+<div>
+<h3 class="font-headline-s text-headline-s leading-tight text-secondary">
+              4 convocatorias pendientes de revisión editorial y legal (Ley 28518)
+            </h3>
+<p class="font-body-s text-body-s text-ink-secondary">
+              Protección de convenios de aprendizaje, jornada máxima de 30h semanales para formativas y seguro médico FOLA.
+            </p>
+</div>
+</div>
+<span class="hidden md:inline-flex px-3 py-1 rounded-full bg-secondary text-on-secondary font-label text-label uppercase tracking-widest">
+          SLA &lt; 6 Horas
+        </span>
+</div>
+<!-- Tarjetas Interactivas de Moderación -->
+<div class="grid grid-cols-1 gap-space-md">
+<!-- Moderación 1 -->
+<div class="bg-surface rounded-2xl p-space-lg shadow-sm border-l-4 border-l-primary flex flex-col lg:flex-row lg:items-center justify-between gap-space-md hover:shadow-md transition-shadow">
+<div class="flex-1">
+<div class="flex flex-wrap items-center gap-2 mb-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-primary-container text-primary font-label text-label uppercase">Agronomía &amp; Riego</span>
+<span class="text-ink-secondary font-body-s">• Fundo San Lorenzo S.A.C. (Tambogrande)</span>
+<span class="text-ink-secondary font-body-s">• Enviado hace 45m</span>
+</div>
+<h4 class="font-headline-s text-headline-s text-ink-primary mb-1">
+              Practicante Pre de Agronomía y Riego por Goteo
+            </h4>
+<div class="flex flex-wrap items-center gap-space-md text-body-s font-body-s text-ink-secondary">
+<span class="flex items-center gap-1 text-primary font-bold">
+<span class="material-symbols-outlined text-[16px]">payments</span> Subvención S/ 1,100 / mes
+              </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">health_and_safety</span> Incluye Seguro FOLA Completo
+              </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span> 30 horas semanales máx.
+              </span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-2">
+<button class="px-4 py-2 rounded-xl bg-primary text-on-primary font-headline-s text-headline-s text-xs shadow-sm hover:bg-primary-deep transition-all flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">check</span> Aprobar Convocatoria
+            </button>
+<button class="px-3.5 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-error font-headline-s text-headline-s text-xs transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">block</span> Rechazar
+            </button>
+<button class="px-3 py-2 rounded-xl bg-surface-container-low text-ink-secondary hover:text-ink-primary font-headline-s text-headline-s text-xs transition-colors">
+              Ver detalle
+            </button>
+</div>
+</div>
+<!-- Moderación 2 -->
+<div class="bg-surface rounded-2xl p-space-lg shadow-sm border-l-4 border-l-secondary flex flex-col lg:flex-row lg:items-center justify-between gap-space-md hover:shadow-md transition-shadow">
+<div class="flex-1">
+<div class="flex flex-wrap items-center gap-2 mb-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-accent-container text-secondary font-label text-label uppercase">Contabilidad Jr.</span>
+<span class="text-ink-secondary font-body-s">• Textil Piura Norte (Castilla)</span>
+<span class="text-ink-secondary font-body-s">• Enviado hace 2h</span>
+</div>
+<h4 class="font-headline-s text-headline-s text-ink-primary mb-1">
+              Asistente Contable Jr.
+            </h4>
+<div class="flex flex-wrap items-center gap-space-md text-body-s font-body-s text-ink-secondary">
+<span class="flex items-center gap-1 text-ink-primary font-semibold">
+<span class="material-symbols-outlined text-[16px]">payments</span> Subvención S/ 1,025 (Mínimo legal)
+              </span>
+<span class="flex items-center gap-1 text-secondary font-medium bg-secondary-fixed/40 px-2 py-0.5 rounded-lg">
+<span class="material-symbols-outlined text-[15px]">warning</span> Falta especificar horario académico compatible
+              </span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-2">
+<button class="px-4 py-2 rounded-xl bg-secondary text-on-secondary font-headline-s text-headline-s text-xs shadow-sm hover:opacity-90 transition-all flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">contact_support</span> Pedir Corrección
+            </button>
+<button class="px-3.5 py-2 rounded-xl bg-primary text-on-primary font-headline-s text-headline-s text-xs shadow-sm hover:bg-primary-deep transition-all">
+              Aprobar Condicional
+            </button>
+<button class="px-3 py-2 rounded-xl bg-surface-container-low text-ink-secondary hover:text-ink-primary font-headline-s text-headline-s text-xs">
+              Ver borrador
+            </button>
+</div>
+</div>
+<!-- Moderación 3 -->
+<div class="bg-surface rounded-2xl p-space-lg shadow-sm border-l-4 border-l-error flex flex-col lg:flex-row lg:items-center justify-between gap-space-md hover:shadow-md transition-shadow">
+<div class="flex-1">
+<div class="flex flex-wrap items-center gap-2 mb-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-error-container text-error font-label text-label uppercase">Marketing &amp; Redes</span>
+<span class="text-ink-secondary font-body-s">• Café &amp; Algodón de Catacaos</span>
+<span class="text-ink-secondary font-body-s">• Enviado hace 3h</span>
+</div>
+<h4 class="font-headline-s text-headline-s text-ink-primary mb-1">
+              Practicante de Marketing Digital y Redes
+            </h4>
+<div class="flex flex-wrap items-center gap-space-md text-body-s font-body-s">
+<span class="flex items-center gap-1 text-error font-bold bg-error-container px-2.5 py-1 rounded-lg">
+<span class="material-symbols-outlined text-[16px]">error</span> Subvención S/ 600 (Alerta: Inferior al mínimo de S/ 1,025)
+              </span>
+<span class="text-ink-secondary">Modalidad reportada como presencial a tiempo completo</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-2">
+<button class="px-4 py-2 rounded-xl bg-error text-on-error font-headline-s text-headline-s text-xs shadow-sm hover:opacity-90 transition-all flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">report</span> Observar y Notificar Ley
+            </button>
+<button class="px-3.5 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-ink-primary font-headline-s text-headline-s text-xs">
+              Revisar Subvención
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== SECCIÓN 6: BANDEJA DE LEADS Y ALIANZAS ==================== -->
+<section class="w-full" id="leads">
+<div class="bg-surface rounded-2xl p-space-lg shadow-sm">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-lg">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<h2 class="font-headline-s text-headline-s text-ink-primary">Bandeja de Leads &amp; Prospección Institucional</h2>
+</div>
+<p class="font-body-s text-body-s text-ink-secondary">Oportunidades de alianza estratégica con universidades, institutos y gremios empresariales en Piura.</p>
+</div>
+<button class="px-3.5 py-2 rounded-xl bg-primary text-on-primary font-headline-s text-headline-s text-sm inline-flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">add_call</span>
+<span>Registrar Nuevo Contacto</span>
+</button>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low/70 text-ink-secondary font-label text-label uppercase tracking-wider">
+<th class="py-3 px-space-md rounded-l-xl">Contacto Institucional</th>
+<th class="py-3 px-space-md">Correo / Teléfono</th>
+<th class="py-3 px-space-md">Tipo de Lead</th>
+<th class="py-3 px-space-md">Estado Comercial</th>
+<th class="py-3 px-space-md">Notas &amp; Compromisos</th>
+<th class="py-3 px-space-md text-right rounded-r-xl">Acción</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container text-body-m font-body-m text-ink-primary">
+<!-- Lead 1 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-space-md px-space-md font-semibold text-ink-primary">
+                Lic. Fernando Talledo
+                <div class="text-body-s font-normal text-ink-secondary">MarinaSun Export (Paita)</div>
+</td>
+<td class="py-space-md px-space-md text-body-s font-body-s">
+<div class="text-ink-primary font-medium">ftalledo@marinasun.pe</div>
+<div class="text-ink-secondary">+51 969 412 884</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-ink-primary font-label text-label">
+                  Empresa Agroindustrial
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-primary-container text-primary font-label text-label font-bold">
+                  Nuevo Lead
+                </span>
+</td>
+<td class="py-space-md px-space-md text-body-s font-body-s text-ink-secondary max-w-xs truncate">
+                Interesado en publicar 8 vacantes de packing para campaña de uva en Paita.
+              </td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-3 py-1.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-primary font-headline-s text-headline-s text-xs inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">chat</span> WhatsApp
+                </button>
+</td>
+</tr>
+<!-- Lead 2 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-space-md px-space-md font-semibold text-ink-primary">
+                Dra. Elena Ruiz
+                <div class="text-body-s font-normal text-ink-secondary">SENATI Piura Centro</div>
+</td>
+<td class="py-space-md px-space-md text-body-s font-body-s">
+<div class="text-ink-primary font-medium">coordinacion@senati.piura.pe</div>
+<div class="text-ink-secondary">+51 968 112 040</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-accent-container text-secondary font-label text-label font-bold">
+                  Alianza Técnica Dual
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-fixed/60 text-secondary font-label text-label font-bold">
+                  En Contacto WhatsApp
+                </span>
+</td>
+<td class="py-space-md px-space-md text-body-s font-body-s text-ink-secondary max-w-xs truncate">
+                Validación de bolsa de trabajo dual para egresados de electricidad y mecatrónica.
+              </td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-3 py-1.5 rounded-xl bg-secondary text-on-secondary font-headline-s text-headline-s text-xs inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">calendar_month</span> Agendar
+                </button>
+</td>
+</tr>
+<!-- Lead 3 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-space-md px-space-md font-semibold text-ink-primary">
+                Econ. Mateo Carrasco
+                <div class="text-body-s font-normal text-ink-secondary">Inversiones del Norte Corp.</div>
+</td>
+<td class="py-space-md px-space-md text-body-s font-body-s">
+<div class="text-ink-primary font-medium">mcarrasco@inversionesnorte.com</div>
+<div class="text-ink-secondary">+51 972 301 922</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-ink-primary font-label text-label">
+                  Empresa Retail Corporativo
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-primary-container text-primary font-label text-label font-bold">
+                  Demo Programada
+                </span>
+</td>
+<td class="py-space-md px-space-md text-body-s font-body-s text-ink-secondary max-w-xs truncate">
+                Reunión programada para martes 10:00 AM sobre plan anual de atracción de talento UDEP.
+              </td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-3 py-1.5 rounded-xl bg-primary text-on-primary font-headline-s text-headline-s text-xs shadow-sm hover:bg-primary-deep transition-all inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">videocam</span> Ver Demo
+                </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+</div>
+<!-- Script interactivo de filtrado local para búsqueda instantánea -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('user-search-input');
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        const rows = document.querySelectorAll('#usuarios tbody tr');
+        rows.forEach(row => {
+          const text = row.innerText.toLowerCase();
+          row.style.display = text.includes(query) ? '' : 'none';
+        });
+      });
+    }
+  });
+</script></main><footer class="w-full bg-surface py-space-md shadow-[0_-1px_6px_rgba(20,32,27,0.03)]"><div class="w-full px-space-md md:px-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-sm text-center sm:text-left"><div class="flex items-center gap-2"><span class="inline-flex items-center justify-center w-2 h-2 rounded-full bg-primary"></span><span class="font-body-s text-body-s text-on-surface-variant font-medium">Sistemas operativos en Piura, Perú</span></div><div class="flex items-center gap-space-md font-body-s text-body-s text-on-surface-variant"><a class="hover:text-primary transition-colors" href="#">Soporte Técnico</a><a class="hover:text-primary transition-colors" href="#">Políticas de Región</a><span class="px-2 py-0.5 rounded-full bg-surface-container font-label text-label text-on-surface-variant">v2.4</span></div></div></footer></div></body></html>

@@ -11,3 +11,4 @@ data/uploads/
 *.log
 docs/capturas/
 backend/data/
+.stitch/designs/*.png

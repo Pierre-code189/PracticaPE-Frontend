@@ -1,0 +1,90 @@
+{
+  "projectId": "17882534861998381791",
+  "designSystem": "assets/243fa11fdc024df3b341a9a9bce4d3e6",
+  "generatedAt": "2026-11-19",
+  "screens": {
+    "home": {
+      "screenId": "e91acc5000914dc199acc898f368cf37",
+      "htmlFile": "projects/17882534861998381791/files/2f99f3de6da746069ca598e5506478b6",
+      "imageFile": "projects/17882534861998381791/files/6854e50e681e46028f8548217578a030",
+      "width": 2560,
+      "height": 6032
+    },
+    "ofertas": {
+      "screenId": "18361cfd0be4448eb642a6fc92ea2cbf",
+      "htmlFile": "projects/17882534861998381791/files/ac8a798f62ec493bad5a9bf3bf03a112",
+      "imageFile": "projects/17882534861998381791/files/5a89dd9ed8394952bf98beddfc2fa50d",
+      "width": 2560,
+      "height": 4550
+    },
+    "auth": {
+      "screenId": "616f9ba987464e679266852c3c6494c5",
+      "htmlFile": "projects/17882534861998381791/files/88486796b4844d96b50a31f442b9b074",
+      "imageFile": "projects/17882534861998381791/files/008eb8e7499a4287abaef336888dc851",
+      "width": 2560,
+      "height": 2048
+    },
+    "oferta-detalle": {
+      "screenId": "9ae1c17cc8b64feb845e0a1cd46bb813",
+      "htmlFile": "projects/17882534861998381791/files/5d8b76f5e1cc4e6f856ea1acdc6061d5",
+      "imageFile": "projects/17882534861998381791/files/c1163d40cb3b455ca2db4f0c134157b5",
+      "width": 2560,
+      "height": 8014
+    },
+    "perfil-candidato": {
+      "screenId": "237b037641a34766acf47cf7c39eb19d",
+      "htmlFile": "projects/17882534861998381791/files/cdebc51f4d1a4876a859337c760317a5",
+      "imageFile": "projects/17882534861998381791/files/c50a7b5250404469bf5195dba8177da2",
+      "width": 2560,
+      "height": 7300
+    },
+    "panel-empresa": {
+      "screenId": "9779d44f8cf54adba509a2753a2ccd63",
+      "htmlFile": "projects/17882534861998381791/files/a14328a3f155423cb8851cd183916b93",
+      "imageFile": "projects/17882534861998381791/files/e2f32e6112da4c78841b7f0c3f37add8",
+      "width": 2560,
+      "height": 4948
+    },
+    "panel-admin": {
+      "screenId": "ff0cd7387915429bbb7b44f9eeea54c4",
+      "htmlFile": "projects/17882534861998381791/files/f42510cb0aaa4cd3bbbd46f85751314d",
+      "imageFile": "projects/17882534861998381791/files/53c0939c566d4a188896db3f75c1286c",
+      "width": 2560,
+      "height": 7718
+    },
+    "empresas": {
+      "screenId": "a05a68fe2e8e485e88957b7e73867814",
+      "htmlFile": "projects/17882534861998381791/files/c3d088736abd4f3a9453122a91b63187",
+      "imageFile": "projects/17882534861998381791/files/77793d9d0e054b99abd97d23e28f0721",
+      "width": 2560,
+      "height": 5004
+    },
+    "mapa": {
+      "screenId": "125e1f6677e24bc4ba74c098f5add721",
+      "htmlFile": "projects/17882534861998381791/files/d7c4dfab0bb343789c816209ac6d1786",
+      "imageFile": "projects/17882534861998381791/files/6cb20956b3e340b08b4d78aecbde6921",
+      "width": 2560,
+      "height": 3162
+    },
+    "home-mobile": {
+      "screenId": "b640b3348d6245e5b4c241e17aa9bfe9",
+      "htmlFile": "projects/17882534861998381791/files/25b9571ad93e40da9933955e799dce04",
+      "imageFile": "projects/17882534861998381791/files/613e23453d1342afab781fcee5c7ef19",
+      "width": 780,
+      "height": 7968,
+      "variantOf": "home",
+      "deviceType": "MOBILE"
+    },
+    "ofertas-mobile": {
+      "screenId": "0d916a56b1bc4aef8b596f3d2b89ca0d",
+      "htmlFile": "projects/17882534861998381791/files/6696cb8bcc1245ebaf36c340848ab783",
+      "imageFile": "projects/17882534861998381791/files/a25f16ceb5754fe39a92f9644d579d27",
+      "width": 780,
+      "height": 5500,
+      "variantOf": "ofertas",
+      "deviceType": "MOBILE"
+    }
+  },
+  "assetsDir": ".stitch/designs",
+  "pagesDir": "frontend/static/pages"
+}
