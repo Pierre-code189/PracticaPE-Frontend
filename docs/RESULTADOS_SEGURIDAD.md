@@ -1,6 +1,6 @@
 # Resultados — Pruebas de seguridad de PracticaPE
 
-Fecha: 2026-11-19 11:12
+Fecha: 2026-11-19 17:33
 
 51 de 51 casos cumplen el criterio esperado.
 
