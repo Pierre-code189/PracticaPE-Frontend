@@ -1,14 +1,7 @@
 .venv/
 __pycache__/
 *.pyc
-.pytest_cache/
-data/*.db
-data/.secret
-data/admin_credentials.txt
-data/otp_outbox.log
-data/uploads/
+data/
 .env
-*.log
-docs/capturas/
-backend/data/
-.stitch/designs/*.png
+*.db
+.DS_Store
