@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-high": "#e5e9e6", "background-light": "#FAF9F4", "on-surface-variant": "#3e4945", "inverse-primary": "#7bd7bd", "secondary": "#51625a", "secondary-fixed-dim": "#b8cbc1", "on-primary-fixed-variant": "#005141", "outline": "#6e7a75", "surface-dim": "#d7dbd8", "on-error": "#ffffff", "on-tertiary-container": "#ffeeea", "on-secondary-fixed": "#0f1f19", "on-primary": "#ffffff", "primary-container-light": "#D7F0E7", "primary-fixed": "#97f4d9", "accent-container-light": "#FBEBCB", "background": "#f6faf7", "accent-dark": "#F2B85C", "surface-dark": "#12201B", "surface-elevated-dark": "#1A2E27", "surface": "#f6faf7", "on-primary-fixed": "#002019", "surface-tint": "#006b57", "error-container": "#ffdad6", "tertiary-fixed": "#ffdad3", "on-secondary-fixed-variant": "#3a4a43", "on-error-container": "#93000a", "on-tertiary": "#ffffff", "background-dark": "#0B1512", "surface-container-lowest": "#ffffff", "primary-container-dark": "#14382F", "outline-variant": "#bdc9c4", "ink-light": "#14201B", "on-surface": "#181d1b", "on-secondary-container": "#576860", "tertiary": "#894032", "surface-variant": "#dfe3e0", "primary-dark": "#4FC3A7", "secondary-fixed": "#d4e7dd", "surface-elevated-light": "#F1EFE6", "inverse-on-surface": "#eef2ee", "ink-secondary-dark": "#9DB3AA", "on-secondary": "#ffffff", "secondary-container": "#d4e7dd", "on-background": "#181d1b", "primary-container": "#0e7c66", "primary-deep-dark": "#2E9B85", "surface-container-highest": "#dfe3e0", "border-dark": "#243833", "tertiary-fixed-dim": "#ffb4a6", "surface-light": "#FFFFFF", "accent-light": "#E8A13A", "primary-fixed-dim": "#7bd7bd", "tertiary-container": "#a75748", "primary": "#00614f", "border-light": "#E3E0D5", "on-tertiary-fixed-variant": "#763125", "surface-bright": "#f6faf7", "error": "#C0392B", "surface-container": "#ebefeb", "on-primary-container": "#bcffe9", "ink-dark": "#EAF4EF", "inverse-surface": "#2d312f", "on-tertiary-fixed": "#3d0702", "ink-secondary-light": "#5A6B63", "surface-container-low": "#f0f5f1" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "space-md": "1rem", "space-xl": "2.5rem", "space-xs": "0.25rem", "margin": "1.5rem", "space-lg": "1.5rem", "gutter": "1.5rem" }, "fontFamily": { "headline-l": [ "Plus Jakarta Sans" ], "body-m": [ "Inter" ], "body-s": [ "Inter" ], "body-l": [ "Inter" ], "headline-m": [ "Plus Jakarta Sans" ], "headline-s": [ "Plus Jakarta Sans" ], "label": [ "Inter" ], "display": [ "Plus Jakarta Sans" ] }, "fontSize": { "headline-l": [ "32px", { "lineHeight": "1.2", "fontWeight": "700" } ], "body-m": [ "14px", { "lineHeight": "1.5", "fontWeight": "400" } ], "body-s": [ "12px", { "lineHeight": "1.4", "fontWeight": "400" } ], "body-l": [ "16px", { "lineHeight": "1.5", "fontWeight": "400" } ], "headline-m": [ "24px", { "lineHeight": "1.3", "fontWeight": "700" } ], "headline-s": [ "18px", { "lineHeight": "1.4", "fontWeight": "700" } ], "label": [ "11px", { "lineHeight": "1.2", "letterSpacing": "0.06em", "fontWeight": "700" } ], "display": [ "40px", { "lineHeight": "1.05", "fontWeight": "800" } ] } } } };</script></head><body class="bg-surface font-body-m text-on-surface antialiased min-h-screen flex flex-col justify-between"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(20,32,27,0.04)]"><div class="h-16 max-w-[1200px] mx-auto px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><span class="font-headline-s text-headline-s text-primary tracking-tight">Práctica<span class="text-secondary">PE</span></span><span class="px-space-sm py-space-xs rounded-full bg-secondary-container text-on-secondary-container font-label text-label uppercase">EMPRESAS</span></div><nav class="hidden md:flex items-center gap-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-full px-space-md py-space-xs"><a class="px-space-md py-space-xs rounded-full font-body-m text-body-m text-on-surface-variant hover:text-on-surface transition-colors" data-path="panel" href="#">Panel</a><a aria-current="page" class="transition-colors bg-primary-container text-on-primary-container font-bold rounded-full px-space-md py-space-xs" data-path="ofertas-publicadas" href="#">Ofertas publicadas</a><a class="px-space-md py-space-xs rounded-full font-body-m text-body-m text-on-surface-variant hover:text-on-surface transition-colors" data-path="candidatos" href="#">Candidatos</a></nav></div><div class="flex items-center gap-space-md"><button aria-label="Cambiar tema claro u oscuro" class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">light_mode</span></button><div class="flex items-center gap-space-sm pl-space-sm py-space-xs pr-space-md rounded-full bg-surface-container-low"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden sm:flex flex-col text-left"><div class="flex items-center gap-space-xs"><span class="font-body-s text-body-s font-semibold text-on-surface leading-none">AgroPiura SAC</span><span class="material-symbols-outlined text-primary text-[14px]" title="RUC Verificado">verified</span></div><span class="font-label text-label text-on-surface-variant leading-none mt-0.5">RUC 20482910481</span></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">keyboard_arrow_down</span></div></div></div></header><main class="w-full pt-16 bg-surface flex-1 max-w-[1200px] mx-auto px-margin"><div class="flex flex-col w-full">
+<!-- Cabecera de la Sección -->
+<div class="mb-space-lg">
+<!-- Migas de pan -->
+<nav aria-label="Ruta de navegación" class="flex items-center gap-space-xs text-on-surface-variant font-body-s text-body-s mb-space-sm">
+<a class="hover:text-primary transition-colors" href="#">Inicio</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Ofertas publicadas</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span aria-current="page" class="text-on-surface font-semibold">Nueva convocatoria</span>
+</nav>
+<!-- Título, subtítulo y estado en vivo -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md">
+<div class="max-w-3xl">
+<h1 class="font-headline-l text-headline-l text-ink-light tracking-tight">Publicar una convocatoria de prácticas o empleo</h1>
+<p class="font-body-l text-body-l text-ink-secondary-light mt-space-xs leading-relaxed">
+          Completa los requerimientos formales bajo el marco de la Ley N° 28518 y difunde tu vacante ante estudiantes y egresados de Piura.
+        </p>
+</div>
+<div class="flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-low shadow-sm self-start lg:self-auto">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-body-s text-body-s text-on-surface-variant">Borrador guardado automáticamente hace 2 min</span>
+</div>
+</div>
+</div>
+<!-- Indicador visual de pasos (Steppers horizontales) -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm mb-space-lg overflow-x-auto">
+<div class="flex items-center justify-between min-w-[720px] relative">
+<!-- Línea conectora base -->
+<div class="absolute left-8 right-8 top-1/2 -translate-y-1/2 h-1 bg-surface-container -z-0"></div>
+<div class="absolute left-8 top-1/2 -translate-y-1/2 h-1 bg-primary transition-all duration-300 -z-0" id="step-progress-bar" style="width: 5%;"></div>
+<!-- Paso 1 -->
+<button class="step-nav-btn relative z-10 flex items-center gap-space-xs group focus:outline-none" id="step-btn-1" onclick="goToStep(1)" type="button">
+<div class="w-10 h-10 rounded-full flex items-center justify-center font-headline-s text-headline-s bg-primary text-on-primary transition-all shadow-md ring-4 ring-primary-container-light" id="step-circle-1">
+          1
+        </div>
+<div class="flex flex-col text-left">
+<span class="font-label text-label uppercase text-on-surface-variant group-hover:text-primary transition-colors">Paso 01</span>
+<span class="font-headline-s text-body-m font-bold text-on-surface">Datos del puesto</span>
+</div>
+</button>
+<!-- Paso 2 -->
+<button class="step-nav-btn relative z-10 flex items-center gap-space-xs group focus:outline-none" id="step-btn-2" onclick="goToStep(2)" type="button">
+<div class="w-10 h-10 rounded-full flex items-center justify-center font-headline-s text-headline-s bg-surface-container text-on-surface-variant transition-all" id="step-circle-2">
+          2
+        </div>
+<div class="flex flex-col text-left">
+<span class="font-label text-label uppercase text-on-surface-variant group-hover:text-primary transition-colors">Paso 02</span>
+<span class="font-headline-s text-body-m font-bold text-on-surface-variant">Empresa</span>
+</div>
+</button>
+<!-- Paso 3 -->
+<button class="step-nav-btn relative z-10 flex items-center gap-space-xs group focus:outline-none" id="step-btn-3" onclick="goToStep(3)" type="button">
+<div class="w-10 h-10 rounded-full flex items-center justify-center font-headline-s text-headline-s bg-surface-container text-on-surface-variant transition-all" id="step-circle-3">
+          3
+        </div>
+<div class="flex flex-col text-left">
+<span class="font-label text-label uppercase text-on-surface-variant group-hover:text-primary transition-colors">Paso 03</span>
+<span class="font-headline-s text-body-m font-bold text-on-surface-variant">Requisitos</span>
+</div>
+</button>
+<!-- Paso 4 -->
+<button class="step-nav-btn relative z-10 flex items-center gap-space-xs group focus:outline-none" id="step-btn-4" onclick="goToStep(4)" type="button">
+<div class="w-10 h-10 rounded-full flex items-center justify-center font-headline-s text-headline-s bg-surface-container text-on-surface-variant transition-all" id="step-circle-4">
+          4
+        </div>
+<div class="flex flex-col text-left">
+<span class="font-label text-label uppercase text-on-surface-variant group-hover:text-primary transition-colors">Paso 04</span>
+<span class="font-headline-s text-body-m font-bold text-on-surface-variant">Remuneración</span>
+</div>
+</button>
+<!-- Paso 5 -->
+<button class="step-nav-btn relative z-10 flex items-center gap-space-xs group focus:outline-none" id="step-btn-5" onclick="goToStep(5)" type="button">
+<div class="w-10 h-10 rounded-full flex items-center justify-center font-headline-s text-headline-s bg-surface-container text-on-surface-variant transition-all" id="step-circle-5">
+          5
+        </div>
+<div class="flex flex-col text-left">
+<span class="font-label text-label uppercase text-on-surface-variant group-hover:text-primary transition-colors">Paso 05</span>
+<span class="font-headline-s text-body-m font-bold text-on-surface-variant">Revisión</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Cuerpo en 2 columnas -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Columna Izquierda: Formulario multipaso -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<!-- ======================= PASO 1: DATOS DEL PUESTO ======================= -->
+<section class="step-panel flex flex-col gap-space-md" id="step-panel-1">
+<div class="flex items-center gap-space-sm pb-space-sm bg-surface-container-lowest">
+<div class="w-10 h-10 rounded-full bg-primary-container-light text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">assignment</span>
+</div>
+<div>
+<h2 class="font-headline-m text-headline-m text-on-surface leading-snug">Paso 1: Datos principales del puesto</h2>
+<p class="font-body-s text-body-s text-on-surface-variant">Define el perfil básico y la localización de la vacante en Piura.</p>
+</div>
+</div>
+<!-- Título del Puesto -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-body-m text-body-m font-semibold text-on-surface flex items-center justify-between" for="input-job-title">
+<span>Título del puesto <span class="text-tertiary">*</span></span>
+<span class="font-label text-label text-on-surface-variant">Conforme a SUNAT/MTPE</span>
+</label>
+<input class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-low text-on-surface placeholder:text-on-surface-variant/60 font-body-m text-body-m focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner" id="input-job-title" oninput="syncLivePreview()" placeholder="[Título del puesto, ej. Practicante Preprofesional de Operaciones Logísticas]" type="text" value="Practicante Preprofesional de Logística &amp; Exportación"/>
+<p class="font-body-s text-body-s text-on-surface-variant">Escribe una denominación explícita para atraer perfiles idóneos de la zona.</p>
+</div>
+<!-- Especialidad y Modalidad -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Área profesional -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-body-m text-body-m font-semibold text-on-surface" for="select-career">Área profesional / Especialidad <span class="text-tertiary">*</span></label>
+<div class="relative">
+<select class="w-full px-space-md py-space-sm pr-10 rounded-lg bg-surface-container-low text-on-surface font-body-m text-body-m focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner appearance-none" id="select-career" onchange="syncLivePreview()">
+<option value="Ingeniería Industrial / Sistemas">Ingeniería Industrial / Sistemas</option>
+<option selected="" value="Logística y Comercio Exterior">Logística y Comercio Exterior</option>
+<option value="Agroindustria y Agronomía">Agroindustria y Agronomía</option>
+<option value="Administración y Finanzas">Administración y Finanzas</option>
+<option value="Pesquería y Procesos Hidrobiológicos">Pesquería y Procesos Hidrobiológicos</option>
+<option value="Contabilidad y Tributación">Contabilidad y Tributación</option>
+<option value="Tecnología de la Información">Tecnología de la Información</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-on-surface-variant">expand_more</span>
+</div>
+</div>
+<!-- Distrito / Sede Regional -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-body-m text-body-m font-semibold text-on-surface" for="select-location">Distrito / Sede en Región Piura <span class="text-tertiary">*</span></label>
+<div class="relative">
+<select class="w-full px-space-md py-space-sm pr-10 rounded-lg bg-surface-container-low text-on-surface font-body-m text-body-m focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner appearance-none" id="select-location" onchange="syncLivePreview()">
+<option value="Paita (Puerto)">Paita (Puerto)</option>
+<option selected="" value="Piura Centro">Piura Centro</option>
+<option value="Castilla">Castilla</option>
+<option value="Veintiséis de Octubre">Veintiséis de Octubre</option>
+<option value="Sullana">Sullana</option>
+<option value="Talara">Talara</option>
+<option value="Catacaos">Catacaos</option>
+<option value="Sechura">Sechura</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-on-surface-variant">pin_drop</span>
+</div>
+</div>
+</div>
+<!-- Modalidad de trabajo (Cards interactivas) -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-body-m text-body-m font-semibold text-on-surface">Modalidad de trabajo <span class="text-tertiary">*</span></label>
+<div class="grid grid-cols-3 gap-space-sm">
+<label class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors text-center has-[:checked]:bg-primary-container-light has-[:checked]:ring-2 has-[:checked]:ring-primary">
+<input checked="" class="sr-only" name="modalidad" onchange="updateModality('Presencial')" type="radio" value="Presencial"/>
+<span class="material-symbols-outlined text-primary mb-1">apartment</span>
+<span class="font-headline-s text-body-s font-semibold text-on-surface">Presencial</span>
+<span class="font-label text-label text-on-surface-variant">En planta o sede</span>
+</label>
+<label class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors text-center has-[:checked]:bg-primary-container-light has-[:checked]:ring-2 has-[:checked]:ring-primary">
+<input class="sr-only" name="modalidad" onchange="updateModality('Híbrido')" type="radio" value="Híbrido"/>
+<span class="material-symbols-outlined text-primary mb-1">devices</span>
+<span class="font-headline-s text-body-s font-semibold text-on-surface">Híbrido</span>
+<span class="font-label text-label text-on-surface-variant">3 días oficina / 2 remoto</span>
+</label>
+<label class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors text-center has-[:checked]:bg-primary-container-light has-[:checked]:ring-2 has-[:checked]:ring-primary">
+<input class="sr-only" name="modalidad" onchange="updateModality('Remoto (100%)')" type="radio" value="Remoto (100%)"/>
+<span class="material-symbols-outlined text-primary mb-1">wifi</span>
+<span class="font-headline-s text-body-s font-semibold text-on-surface">Remoto</span>
+<span class="font-label text-label text-on-surface-variant">100% virtual</span>
+</label>
+</div>
+</div>
+<!-- Jornada formativa y Vacantes -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Jornada máxima Ley 28518 -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-body-m text-body-m font-semibold text-on-surface flex items-center justify-between" for="select-jornada">
+<span>Régimen formativo <span class="text-tertiary">*</span></span>
+<span class="font-label text-label text-primary">Ley 28518</span>
+</label>
+<div class="relative">
+<select class="w-full px-space-md py-space-sm pr-10 rounded-lg bg-surface-container-low text-on-surface font-body-m text-body-m focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner appearance-none" id="select-jornada" onchange="syncLivePreview()">
+<option selected="" value="Preprofesional (Máx 30 hrs/semana)">Práctica Preprofesional (30 hrs/sem)</option>
+<option value="Profesional (Máx 48 hrs/semana)">Práctica Profesional (48 hrs/sem)</option>
+<option value="Contrato Laboral Juvenil">Puesto Empleo Junior (48 hrs/sem)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-on-surface-variant">schedule</span>
+</div>
+</div>
+<!-- Vacantes disponibles -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-body-m text-body-m font-semibold text-on-surface" for="input-vacantes">Número de vacantes</label>
+<div class="flex items-center gap-space-xs">
+<button class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface hover:bg-surface-container font-headline-m text-body-l" onclick="adjustVacantes(-1)" type="button">-</button>
+<input class="w-full text-center py-space-sm rounded-lg bg-surface-container-low text-on-surface font-headline-s text-body-l focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="input-vacantes" max="50" min="1" onchange="syncLivePreview()" type="number" value="2"/>
+<button class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface hover:bg-surface-container font-headline-m text-body-l" onclick="adjustVacantes(1)" type="button">+</button>
+</div>
+</div>
+</div>
+<!-- Fecha límite de postulación -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-body-m text-body-m font-semibold text-on-surface" for="input-deadline">Cierre de convocatoria</label>
+<div class="relative">
+<input class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-low text-on-surface font-body-m text-body-m focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner" id="input-deadline" onchange="syncLivePreview()" type="date" value="2024-11-20"/>
+</div>
+<p class="font-body-s text-body-s text-on-surface-variant">Recomendamos al menos 10 días calendario para captar postulantes universitarios de Piura.</p>
+</div>
+<!-- Funciones y responsabilidades principales -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-body-m text-body-m font-semibold text-on-surface" for="textarea-functions">Funciones y responsabilidades principales <span class="text-tertiary">*</span></label>
+<textarea class="w-full p-space-md rounded-lg bg-surface-container-low text-on-surface placeholder:text-on-surface-variant/60 font-body-m text-body-m focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner leading-relaxed resize-y" id="textarea-functions" oninput="syncLivePreview()" placeholder="Describe las tareas clave y proyectos que liderará o apoyará el practicante..." rows="5">• Apoyo en la consolidación de guías de remisión y despachos para puerto de Paita.
+• Coordinación con agencias de aduanas y transportistas de la macrorregión norte.
+• Control de inventarios y trazabilidad de embarques agrícolas de mango y uva de mesa.
+• Elaboración de reportes de KPI logísticos semanales para la gerencia de operaciones.</textarea>
+</div>
+</section>
+<!-- ======================= PASO 2: EMPRESA ======================= -->
+<section class="step-panel hidden flex-col gap-space-md" id="step-panel-2">
+<div class="flex items-center gap-space-sm pb-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-container-light text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">domain</span>
+</div>
+<div>
+<h2 class="font-headline-m text-headline-m text-on-surface leading-snug">Paso 2: Datos de la Empresa</h2>
+<p class="font-body-s text-body-s text-on-surface-variant">Información institucional vinculada al RUC verificado ante SUNAT.</p>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-primary text-on-primary flex items-center justify-center font-headline-m text-headline-m flex-shrink-0">
+              AP
+            </div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-s text-headline-s text-on-surface font-bold">AgroPiura SAC</span>
+<span class="px-space-sm py-space-xs rounded-full bg-primary-container-light text-primary font-label text-label flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">verified</span> RUC 20482910481
+                </span>
+<span class="px-space-sm py-space-xs rounded-full bg-surface-container text-on-surface-variant font-label text-label">
+                  HABIDO / ACTIVO
+                </span>
+</div>
+<p class="font-body-s text-body-s text-on-surface-variant mt-1">Sede Central: Zona Industrial II, Mz. B Lt. 4, Piura.</p>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-body-m text-body-m font-semibold text-on-surface" for="input-empresa-desc">Resumen de la organización</label>
+<textarea class="w-full p-space-md rounded-lg bg-surface-container-low text-on-surface font-body-m text-body-m focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="input-empresa-desc" rows="3">Empresa agroexportadora líder en el valle del Medio Piura, especializada en el cultivo, empaque y distribución global de uva de mesa red globe, mango kent y palta hass hacia mercados de Europa y Norteamérica.</textarea>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-body-m text-body-m font-semibold text-on-surface">Sector de actividad</label>
+<input class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-low text-on-surface font-body-m text-body-m" readonly="" type="text" value="Agroindustria y Comercio Exterior"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-body-m text-body-m font-semibold text-on-surface">Representante de convenio formativo</label>
+<input class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-low text-on-surface font-body-m text-body-m" type="text" value="Lic. Claudia Mendoza - Gestión de Talento"/>
+</div>
+</div>
+</section>
+<!-- ======================= PASO 3: REQUISITOS ======================= -->
+<section class="step-panel hidden flex-col gap-space-md" id="step-panel-3">
+<div class="flex items-center gap-space-sm pb-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-container-light text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">school</span>
+</div>
+<div>
+<h2 class="font-headline-m text-headline-m text-on-surface leading-snug">Paso 3: Perfil y Requisitos</h2>
+<p class="font-body-s text-body-s text-on-surface-variant">Especifica la formación académica y competencias que necesitas.</p>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-body-m text-body-m font-semibold text-on-surface">Grado / Nivel de estudios solicitado</label>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<label class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container has-[:checked]:bg-primary-container-light has-[:checked]:ring-2 has-[:checked]:ring-primary">
+<input checked="" class="accent-primary" name="academic_level" type="radio" value="7mo - 9no ciclo"/>
+<span class="font-body-m text-body-m text-on-surface font-medium">Estudiante (7mo - 10mo ciclo)</span>
+</label>
+<label class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container has-[:checked]:bg-primary-container-light has-[:checked]:ring-2 has-[:checked]:ring-primary">
+<input class="accent-primary" name="academic_level" type="radio" value="Egresado reciente"/>
+<span class="font-body-m text-body-m text-on-surface font-medium">Egresado no titulado</span>
+</label>
+<label class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container has-[:checked]:bg-primary-container-light has-[:checked]:ring-2 has-[:checked]:ring-primary">
+<input class="accent-primary" name="academic_level" type="radio" value="Técnico / Instituto"/>
+<span class="font-body-m text-body-m text-on-surface font-medium">Técnico superior (IES)</span>
+</label>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-body-m text-body-m font-semibold text-on-surface">Instituciones de educación aliadas en la zona</label>
+<p class="font-body-s text-body-s text-on-surface-variant">Se notificará prioritariamente a las bolsas de trabajo de estas casas de estudio:</p>
+<div class="flex flex-wrap gap-space-xs mt-1">
+<span class="px-space-md py-space-xs rounded-full bg-surface-container text-on-surface font-body-s text-body-s flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">check</span> Universidad Nacional de Piura (UNP)
+              </span>
+<span class="px-space-md py-space-xs rounded-full bg-surface-container text-on-surface font-body-s text-body-s flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">check</span> Universidad de Piura (UDEP)
+              </span>
+<span class="px-space-md py-space-xs rounded-full bg-surface-container text-on-surface font-body-s text-body-s flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">check</span> UCV Filial Piura
+              </span>
+<span class="px-space-md py-space-xs rounded-full bg-surface-container text-on-surface font-body-s text-body-s flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">check</span> Zegel / Senati Piura
+              </span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-body-m text-body-m font-semibold text-on-surface" for="textarea-requirements">Requisitos específicos &amp; Habilidades técnicas</label>
+<textarea class="w-full p-space-md rounded-lg bg-surface-container-low text-on-surface font-body-m text-body-m focus:outline-none focus:ring-2 focus:ring-primary shadow-inner leading-relaxed resize-y" id="textarea-requirements" oninput="syncLivePreview()" rows="4">• Manejo de Excel a nivel intermedio (Tablas dinámicas, filtros y fórmulas de consolidación).
+• Conocimiento básico de normativas aduaneras (Incoterms 2020) y trámites SENASA.
+• Residencia preferente en Piura, Castilla o Paita.
+• Disposición proactiva, orden y trabajo en equipo.</textarea>
+</div>
+</section>
+<!-- ======================= PASO 4: REMUNERACIÓN ======================= -->
+<section class="step-panel hidden flex-col gap-space-md" id="step-panel-4">
+<div class="flex items-center gap-space-sm pb-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-container-light text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">payments</span>
+</div>
+<div>
+<h2 class="font-headline-m text-headline-m text-on-surface leading-snug">Paso 4: Remuneración y Beneficios de Ley</h2>
+<p class="font-body-s text-body-s text-on-surface-variant">Conforme a la Ley N° 28518 sobre Modalidades Formativas Laborales.</p>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-accent-container-light flex items-start gap-space-md">
+<span class="material-symbols-outlined text-accent-light text-[28px] flex-shrink-0 mt-0.5">verified_user</span>
+<div>
+<h3 class="font-headline-s text-body-l font-bold text-on-surface">Subvención Mínima Legal en Perú</h3>
+<p class="font-body-s text-body-s text-on-surface-variant mt-1">
+                La subvención mensual no puede ser menor a una Remuneración Mínima Vital (RMV = S/ 1,025) cuando se cumpla la jornada formativa máxima prevista.
+              </p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-body-m text-body-m font-semibold text-on-surface" for="input-salary">Subvención económica mensual (PEN)</label>
+<div class="relative">
+<span class="absolute left-3.5 top-1/2 -translate-y-1/2 font-headline-s text-body-l text-on-surface-variant font-bold">S/</span>
+<input class="w-full pl-10 pr-space-md py-space-sm rounded-lg bg-surface-container-low text-on-surface font-headline-s text-headline-s tabular-nums focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner" id="input-salary" oninput="syncLivePreview()" type="text" value="1,300"/>
+</div>
+<span class="font-body-s text-body-s text-primary font-medium">Supera la RMV legal (S/ 1,025)</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-body-m text-body-m font-semibold text-on-surface">Seguro Médico Formativo (FOLA)</label>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">health_and_safety</span>
+<span class="font-body-m text-body-m text-on-surface">Póliza FOLA (100% asumido)</span>
+</div>
+<span class="px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label text-label uppercase">Obligatorio</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-body-m text-body-m font-semibold text-on-surface">Beneficios adicionales ofrecidos</label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs">
+<label class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container">
+<input checked="" class="accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-body-s text-body-s text-on-surface">Media subvención cada 6 meses (Ley 28518)</span>
+</label>
+<label class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container">
+<input checked="" class="accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-body-s text-body-s text-on-surface">Movilidad de acercamiento en ruta Piura-Paita</span>
+</label>
+<label class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container">
+<input checked="" class="accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-body-s text-body-s text-on-surface">Alimentación principal en comedor de planta</span>
+</label>
+<label class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container">
+<input class="accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-body-s text-body-s text-on-surface">Línea de carrera a puesto permanente</span>
+</label>
+</div>
+</div>
+</section>
+<!-- ======================= PASO 5: REVISIÓN ======================= -->
+<section class="step-panel hidden flex-col gap-space-md" id="step-panel-5">
+<div class="flex items-center gap-space-sm pb-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-container-light text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div>
+<h2 class="font-headline-m text-headline-m text-on-surface leading-snug">Paso 5: Revisión final y publicación</h2>
+<p class="font-body-s text-body-s text-on-surface-variant">Confirma la legalidad de los datos antes de emitir la convocatoria pública.</p>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label text-label uppercase text-on-surface-variant">Resumen Ejecutivo de Convocatoria</span>
+<span class="px-space-sm py-space-xs rounded-full bg-primary-container-light text-primary font-label text-label">Listo para difusión</span>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-space-sm pt-space-xs">
+<div>
+<span class="font-body-s text-body-s text-on-surface-variant block">Puesto:</span>
+<span class="font-headline-s text-body-m font-bold text-on-surface" id="review-title">Practicante Preprofesional</span>
+</div>
+<div>
+<span class="font-body-s text-body-s text-on-surface-variant block">Sede regional:</span>
+<span class="font-headline-s text-body-m font-bold text-on-surface" id="review-location">Piura Centro</span>
+</div>
+<div>
+<span class="font-body-s text-body-s text-on-surface-variant block">Subvención:</span>
+<span class="font-headline-s text-body-m font-bold text-primary tabular-nums" id="review-salary">S/ 1,300 /mes</span>
+</div>
+<div>
+<span class="font-body-s text-body-s text-on-surface-variant block">Modalidad:</span>
+<span class="font-headline-s text-body-m font-bold text-on-surface" id="review-modalidad">Presencial</span>
+</div>
+<div>
+<span class="font-body-s text-body-s text-on-surface-variant block">Régimen:</span>
+<span class="font-headline-s text-body-m font-bold text-on-surface">Preprofesional (30h)</span>
+</div>
+<div>
+<span class="font-body-s text-body-s text-on-surface-variant block">Vacantes:</span>
+<span class="font-headline-s text-body-m font-bold text-on-surface" id="review-vacantes">2 vacantes</span>
+</div>
+</div>
+</div>
+<!-- Declaración jurada SUNAFIL / MTPE -->
+<div class="p-space-md rounded-xl bg-surface-container flex items-start gap-space-sm">
+<input checked="" class="accent-primary w-5 h-5 rounded mt-0.5" id="check-normativa" type="checkbox"/>
+<label class="font-body-s text-body-s text-on-surface cursor-pointer" for="check-normativa">
+              Declaro bajo juramento que las condiciones registradas en esta oferta cumplen cabalmente con la Ley N° 28518 (Modalidades Formativas Laborales), contemplando el otorgamiento del respectivo plan de aprendizaje, descanso semanal, cobertura de seguro FOLA y no sustitución de puestos permanentes.
+            </label>
+</div>
+</section>
+</div>
+</div>
+<!-- Columna Derecha: Sticky Live Preview -->
+<div class="lg:col-span-5 sticky top-20 flex flex-col gap-space-md">
+<!-- Panel Header -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">visibility</span>
+<span class="font-headline-s text-headline-s text-on-surface">Vista previa en tiempo real</span>
+</div>
+<span class="px-space-sm py-space-xs rounded-full bg-primary-container-light text-primary font-label text-label uppercase">
+          Así la verán los postulantes
+        </span>
+</div>
+<!-- Tarjeta Réplica Oficial de Oferta PrácticaPE (con borde ámbar 3px si compensada) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-md border-l-[3px] border-accent-light relative flex flex-col gap-space-md transition-all">
+<!-- Cabecera de la tarjeta: Empresa & RUC -->
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center font-headline-m text-headline-m shadow-sm">
+              AP
+            </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-s text-body-l font-bold text-on-surface">AgroPiura SAC</span>
+<span class="material-symbols-outlined text-primary text-[16px]" title="RUC Validado SUNAT">verified</span>
+</div>
+<span class="font-body-s text-body-s text-on-surface-variant">Agroindustria • Valle del Medio Piura</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low transition-colors" title="Guardar como favorito" type="button">
+<span class="material-symbols-outlined text-[20px]">bookmark_border</span>
+</button>
+</div>
+<!-- Título del Puesto y Badges de Metadata -->
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-s text-headline-s text-on-surface leading-tight" id="preview-job-title">
+            Practicante Preprofesional de Logística &amp; Exportación
+          </h3>
+<div class="flex flex-wrap items-center gap-space-xs mt-1">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-low text-on-surface font-body-s text-body-s flex items-center gap-1" id="preview-chip-distrito">
+<span class="material-symbols-outlined text-[14px] text-primary">location_on</span>
+<span>Piura Centro</span>
+</span>
+<span class="px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-body-s text-body-s" id="preview-chip-modalidad">
+              Presencial
+            </span>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container text-on-surface-variant font-body-s text-body-s" id="preview-chip-regimen">
+              Convenio Ley N° 28518
+            </span>
+</div>
+</div>
+<!-- Subvención Económica Destacada -->
+<div class="p-space-sm rounded-lg bg-accent-container-light flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary-container text-[18px]">payments</span>
+<span class="font-body-s text-body-s font-semibold text-on-surface">Subvención mensual:</span>
+</div>
+<span class="font-headline-s text-body-l font-bold text-tertiary-container tabular-nums" id="preview-salary-badge">
+            S/ 1,300 /mes
+          </span>
+</div>
+<!-- Lista compacta de Funciones Clave en Live Preview -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label text-label uppercase text-on-surface-variant font-bold">Actividades a desarrollar:</span>
+<ul class="space-y-1 font-body-s text-body-s text-on-surface-variant" id="preview-functions-list">
+<li class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-primary mt-0.5 flex-shrink-0">check_circle</span>
+<span>Apoyo en la consolidación de guías de remisión y despachos para puerto de Paita.</span>
+</li>
+<li class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-primary mt-0.5 flex-shrink-0">check_circle</span>
+<span>Coordinación con agencias de aduanas y transportistas de la macrorregión norte.</span>
+</li>
+</ul>
+</div>
+<!-- Botón de postulación simulado para el candidato -->
+<div class="pt-space-xs">
+<button class="w-full py-space-sm rounded-full bg-primary text-on-primary font-headline-s text-body-m font-bold text-center opacity-90 cursor-not-allowed shadow-sm flex items-center justify-center gap-space-xs" disabled="" type="button">
+<span>Postular ahora con mi CV</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<span class="block text-center font-label text-label text-on-surface-variant mt-1.5">Los postulantes enviarán su perfil universitario verificado</span>
+</div>
+</div>
+<!-- Ayuda Contextual Legal Región Grau -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[20px]">policy</span>
+<span class="font-headline-s text-body-s font-bold">Cumplimiento formativo Región Grau</span>
+</div>
+<p class="font-body-s text-body-s text-on-surface-variant leading-relaxed">
+          Las convocatorias registradas en PrácticaPE son sincronizadas con el portal del MTPE y supervisadas por SUNAFIL Intendencia Regional Piura. Todos los convenios suscritos gozan de exención de sobrecostos laborales y cargas sociales ordinarias.
+        </p>
+</div>
+</div>
+</div>
+<!-- Barra de navegación y acciones inferior fija -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-md mt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm order-2 sm:order-1">
+<button class="px-space-md py-space-xs rounded-full font-headline-s text-body-m font-bold text-on-surface-variant bg-surface-container hover:bg-surface-container-high transition-colors disabled:opacity-40 disabled:cursor-not-allowed flex items-center gap-1" disabled="" id="btn-prev" onclick="navigateStep(-1)" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Anterior</span>
+</button>
+<button class="px-space-md py-space-xs rounded-full font-body-m text-body-m text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Guardar borrador</span>
+</button>
+</div>
+<!-- Indicador de avance central -->
+<div class="order-1 sm:order-2 flex flex-col items-center">
+<span class="font-headline-s text-body-m font-bold text-on-surface" id="step-count-indicator">Paso 1 de 5</span>
+<span class="font-label text-label text-primary font-semibold uppercase" id="step-pct-indicator">20% completado</span>
+</div>
+<!-- Botón Primario de Avance / Publicación -->
+<div class="order-3">
+<button class="px-space-lg py-space-sm rounded-full font-headline-s text-body-m font-bold bg-primary hover:bg-[#0A5C4D] text-on-primary transition-all shadow-md hover:shadow-lg flex items-center gap-space-xs" id="btn-next" onclick="navigateStep(1)" type="button">
+<span id="btn-next-text">Continuar a Datos de Empresa</span>
+<span class="material-symbols-outlined text-[18px]" id="btn-next-icon">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  let currentStep = 1;
+  const totalSteps = 5;
+
+  const stepTitles = [
+    "Continuar a Datos de Empresa",
+    "Continuar a Requisitos",
+    "Continuar a Remuneración",
+    "Continuar a Revisión final",
+    "Publicar oferta ahora"
+  ];
+
+  function updateModality(mod) {
+    document.getElementById('preview-chip-modalidad').innerText = mod;
+  }
+
+  function adjustVacantes(delta) {
+    const el = document.getElementById('input-vacantes');
+    let val = parseInt(el.value, 10) || 1;
+    val = Math.max(1, Math.min(50, val + delta));
+    el.value = val;
+    syncLivePreview();
+  }
+
+  function syncLivePreview() {
+    // Título
+    const titleVal = document.getElementById('input-job-title').value.trim();
+    document.getElementById('preview-job-title').innerText = titleVal || '[Título del puesto]';
+    const revTitle = document.getElementById('review-title');
+    if (revTitle) revTitle.innerText = titleVal || 'Practicante';
+
+    // Ubicación
+    const locVal = document.getElementById('select-location').value;
+    document.getElementById('preview-chip-distrito').querySelector('span:last-child').innerText = locVal;
+    const revLoc = document.getElementById('review-location');
+    if (revLoc) revLoc.innerText = locVal;
+
+    // Jornada
+    const jorVal = document.getElementById('select-jornada').value;
+    const chipReg = document.getElementById('preview-chip-regimen');
+    if (jorVal.includes('30')) {
+      chipReg.innerText = 'Preprofesional (30h/sem)';
+    } else if (jorVal.includes('48')) {
+      chipReg.innerText = 'Profesional (48h/sem)';
+    } else {
+      chipReg.innerText = 'Empleo Juvenil (48h/sem)';
+    }
+
+    // Salario
+    const salVal = document.getElementById('input-salary').value.trim();
+    const salBadge = document.getElementById('preview-salary-badge');
+    if (salVal) {
+      salBadge.innerText = 'S/ ' + salVal + ' /mes';
+    } else {
+      salBadge.innerText = 'A convenir';
+    }
+    const revSal = document.getElementById('review-salary');
+    if (revSal) revSal.innerText = 'S/ ' + salVal + ' /mes';
+
+    // Vacantes
+    const vacVal = document.getElementById('input-vacantes').value;
+    const revVac = document.getElementById('review-vacantes');
+    if (revVac) revVac.innerText = vacVal + (parseInt(vacVal) === 1 ? ' vacante' : ' vacantes');
+
+    // Funciones en vista previa (primeras 2)
+    const funcText = document.getElementById('textarea-functions').value;
+    const lines = funcText.split('\n').map(l => l.replace(/^[•\-\*]\s*/, '').trim()).filter(l => l.length > 0);
+    const ul = document.getElementById('preview-functions-list');
+    ul.innerHTML = '';
+    const sliceCount = Math.min(lines.length, 3);
+    if (sliceCount === 0) {
+      ul.innerHTML = '<li class="text-on-surface-variant italic font-body-s text-body-s">Sin funciones registradas aún...</li>';
+    } else {
+      for (let i = 0; i < sliceCount; i++) {
+        const li = document.createElement('li');
+        li.className = 'flex items-start gap-1.5';
+        li.innerHTML = '<span class="material-symbols-outlined text-[14px] text-primary mt-0.5 flex-shrink-0">check_circle</span><span>' + lines[i] + '</span>';
+        ul.appendChild(li);
+      }
+    }
+  }
+
+  function goToStep(targetStep) {
+    if (targetStep < 1 || targetStep > totalSteps) return;
+    currentStep = targetStep;
+
+    // Cambiar paneles
+    document.querySelectorAll('.step-panel').forEach((el, idx) => {
+      if (idx + 1 === currentStep) {
+        el.classList.remove('hidden');
+        el.classList.add('flex');
+      } else {
+        el.classList.add('hidden');
+        el.classList.remove('flex');
+      }
+    });
+
+    // Actualizar Stepper Círculos
+    for (let i = 1; i <= totalSteps; i++) {
+      const circle = document.getElementById('step-circle-' + i);
+      const btn = document.getElementById('step-btn-' + i);
+      const labelText = btn.querySelector('.font-headline-s');
+
+      if (i < currentStep) {
+        // Completado
+        circle.className = 'w-10 h-10 rounded-full flex items-center justify-center bg-primary text-on-primary font-headline-s text-headline-s transition-all shadow-sm';
+        circle.innerHTML = '<span class="material-symbols-outlined text-[20px]">check</span>';
+        labelText.className = 'font-headline-s text-body-m font-bold text-primary';
+      } else if (i === currentStep) {
+        // Activo
+        circle.className = 'w-10 h-10 rounded-full flex items-center justify-center font-headline-s text-headline-s bg-primary text-on-primary transition-all shadow-md ring-4 ring-primary-container-light';
+        circle.innerText = i;
+        labelText.className = 'font-headline-s text-body-m font-bold text-on-surface';
+      } else {
+        // Pendiente
+        circle.className = 'w-10 h-10 rounded-full flex items-center justify-center font-headline-s text-headline-s bg-surface-container text-on-surface-variant transition-all';
+        circle.innerText = i;
+        labelText.className = 'font-headline-s text-body-m font-bold text-on-surface-variant';
+      }
+    }
+
+    // Barra de progreso del stepper
+    const progressMap = { 1: '5%', 2: '28%', 3: '52%', 4: '76%', 5: '100%' };
+    document.getElementById('step-progress-bar').style.width = progressMap[currentStep];
+
+    // Actualizar botones de navegación inferiores
+    document.getElementById('btn-prev').disabled = currentStep === 1;
+    document.getElementById('step-count-indicator').innerText = 'Paso ' + currentStep + ' de ' + totalSteps;
+    document.getElementById('step-pct-indicator').innerText = (currentStep * 20) + '% completado';
+
+    const btnNextText = document.getElementById('btn-next-text');
+    const btnNextIcon = document.getElementById('btn-next-icon');
+    const btnNext = document.getElementById('btn-next');
+
+    btnNextText.innerText = stepTitles[currentStep - 1];
+    if (currentStep === 5) {
+      btnNextIcon.innerText = 'send';
+      btnNext.classList.remove('bg-primary');
+      btnNext.classList.add('bg-primary-container');
+    } else {
+      btnNextIcon.innerText = 'arrow_forward';
+      btnNext.classList.add('bg-primary');
+      btnNext.classList.remove('bg-primary-container');
+    }
+
+    syncLivePreview();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function navigateStep(direction) {
+    if (direction === 1 && currentStep === 5) {
+      // Estado de carga y simulación de publicación
+      const btn = document.getElementById('btn-next');
+      const text = document.getElementById('btn-next-text');
+      const icon = document.getElementById('btn-next-icon');
+      btn.disabled = true;
+      text.innerText = 'Publicando en PrácticaPE…';
+      icon.innerText = 'hourglass_empty';
+      icon.classList.add('animate-spin');
+
+      setTimeout(() => {
+        text.innerText = '¡Oferta publicada con éxito!';
+        icon.innerText = 'check_circle';
+        icon.classList.remove('animate-spin');
+        btn.classList.replace('bg-primary-container', 'bg-primary');
+      }, 1500);
+      return;
+    }
+
+    goToStep(currentStep + direction);
+  }
+
+  // Inicializar preview al cargar
+  document.addEventListener('DOMContentLoaded', () => {
+    syncLivePreview();
+  });
+</script></main><footer class="w-full bg-surface-container-low mt-space-xl"><div class="max-w-[1200px] mx-auto px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-4 gap-space-lg mb-space-lg"><div class="md:col-span-2 flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><span class="font-headline-s text-headline-s text-primary">Práctica<span class="text-secondary">PE</span></span><span class="px-space-sm py-space-xs rounded-full bg-primary-container-light text-primary font-label text-label">REGIÓN GRAU</span></div><p class="font-body-s text-body-s text-on-surface-variant max-w-md">Ecosistema digital de prácticas preprofesionales y profesionales articulado para el desarrollo productivo, agroindustrial y pesquero del departamento de Piura.</p><div class="flex items-center gap-space-xs text-on-surface-variant font-body-s text-body-s mt-space-xs"><span class="material-symbols-outlined text-[16px] text-primary">gavel</span><span>Conforme a la Ley sobre Modalidades Formativas Laborales N° 28518 y directivas de MTPE</span></div></div><div class="flex flex-col gap-space-xs"><span class="font-headline-s text-headline-s text-on-surface text-sm font-semibold uppercase tracking-wider mb-space-xs">Empleadores Piura</span><a class="font-body-s text-body-s text-on-surface-variant hover:text-on-surface transition-colors" href="#">Convenios y Planes Específicos</a><a class="font-body-s text-body-s text-on-surface-variant hover:text-on-surface transition-colors" href="#">Subvención Económica y Seguro FOLA</a><a class="font-body-s text-body-s text-on-surface-variant hover:text-on-surface transition-colors" href="#">Directorio de Universidades e IES</a><a class="font-body-s text-body-s text-on-surface-variant hover:text-on-surface transition-colors" href="#">Validación Sunat RUC</a></div><div class="flex flex-col gap-space-xs"><span class="font-headline-s text-headline-s text-on-surface text-sm font-semibold uppercase tracking-wider mb-space-xs">Soporte Institucional</span><span class="font-body-s text-body-s text-on-surface-variant">Sede Regional Piura - Calle Los Corales, Urb. Santa Inés</span><span class="font-body-s text-body-s text-on-surface-variant">Mesa de Ayuda: empresas@practica.pe</span><a class="font-body-s text-body-s text-on-surface-variant hover:text-on-surface transition-colors" href="#">Términos de Intermediación</a><a class="font-body-s text-body-s text-on-surface-variant hover:text-on-surface transition-colors" href="#">Libro de Reclamaciones</a></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-sm font-body-s text-body-s text-on-surface-variant"><p>© 2024 PrácticaPE. Desarrollado para la consolidación formativa laboral en Piura, Sullana, Talara y Sechura.</p><div class="flex items-center gap-space-md"><span class="font-label text-label text-on-surface-variant uppercase">Cumplimiento Laboral Sunafil</span><span class="w-1.5 h-1.5 rounded-full bg-primary"></span><span class="font-label text-label text-on-surface-variant uppercase">DRTPE Piura</span></div></div></div></footer></body></html>
