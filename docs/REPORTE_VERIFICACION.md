@@ -34,14 +34,15 @@ real o por un estado vacío explícito.
 
 ## 2. Verificación por capas
 
-**Capa API** — `scripts/e2e_api.py` contra la instancia real: **55/55 PASS**.
+**Capa API** — `scripts/e2e_api.py` contra la instancia real: **64/64 PASS**
+(incluye el feed por fuente y el envío de chambas).
 Cubre acceso OTP, visibilidad por rol, postulación (y duplicado), empresa, administración,
 contacto y límites.
 
 **Capa navegador (local)** — 18 pantallas × 3 viewports (360/780/1024 px): **54/54** sin scroll
 horizontal y sin errores JS (`window.__errs` vacío).
 
-**Capa navegador (producción)** — 18 pantallas a 360 px: **18/18** sin scroll horizontal ni
+**Capa navegador (producción)** — 19 pantallas a 360 px: **19/19** sin scroll horizontal ni
 errores. Login OTP completo con código real de Gmail (candidato y empresa), postulación real
 (y detección de duplicado), panel de empresa con KPIs reales, mapa con 4 ofertas geolocalizadas.
 
