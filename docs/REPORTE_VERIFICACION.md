@@ -6,7 +6,7 @@ Producción: https://practicape.apioai.online
 
 ## 1. Contrato de pantallas → API
 
-18 pantallas generadas con Stitch (proyecto `16989794354844657044`, design system
+19 pantallas generadas con Stitch (proyecto `16989794354844657044`, design system
 `assets/145e3a73db4a45a1906045fca09873b9`) y montadas como SPA por hash.
 
 | Pantalla | Ruta | Endpoint propio |
@@ -63,6 +63,23 @@ errores. Login OTP completo con código real de Gmail (candidato y empresa), pos
   del propio design system.
 - **Datos reales conservados**: la BD de producción se migró a la v2
   (`ALTER TABLE jobs ADD COLUMN category TEXT`) y se conserva `data/.secret`.
+
+## 3bis. Motor de recolección (scraping)
+
+El corazón del producto: la oferta se extrae de internet y el feed la agrega.
+
+- `scripts/run_collector.py` — recoge ofertas de Computrabajo Perú y DuckDuckGo HTML,
+  deduplica por URL y las deja en **revisión** (`pending`, `source=web`). Nunca publica solo.
+  Verificado: 6 consultas → 25 halladas, 19 nuevas en revisión.
+- `app/services/web_collector.py` + `social_importer.py` — fuentes y parseo (con guard SSRF).
+- `GET /jobs/sources` — recuento por fuente (Internet / Enviadas por usuarios / Empresas).
+- `GET /jobs?source=` — filtra el feed; `manual` agrupa avisos del panel y semilla.
+- `POST /jobs/submit` — "Publica tu chamba": envía un enlace y pasa a moderación.
+- Pantalla `#/enviar` (Stitch, `2495f8f9fa444d8baf5361ef86c10efd`), con login obligatorio.
+
+En producción quedaron **43 ofertas reales de Piura** (DP World, SUNARP, AgroAurora, Caja Trujillo,
+Promart, etc.) recolectadas y aprobadas una a una tras revisión. Antes de la moderación la web
+no las mostraba.
 
 ## 4. Pendiente / deuda conocida
 

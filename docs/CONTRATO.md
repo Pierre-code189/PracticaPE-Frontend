@@ -11,6 +11,8 @@ endpoint, no se muestra (regla de oro: nada de contadores ni tarjetas inventadas
 | Descubrimiento | Listado de ofertas | `#/ofertas` | `GET /jobs` + `GET /jobs/districts` |
 | Descubrimiento | Detalle de oferta | `#/oferta/{id}` | `GET /jobs/{id}`, `POST /jobs/{id}/apply` |
 | Descubrimiento | Mapa de ofertas | `#/mapa` | `GET /jobs/map` |
+| Descubrimiento | Publica tu chamba | `#/enviar` | `POST /jobs/submit` |
+| Descubrimiento | Fuentes del feed | chips de la home | `GET /jobs/sources`, `GET /jobs?source=` |
 | Acceso | Código de acceso (OTP) | `#/auth` | `POST /auth/request-otp`, `/auth/verify-otp` |
 | Candidato | Perfil de candidato | `#/perfil` | `GET/PUT /me/profile`, `/me/profile/items`, `/me/cv` |
 | Candidato | Mis postulaciones | `#/postulaciones` | `GET /me/applications` |
