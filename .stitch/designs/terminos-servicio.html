@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"surface-container-high":"#e5e9e6","inverse-surface":"#2d312f","tertiary-container":"#a75748","surface-dim":"#d7dbd8","primary-container-dark":"#14382F","on-surface-variant":"#3e4945","on-tertiary-fixed-variant":"#763125","error":"#C0392B","on-surface":"#181d1b","primary-dark":"#4FC3A7","on-primary":"#ffffff","ink-light":"#14201B","on-tertiary-fixed":"#3d0702","inverse-primary":"#7bd7bd","primary-container-light":"#D7F0E7","ink-secondary-dark":"#9DB3AA","surface-tint":"#006b57","primary-deep-dark":"#2E9B85","surface-container-low":"#f0f5f1","secondary-fixed":"#d4e7dd","border-dark":"#243833","primary-fixed":"#97f4d9","surface-variant":"#dfe3e0","surface":"#f6faf7","surface-container":"#ebefeb","on-error-container":"#93000a","surface-elevated-light":"#F1EFE6","secondary-container":"#d4e7dd","ink-secondary-light":"#5A6B63","surface-container-lowest":"#ffffff","accent-dark":"#F2B85C","on-secondary-fixed":"#0f1f19","surface-container-highest":"#dfe3e0","on-secondary-fixed-variant":"#3a4a43","accent-light":"#E8A13A","background":"#f6faf7","on-secondary":"#ffffff","surface-elevated-dark":"#1A2E27","background-dark":"#0B1512","primary":"#00614f","accent-container-light":"#FBEBCB","on-secondary-container":"#576860","on-tertiary":"#ffffff","tertiary":"#894032","secondary-fixed-dim":"#b8cbc1","on-background":"#181d1b","on-primary-fixed-variant":"#005141","primary-container":"#0e7c66","surface-light":"#FFFFFF","outline-variant":"#bdc9c4","outline":"#6e7a75","primary-fixed-dim":"#7bd7bd","ink-dark":"#EAF4EF","background-light":"#FAF9F4","error-container":"#ffdad6","border-light":"#E3E0D5","surface-bright":"#f6faf7","secondary":"#51625a","inverse-on-surface":"#eef2ee","on-error":"#ffffff","tertiary-fixed":"#ffdad3","on-primary-fixed":"#002019","tertiary-fixed-dim":"#ffb4a6","on-tertiary-container":"#ffeeea","surface-dark":"#12201B","on-primary-container":"#bcffe9"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xl":"2.5rem","space-sm":"0.5rem","space-md":"1rem","margin":"1.5rem","gutter":"1.5rem","space-lg":"1.5rem","space-xs":"0.25rem"},"fontFamily":{"body-m":["Inter"],"body-s":["Inter"],"headline-s":["Plus Jakarta Sans"],"body-l":["Inter"],"headline-m":["Plus Jakarta Sans"],"headline-l":["Plus Jakarta Sans"],"label":["Inter"],"display":["Plus Jakarta Sans"]},"fontSize":{"body-m":["14px",{"lineHeight":"1.5","fontWeight":"400"}],"body-s":["12px",{"lineHeight":"1.4","fontWeight":"400"}],"headline-s":["18px",{"lineHeight":"1.4","fontWeight":"700"}],"body-l":["16px",{"lineHeight":"1.5","fontWeight":"400"}],"headline-m":["24px",{"lineHeight":"1.3","fontWeight":"700"}],"headline-l":["32px",{"lineHeight":"1.2","fontWeight":"700"}],"label":["11px",{"lineHeight":"1.2","letterSpacing":"0.06em","fontWeight":"700"}],"display":["40px",{"lineHeight":"1.05","fontWeight":"800"}]}}}};</script></head><body class="bg-background font-body-m text-body-m text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest shadow-[0_1px_8px_rgba(20,32,27,0.06)]"><div class="h-16 max-w-[1200px] mx-auto px-margin flex items-center justify-between"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-xs" data-path="ofertas" href="#"><span class="font-headline-m text-headline-m text-primary tracking-tight">Práctica<span class="text-accent-light">PE</span></span></a><nav class="hidden md:flex items-center gap-space-lg ml-space-md" data-active-classes="text-primary font-headline-s font-bold"><a class="font-body-m text-body-m text-on-surface-variant hover:text-on-surface transition-colors" data-path="ofertas" href="#">Ofertas</a><a class="font-body-m text-body-m text-on-surface-variant hover:text-on-surface transition-colors" data-path="empresas" href="#">Empresas</a><a class="font-body-m text-body-m text-on-surface-variant hover:text-on-surface transition-colors" data-path="convenios" href="#">Convenios</a><a aria-current="page" class="transition-colors text-primary font-headline-s font-bold" data-path="legal" href="#">Legal</a></nav></div><div class="flex items-center gap-space-md"><button aria-label="Cambiar tema" class="p-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-full transition-colors flex items-center justify-center" type="button"><svg class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg><svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Breadcrumb & Institutional Header Container -->
+<section class="w-full bg-surface-container-low/70 py-space-xl">
+<div class="max-w-[1200px] mx-auto px-margin">
+<!-- Migas de pan -->
+<nav aria-label="Migas de pan" class="mb-space-md">
+<ol class="flex items-center gap-space-xs font-body-s text-body-s text-on-surface-variant">
+<li>
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">home</span>
+<span>Inicio</span>
+</a>
+</li>
+<li>
+<span class="text-outline-variant">/</span>
+</li>
+<li>
+<span class="text-on-surface-variant font-medium">Legal</span>
+</li>
+<li>
+<span class="text-outline-variant">/</span>
+</li>
+<li aria-current="page">
+<span class="text-primary font-semibold">Términos y Condiciones</span>
+</li>
+</ol>
+</nav>
+<!-- Cabecera Institucional -->
+<div class="space-y-space-sm max-w-4xl">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center font-label text-label uppercase text-primary tracking-widest bg-primary-container-light text-primary px-2.5 py-1 rounded-full">
+            LEGAL
+          </span>
+<span class="h-1 w-1 rounded-full bg-outline-variant"></span>
+<span class="font-label text-label uppercase text-on-surface-variant tracking-wider">
+            MARCO REGULATORIO
+          </span>
+</div>
+<h1 class="font-display text-display text-on-surface tracking-tight">
+          Términos y Condiciones de Uso
+        </h1>
+<p class="font-body-l text-body-l text-on-surface-variant leading-relaxed">
+          Bases y directrices jurídicas que rigen el acceso, registro y utilización del ecosistema digital de inserción formativa en Piura.
+        </p>
+<!-- Chips de Metadatos -->
+<div class="flex flex-wrap items-center gap-space-xs pt-space-xs">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest text-primary font-body-s text-body-s shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary-dark"></span>
+            Vigente
+          </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-body-s text-body-s">
+<span class="material-symbols-outlined text-[14px]">groups</span>
+            Candidatos y empleadores
+          </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-body-s text-body-s">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+            Perú
+          </span>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Content Layout (1200px max, split columns) -->
+<div class="max-w-[1200px] w-full mx-auto px-margin py-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- COLUMNA IZQUIERDA: Índice Pegajoso / Sticky Sidebar (4 cols) -->
+<aside class="lg:col-span-4 sticky top-24 z-10">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">menu_book</span>
+<span class="font-label text-label uppercase text-on-surface tracking-wider font-bold">
+                CONTENIDO DEL DOCUMENTO
+              </span>
+</div>
+<span class="font-label text-label text-primary bg-primary-container-light px-2 py-0.5 rounded-full">10 SECCIONES</span>
+</div>
+<!-- Interactive Nav List -->
+<nav aria-label="Secciones del documento" class="space-y-1" id="legal-index-nav">
+<a class="group flex items-center justify-between px-3 py-2 rounded-lg bg-primary-container-light text-primary font-headline-s text-body-m font-semibold transition-all" data-section="1" href="#seccion-1">
+<span class="truncate">1. Aceptación de los términos</span>
+<span class="material-symbols-outlined text-[18px] text-primary">arrow_right</span>
+</a>
+<a class="group flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-body-m text-body-m transition-all" data-section="2" href="#seccion-2">
+<span class="truncate">2. Naturaleza del servicio</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 text-on-surface-variant">arrow_right</span>
+</a>
+<a class="group flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-body-m text-body-m transition-all" data-section="3" href="#seccion-3">
+<span class="truncate">3. Registro y cuenta de usuario</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 text-on-surface-variant">arrow_right</span>
+</a>
+<a class="group flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-body-m text-body-m transition-all" data-section="4" href="#seccion-4">
+<span class="truncate">4. Obligaciones del candidato</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 text-on-surface-variant">arrow_right</span>
+</a>
+<a class="group flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-body-m text-body-m transition-all" data-section="5" href="#seccion-5">
+<span class="truncate">5. Obligaciones del empleador</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 text-on-surface-variant">arrow_right</span>
+</a>
+<a class="group flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-body-m text-body-m transition-all" data-section="6" href="#seccion-6">
+<span class="truncate">6. Propiedad intelectual</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 text-on-surface-variant">arrow_right</span>
+</a>
+<a class="group flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-body-m text-body-m transition-all" data-section="7" href="#seccion-7">
+<span class="truncate">7. Planes y condiciones</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 text-on-surface-variant">arrow_right</span>
+</a>
+<a class="group flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-body-m text-body-m transition-all" data-section="8" href="#seccion-8">
+<span class="truncate">8. Suspensión o cancelación</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 text-on-surface-variant">arrow_right</span>
+</a>
+<a class="group flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-body-m text-body-m transition-all" data-section="9" href="#seccion-9">
+<span class="truncate">9. Limitación de responsabilidad</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 text-on-surface-variant">arrow_right</span>
+</a>
+<a class="group flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-body-m text-body-m transition-all" data-section="10" href="#seccion-10">
+<span class="truncate">10. Ley aplicable y fuero</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 text-on-surface-variant">arrow_right</span>
+</a>
+</nav>
+<!-- Ámbito territorial badge en la base -->
+<div class="pt-space-sm bg-surface-container-low rounded-lg p-3">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span class="font-label text-label uppercase text-on-surface font-semibold tracking-wide">Ámbito territorial</span>
+</div>
+<p class="font-body-s text-body-s text-on-surface-variant mt-1 leading-snug">
+              Región Grau / Piura — Validez jurídica y alcance formativo en todo el departamento y sedes vinculadas.
+            </p>
+</div>
+</div>
+</aside>
+<!-- COLUMNA DERECHA: Lectura Central (8 cols, max-w-[720px]) -->
+<main class="lg:col-span-8 max-w-[720px] space-y-space-xl">
+<!-- SECCIÓN 1 -->
+<article class="scroll-mt-24 space-y-space-sm" id="seccion-1">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="font-label text-label uppercase tracking-wider bg-surface-container px-2 py-0.5 rounded text-primary">SECCIÓN 01</span>
+</div>
+<h2 class="font-headline-m text-headline-m text-on-surface">
+            1. Aceptación de los términos
+          </h2>
+<div class="space-y-space-sm text-on-surface-variant font-body-l text-body-l leading-relaxed">
+<p>
+              El acceso, navegación, registro e interacción dentro del portal web PrácticaPE atribuye inmediatamente la condición formal de usuario, conllevando la aceptación plena, consciente e irrevocable de todas y cada una de las cláusulas, deberes y directrices incorporadas en el presente documento de Términos y Condiciones de Uso.
+            </p>
+<p>
+              Cualquier persona natural o jurídica que no esté enteramente conforme con estas disposiciones o con las políticas complementarias del servicio deberá abstenerse categóricamente de registrarse, cargar credenciales, remitir candidaturas o publicar oportunidades a través de esta plataforma digital. La continuidad en la navegación constituye ratificación incondicional de los acuerdos normativos vigentes.
+            </p>
+</div>
+</article>
+<!-- SECCIÓN 2 -->
+<article class="scroll-mt-24 space-y-space-sm" id="seccion-2">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="font-label text-label uppercase tracking-wider bg-surface-container px-2 py-0.5 rounded text-primary">SECCIÓN 02</span>
+</div>
+<h2 class="font-headline-m text-headline-m text-on-surface">
+            2. Naturaleza del servicio
+          </h2>
+<div class="space-y-space-sm text-on-surface-variant font-body-l text-body-l leading-relaxed">
+<p>
+              PrácticaPE funciona de forma exclusiva como un canal digital regionalizado de intermediación, enlace, publicación y visibilización de convocatorias formativas. El propósito central consiste en articular eficientemente el talento universitario y técnico emergente con empresas, consultorías y organizaciones de la Región Piura que requieran integrar practicantes en estricta conformidad con los esquemas de aprendizaje productivo.
+            </p>
+<p>
+              El servicio prioriza y promueve el cumplimiento de los convenios formativos reglamentados en el país, fomentando la igualdad de oportunidades, la transparencia en los procesos de postulación, la meritocracia académica y la erradicación de prácticas laborales desnaturalizadas o no remuneradas que contravengan la dignidad de los jóvenes talentos.
+            </p>
+</div>
+</article>
+<!-- SECCIÓN 3 -->
+<article class="scroll-mt-24 space-y-space-sm" id="seccion-3">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="font-label text-label uppercase tracking-wider bg-surface-container px-2 py-0.5 rounded text-primary">SECCIÓN 03</span>
+</div>
+<h2 class="font-headline-m text-headline-m text-on-surface">
+            3. Registro y cuenta de usuario
+          </h2>
+<div class="space-y-space-sm text-on-surface-variant font-body-l text-body-l leading-relaxed">
+<p>
+              Para acceder a las utilidades completas de postulación o difusión de vacantes es mandatorio completar el formulario de registro correspondiente. Toda la información suministrada al darse de alta debe ser auténtica, completa, fidedigna y periódicamente actualizada por el titular.
+            </p>
+<p>
+              Las credenciales de acceso, contraseñas y factores de autenticación son de carácter estrictamente personal e intransferible. Queda prohibida la cesión, préstamo, venta o uso compartido de cuentas con terceros. Toda acción, postulación, mensaje o publicación efectuada desde un perfil activo se presumirá legítimamente realizada por el usuario registrado titular.
+            </p>
+</div>
+</article>
+<!-- SECCIÓN 4 -->
+<article class="scroll-mt-24 space-y-space-sm" id="seccion-4">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="font-label text-label uppercase tracking-wider bg-surface-container px-2 py-0.5 rounded text-primary">SECCIÓN 04</span>
+</div>
+<h2 class="font-headline-m text-headline-m text-on-surface">
+            4. Obligaciones del candidato
+          </h2>
+<div class="space-y-space-sm text-on-surface-variant font-body-l text-body-l leading-relaxed">
+<p>
+              Los postulantes tienen la responsabilidad primordial de registrar información fidedigna e inalterada respecto a su formación profesional, centro universitario o técnico de procedencia, ciclo académico actual, tercio o décimo superior acreditado y disponibilidad real para jornadas de aprendizaje formativo.
+            </p>
+</div>
+<!-- TARJETA DESTACADA: Lista de verificación candidato -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm space-y-space-sm">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-primary text-[20px]">fact_check</span>
+<h3 class="font-headline-s text-headline-s text-on-surface">
+                Compromisos ineludibles del postulante
+              </h3>
+</div>
+<ul class="space-y-3 pt-1">
+<li class="flex items-start gap-3">
+<span class="flex-shrink-0 w-5 h-5 rounded-full bg-primary-container-light text-primary flex items-center justify-center mt-0.5">
+<span class="material-symbols-outlined text-[14px] font-bold">check</span>
+</span>
+<span class="font-body-m text-body-m text-on-surface">
+                  Acreditar filiación académica auténtica con universidad o instituto de procedencia.
+                </span>
+</li>
+<li class="flex items-start gap-3">
+<span class="flex-shrink-0 w-5 h-5 rounded-full bg-primary-container-light text-primary flex items-center justify-center mt-0.5">
+<span class="material-symbols-outlined text-[14px] font-bold">check</span>
+</span>
+<span class="font-body-m text-body-m text-on-surface">
+                  Proporcionar información fidedigna sobre el avance curricular y ciclo formativo.
+                </span>
+</li>
+<li class="flex items-start gap-3">
+<span class="flex-shrink-0 w-5 h-5 rounded-full bg-primary-container-light text-primary flex items-center justify-center mt-0.5">
+<span class="material-symbols-outlined text-[14px] font-bold">check</span>
+</span>
+<span class="font-body-m text-body-m text-on-surface">
+                  Asistir puntualmente a las evaluaciones, entrevistas y convocatorias confirmadas.
+                </span>
+</li>
+<li class="flex items-start gap-3">
+<span class="flex-shrink-0 w-5 h-5 rounded-full bg-primary-container-light text-primary flex items-center justify-center mt-0.5">
+<span class="material-symbols-outlined text-[14px] font-bold">check</span>
+</span>
+<span class="font-body-m text-body-m text-on-surface">
+                  Respetar la confidencialidad de la información operativa brindada por las empresas convocantes.
+                </span>
+</li>
+</ul>
+</div>
+</article>
+<!-- SECCIÓN 5 -->
+<article class="scroll-mt-24 space-y-space-sm" id="seccion-5">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="font-label text-label uppercase tracking-wider bg-surface-container px-2 py-0.5 rounded text-primary">SECCIÓN 05</span>
+</div>
+<h2 class="font-headline-m text-headline-m text-on-surface">
+            5. Obligaciones del empleador
+          </h2>
+<div class="space-y-space-sm text-on-surface-variant font-body-l text-body-l leading-relaxed">
+<p>
+              Toda organización, estudio, empresa o gremio corporativo que cree una cuenta empleadora asume el compromiso ético y normativo de difundir únicamente vacantes fidedignas con directrices formativas explícitas, alineadas a la legislación de prácticas del Perú, respetando los topes de horas semanales y garantizando un ambiente seguro de aprendizaje técnico supervisado.
+            </p>
+</div>
+<!-- TARJETA DESTACADA: Lista de verificación empleador -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm space-y-space-sm">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-primary text-[20px]">domain_verification</span>
+<h3 class="font-headline-s text-headline-s text-on-surface">
+                Buenas prácticas requeridas al empleador
+              </h3>
+</div>
+<ul class="space-y-3 pt-1">
+<li class="flex items-start gap-3">
+<span class="flex-shrink-0 w-5 h-5 rounded-full bg-primary-container-light text-primary flex items-center justify-center mt-0.5">
+<span class="material-symbols-outlined text-[14px] font-bold">check</span>
+</span>
+<span class="font-body-m text-body-m text-on-surface">
+                  Garantizar que las convocatorias correspondan a puestos formativos reales y supervisados.
+                </span>
+</li>
+<li class="flex items-start gap-3">
+<span class="flex-shrink-0 w-5 h-5 rounded-full bg-primary-container-light text-primary flex items-center justify-center mt-0.5">
+<span class="material-symbols-outlined text-[14px] font-bold">check</span>
+</span>
+<span class="font-body-m text-body-m text-on-surface">
+                  Establecer jornadas compatibles con la carga académica y formativa de los postulantes.
+                </span>
+</li>
+<li class="flex items-start gap-3">
+<span class="flex-shrink-0 w-5 h-5 rounded-full bg-primary-container-light text-primary flex items-center justify-center mt-0.5">
+<span class="material-symbols-outlined text-[14px] font-bold">check</span>
+</span>
+<span class="font-body-m text-body-m text-on-surface">
+                  Otorgar la subvención económica y cobertura de salud requerida por el marco formativo.
+                </span>
+</li>
+<li class="flex items-start gap-3">
+<span class="flex-shrink-0 w-5 h-5 rounded-full bg-primary-container-light text-primary flex items-center justify-center mt-0.5">
+<span class="material-symbols-outlined text-[14px] font-bold">check</span>
+</span>
+<span class="font-body-m text-body-m text-on-surface">
+                  Abstenerse de cualquier cobro, arancel o retención económica hacia los postulantes en cualquier etapa.
+                </span>
+</li>
+</ul>
+</div>
+</article>
+<!-- SECCIÓN 6 -->
+<article class="scroll-mt-24 space-y-space-sm" id="seccion-6">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="font-label text-label uppercase tracking-wider bg-surface-container px-2 py-0.5 rounded text-primary">SECCIÓN 06</span>
+</div>
+<h2 class="font-headline-m text-headline-m text-on-surface">
+            6. Contenido publicado y propiedad intelectual
+          </h2>
+<div class="space-y-space-sm text-on-surface-variant font-body-l text-body-l leading-relaxed">
+<p>
+              Todos los elementos estructurales de la plataforma, incluyendo el software, código fuente, logotipos distintivos, arquitectura gráfica, marcas registradas y recursos visuales de PrácticaPE son titularidad exclusiva de los gestores del proyecto o de sus respectivos licenciantes, encontrándose protegidos por las leyes de propiedad intelectual y derechos de autor del ordenamiento jurídico nacional.
+            </p>
+<p>
+              Las instituciones educativas y empresas convocantes retienen la plena titularidad sobre sus respectivos nombres comerciales, marcas y emblemas institucionales. Al publicar anuncios, conceden a PrácticaPE una autorización no exclusiva, limitada y revocable con el único propósito de indexar, exhibir y promover sus convocatorias formativas dentro del portal y sus canales digitales de articulación regional.
+            </p>
+</div>
+</article>
+<!-- SECCIÓN 7 -->
+<article class="scroll-mt-24 space-y-space-sm" id="seccion-7">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="font-label text-label uppercase tracking-wider bg-surface-container px-2 py-0.5 rounded text-primary">SECCIÓN 07</span>
+</div>
+<h2 class="font-headline-m text-headline-m text-on-surface">
+            7. Planes y condiciones de publicación
+          </h2>
+<div class="space-y-space-sm text-on-surface-variant font-body-l text-body-l leading-relaxed">
+<p>
+              PrácticaPE implementa modalidades de difusión estructuradas para responder a las diferentes capacidades operativas de las entidades participantes:
+            </p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm pt-2">
+<div class="bg-surface-container-low rounded-lg p-space-md space-y-space-xs shadow-sm">
+<span class="font-label text-label text-primary font-bold uppercase tracking-wider">Esquema 01</span>
+<h4 class="font-headline-s text-headline-s text-on-surface">Modalidad Estándar</h4>
+<p class="font-body-s text-body-s text-on-surface-variant leading-relaxed">
+                  Diseñada para difusión básica de vacantes formativas con alcance en la región y filtrado inicial de candidatos locales.
+                </p>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-md space-y-space-xs shadow-sm">
+<span class="font-label text-label text-primary font-bold uppercase tracking-wider">Esquema 02</span>
+<h4 class="font-headline-s text-headline-s text-on-surface">Modalidad Corporativa</h4>
+<p class="font-body-s text-body-s text-on-surface-variant leading-relaxed">
+                  Orientada a convocatorias con requerimientos de selección masiva, paneles analíticos y validación documental prioritaria.
+                </p>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-md space-y-space-xs shadow-sm">
+<span class="font-label text-label text-primary font-bold uppercase tracking-wider">Esquema 03</span>
+<h4 class="font-headline-s text-headline-s text-on-surface">Convenio Institucional</h4>
+<p class="font-body-s text-body-s text-on-surface-variant leading-relaxed">
+                  Mecanismo de articulación directa con facultades universitarias, institutos de educación superior y bolsas de prácticas aliadas.
+                </p>
+</div>
+</div>
+<p class="pt-2">
+              La asignación y vigencia de cada modalidad se regula mediante los protocolos operativos acordados entre la entidad solicitante y el equipo de gestión técnica del portal.
+            </p>
+</div>
+</article>
+<!-- SECCIÓN 8 -->
+<article class="scroll-mt-24 space-y-space-sm" id="seccion-8">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="font-label text-label uppercase tracking-wider bg-surface-container px-2 py-0.5 rounded text-primary">SECCIÓN 08</span>
+</div>
+<h2 class="font-headline-m text-headline-m text-on-surface">
+            8. Suspensión o cancelación de la cuenta
+          </h2>
+<div class="space-y-space-sm text-on-surface-variant font-body-l text-body-l leading-relaxed">
+<p>
+              PrácticaPE se reserva la facultad de aplicar suspensiones preventivas o la baja definitiva e inapelable de cualquier perfil registrado cuando se comprueben transgresiones a las presentes normas o se reciban reportes fundados de la comunidad.
+            </p>
+<p>
+              Constituyen causales directas de revocatoria: la publicación de anuncios formativos engañosos o inexistentes; la solicitud de desembolsos o aranceles económicos a los estudiantes postulantes; la adulteración deliberada de títulos, constancias o historiales curriculares; el hostigamiento comunicativo; y el quebrantamiento de la buena fe que debe imperar en todo proceso de vinculación preprofesional.
+            </p>
+</div>
+</article>
+<!-- SECCIÓN 9 -->
+<article class="scroll-mt-24 space-y-space-sm" id="seccion-9">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="font-label text-label uppercase tracking-wider bg-surface-container px-2 py-0.5 rounded text-primary">SECCIÓN 09</span>
+</div>
+<h2 class="font-headline-m text-headline-m text-on-surface">
+            9. Limitación de responsabilidad
+          </h2>
+<div class="space-y-space-sm text-on-surface-variant font-body-l text-body-l leading-relaxed">
+<p>
+              La plataforma ofrece un entorno de infraestructura digital tecnológica destinado exclusivamente a posibilitar la publicación y el contacto inicial entre candidatos y empleadores. En consecuencia, PrácticaPE no forma parte contractual en la selección final individualizada, en las entrevistas presenciales, ni en la suscripción material de convenios formativos que se acuerden de forma autónoma entre las partes.
+            </p>
+<p>
+              PrácticaPE no asume responsabilidad patrimonial, civil o laboral respecto al cumplimiento efectivo de las estipulaciones pactadas fuera del software, la exactitud de acuerdos privados suscritos extramuros, o el desempeño individual demostrado durante la ejecución del periodo formativo en las instalaciones corporativas.
+            </p>
+</div>
+</article>
+<!-- SECCIÓN 10 -->
+<article class="scroll-mt-24 space-y-space-sm" id="seccion-10">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="font-label text-label uppercase tracking-wider bg-surface-container px-2 py-0.5 rounded text-primary">SECCIÓN 10</span>
+</div>
+<h2 class="font-headline-m text-headline-m text-on-surface">
+            10. Ley aplicable y jurisdicción
+          </h2>
+<div class="space-y-space-sm text-on-surface-variant font-body-l text-body-l leading-relaxed">
+<p>
+              Las presentes condiciones generales se rigen, interpretan y ejecutan en todos sus aspectos de conformidad estricta con el marco legal de la República del Perú.
+            </p>
+<p>
+              En caso de surgir controversias, desavenencias o reclamaciones derivadas de la validez, interpretación o cumplimiento de estos términos que no puedan ser resueltas mediante conciliación directa de buena fe entre los involucrados, las partes renuncian expresamente al fuero de sus domicilios actuales o futuros y se someten a la competencia improrrogable de los jueces y tribunales del Distrito Judicial de Piura.
+            </p>
+</div>
+</article>
+<!-- TARJETA DESTACADA FINAL: Aceptación de términos -->
+<div class="bg-primary-container-light rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">assignment_turned_in</span>
+</div>
+<div class="space-y-1">
+<h3 class="font-headline-m text-headline-m text-on-surface">
+                ¿Aceptas estos términos?
+              </h3>
+<p class="font-body-m text-body-m text-on-surface-variant">
+                Al continuar confirmas que has leído, comprendido y aceptado el marco normativo y operativo de PrácticaPE.
+              </p>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md pt-2">
+<button class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-primary hover:bg-primary-container text-on-primary font-headline-s text-body-m font-semibold shadow-sm hover:shadow transition-all duration-200" id="btn-accept-terms" type="button">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span id="btn-text">Aceptar y continuar</span>
+</button>
+<a class="inline-flex items-center gap-1.5 font-headline-s text-body-m font-semibold text-primary hover:text-primary-container transition-colors" href="#">
+<span>Leer la Política de Privacidad</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</main>
+</div>
+</div>
+</div>
+<script>
+  (function () {
+    // Micro-interaction for Accept Button
+    const acceptBtn = document.getElementById('btn-accept-terms');
+    const btnText = document.getElementById('btn-text');
+
+    if (acceptBtn && btnText) {
+      acceptBtn.addEventListener('click', function () {
+        if (acceptBtn.getAttribute('data-loading') === 'true') return;
+        
+        acceptBtn.setAttribute('data-loading', 'true');
+        acceptBtn.classList.add('opacity-90', 'cursor-wait');
+        btnText.textContent = 'Enviando…';
+
+        setTimeout(function () {
+          btnText.textContent = 'Términos aceptados';
+          acceptBtn.classList.remove('cursor-wait');
+          acceptBtn.classList.add('bg-primary-deep-dark');
+        }, 800);
+      });
+    }
+
+    // Scrollspy for interactive sidebar navigation
+    const sections = document.querySelectorAll('article[id^="seccion-"]');
+    const navLinks = document.querySelectorAll('#legal-index-nav a');
+
+    if ('IntersectionObserver' in window && sections.length > 0) {
+      const observerOptions = {
+        root: null,
+        rootMargin: '-20% 0px -70% 0px',
+        threshold: 0
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const currentId = entry.target.getAttribute('id');
+            navLinks.forEach(link => {
+              const href = link.getAttribute('href').replace('#', '');
+              if (href === currentId) {
+                link.className = 'group flex items-center justify-between px-3 py-2 rounded-lg bg-primary-container-light text-primary font-headline-s text-body-m font-semibold transition-all';
+                const icon = link.querySelector('.material-symbols-outlined');
+                if (icon) {
+                  icon.classList.remove('opacity-0');
+                  icon.classList.add('opacity-100');
+                }
+              } else {
+                link.className = 'group flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-body-m text-body-m transition-all';
+                const icon = link.querySelector('.material-symbols-outlined');
+                if (icon) {
+                  icon.classList.remove('opacity-100');
+                  icon.classList.add('opacity-0');
+                }
+              }
+            });
+          }
+        });
+      }, observerOptions);
+
+      sections.forEach(section => observer.observe(section));
+    }
+  })();
+</script></main><footer class="w-full bg-surface-dark text-ink-dark pt-space-xl pb-space-lg"><div class="max-w-[1200px] mx-auto px-margin"><div class="grid grid-cols-1 md:grid-cols-4 gap-space-lg mb-space-xl"><div class="space-y-space-sm"><div class="font-headline-s text-headline-s text-primary-fixed">PrácticaPE</div><p class="font-body-s text-body-s text-ink-secondary-dark leading-relaxed">Plataforma de articulación para prácticas preprofesionales y convenios laborales formalizados en el norte peruano.</p></div><div class="space-y-space-sm"><div class="font-label text-label uppercase text-accent-dark">Legal y Cumplimiento</div><ul class="space-y-space-xs font-body-s text-body-s"><li class="text-ink-secondary-dark hover:text-ink-dark transition-colors">Ley de Modalidades Formativas (Ley N° 28518)</li><li class="text-ink-secondary-dark hover:text-ink-dark transition-colors">Términos y Condiciones</li><li class="text-ink-secondary-dark hover:text-ink-dark transition-colors">Política de Privacidad y Datos</li><li class="text-ink-secondary-dark hover:text-ink-dark transition-colors">Libro de Reclamaciones</li></ul></div><div class="space-y-space-sm"><div class="font-label text-label uppercase text-accent-dark">Para Candidatos</div><ul class="space-y-space-xs font-body-s text-body-s"><li class="text-ink-secondary-dark hover:text-ink-dark transition-colors">Bolsa de Prácticas</li><li class="text-ink-secondary-dark hover:text-ink-dark transition-colors">Modelo de Convenio Preprofesional</li><li class="text-ink-secondary-dark hover:text-ink-dark transition-colors">Derechos y Subvención Económica</li><li class="text-ink-secondary-dark hover:text-ink-dark transition-colors">Preguntas Frecuentes</li></ul></div><div class="space-y-space-sm"><div class="font-label text-label uppercase text-accent-dark">Para Empleadores</div><ul class="space-y-space-xs font-body-s text-body-s"><li class="text-ink-secondary-dark hover:text-ink-dark transition-colors">Publicar Oportunidad</li><li class="text-ink-secondary-dark hover:text-ink-dark transition-colors">Validación de Centros Universitarios</li><li class="text-ink-secondary-dark hover:text-ink-dark transition-colors">Marco Normativo y Topes de Jornada</li><li class="text-ink-secondary-dark hover:text-ink-dark transition-colors">Contacto Corporativo</li></ul></div></div><div class="pt-space-lg text-center font-body-s text-body-s text-ink-secondary-dark">PrácticaPE — Todos los derechos reservados</div></div></footer></body></html>
