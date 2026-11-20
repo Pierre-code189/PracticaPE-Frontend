@@ -45,6 +45,38 @@
     "perfil-candidato": {
       "id": "6e6fa2b36a864140a19e194cb4a4bfe4",
       "sourceScreen": "projects/16989794354844657044/screens/6e6fa2b36a864140a19e194cb4a4bfe4"
+    },
+    "notificaciones": {
+      "id": "917400c2bbe3477f865e56c392742fa6",
+      "sourceScreen": "projects/16989794354844657044/screens/917400c2bbe3477f865e56c392742fa6"
+    },
+    "perfil-publico": {
+      "id": "e1d26bb467fc4d9dbaf168a7741e1749",
+      "sourceScreen": "projects/16989794354844657044/screens/e1d26bb467fc4d9dbaf168a7741e1749"
+    },
+    "publicar-oferta": {
+      "id": "f02c53f0bda54b0ea83799bd05f93976",
+      "sourceScreen": "projects/16989794354844657044/screens/f02c53f0bda54b0ea83799bd05f93976"
+    },
+    "contacto": {
+      "id": "4d3e43bc752d4f048243bcd5fe4ce7db",
+      "sourceScreen": "projects/16989794354844657044/screens/4d3e43bc752d4f048243bcd5fe4ce7db"
+    },
+    "politica-privacidad": {
+      "id": "925d5bb91ad0408a9f6a5e98e0405793",
+      "sourceScreen": "projects/16989794354844657044/screens/925d5bb91ad0408a9f6a5e98e0405793"
+    },
+    "terminos-servicio": {
+      "id": "c55d269737384c9591d0c13e3e4b8bb4",
+      "sourceScreen": "projects/16989794354844657044/screens/c55d269737384c9591d0c13e3e4b8bb4"
+    },
+    "libro-de-reclamaciones": {
+      "id": "f8d78f0c576043b695d8cb06c751dd39",
+      "sourceScreen": "projects/16989794354844657044/screens/f8d78f0c576043b695d8cb06c751dd39"
+    },
+    "como-funciona": {
+      "id": "1a0156ed6ac344e9b53ad7b9b8662a69",
+      "sourceScreen": "projects/16989794354844657044/screens/1a0156ed6ac344e9b53ad7b9b8662a69"
     }
   }
 }
