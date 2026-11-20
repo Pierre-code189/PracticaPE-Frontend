@@ -77,6 +77,13 @@
     "como-funciona": {
       "id": "1a0156ed6ac344e9b53ad7b9b8662a69",
       "sourceScreen": "projects/16989794354844657044/screens/1a0156ed6ac344e9b53ad7b9b8662a69"
+    },
+    "enviar-oferta": {
+      "id": "2495f8f9fa444d8baf5361ef86c10efd",
+      "title": "Publica tu chamba",
+      "sourceScreen": "projects/16989794354844657044/screens/2495f8f9fa444d8baf5361ef86c10efd",
+      "route": "#/enviar",
+      "generatedAt": "2026-11-19T22:34:00-05:00"
     }
   }
 }
