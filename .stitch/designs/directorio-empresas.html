@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>PrácticaPE</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-light":"#FFFFFF","error":"#C0392B","primary-container":"#0e7c66","on-primary-fixed-variant":"#005141","outline-variant":"#bdc9c4","primary-container-light":"#D7F0E7","secondary-fixed":"#d4e7dd","on-tertiary-container":"#ffeeea","tertiary-fixed":"#ffdad3","outline":"#6e7a75","on-primary":"#ffffff","surface-bright":"#f6faf7","surface-elevated-dark":"#1A2E27","ink-dark":"#EAF4EF","on-primary-fixed":"#002019","on-tertiary-fixed":"#3d0702","border-dark":"#243833","on-error":"#ffffff","tertiary-container":"#a75748","primary-dark":"#4FC3A7","primary-fixed-dim":"#7bd7bd","tertiary-fixed-dim":"#ffb4a6","on-primary-container":"#bcffe9","on-surface-variant":"#3e4945","surface-container-lowest":"#ffffff","error-container":"#ffdad6","on-error-container":"#93000a","surface-dim":"#d7dbd8","primary-deep-dark":"#2E9B85","surface-container":"#ebefeb","on-secondary-container":"#576860","surface-container-high":"#e5e9e6","ink-light":"#14201B","ink-secondary-light":"#5A6B63","primary":"#00614f","on-background":"#181d1b","accent-dark":"#F2B85C","background":"#f6faf7","surface-elevated-light":"#F1EFE6","on-secondary":"#ffffff","accent-light":"#E8A13A","inverse-primary":"#7bd7bd","accent-container-light":"#FBEBCB","on-surface":"#181d1b","border-light":"#E3E0D5","secondary-fixed-dim":"#b8cbc1","secondary":"#51625a","surface":"#f6faf7","inverse-on-surface":"#eef2ee","primary-fixed":"#97f4d9","on-tertiary-fixed-variant":"#763125","surface-container-highest":"#dfe3e0","surface-container-low":"#f0f5f1","primary-container-dark":"#14382F","on-tertiary":"#ffffff","on-secondary-fixed":"#0f1f19","inverse-surface":"#2d312f","surface-tint":"#006b57","secondary-container":"#d4e7dd","surface-dark":"#12201B","ink-secondary-dark":"#9DB3AA","background-light":"#FAF9F4","surface-variant":"#dfe3e0","on-secondary-fixed-variant":"#3a4a43","tertiary":"#894032","background-dark":"#0B1512"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-xs":"0.25rem","space-xl":"2.5rem","margin":"1.5rem","space-sm":"0.5rem","space-lg":"1.5rem","gutter":"1.5rem","space-md":"1rem"},fontFamily:{"headline-m":["Plus Jakarta Sans"],"body-s":["Inter"],"headline-s":["Plus Jakarta Sans"],"body-m":["Inter"],"display":["Plus Jakarta Sans"],"headline-l":["Plus Jakarta Sans"],"label":["Inter"],"body-l":["Inter"]},fontSize:{"headline-m":["24px",{"lineHeight":"1.3","fontWeight":"700"}],"body-s":["12px",{"lineHeight":"1.4","fontWeight":"400"}],"headline-s":["18px",{"lineHeight":"1.4","fontWeight":"700"}],"body-m":["14px",{"lineHeight":"1.5","fontWeight":"400"}],"display":["40px",{"lineHeight":"1.05","fontWeight":"800"}],"headline-l":["32px",{"lineHeight":"1.2","fontWeight":"700"}],"label":["11px",{"lineHeight":"1.2","letterSpacing":"0.06em","fontWeight":"700"}],"body-l":["16px",{"lineHeight":"1.5","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-m text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 h-16 w-full z-50 bg-surface-light border-b border-outline-variant/30"><div class="h-16 max-w-[1200px] mx-auto px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-xs text-on-surface select-none group" data-path="ofertas" href="#"><div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">school</span></div><span class="font-headline-s text-headline-s tracking-tight text-ink-light">Práctica<span class="text-primary">PE</span></span></a><nav class="hidden lg:flex items-center gap-space-lg h-16" data-active-classes="text-primary font-semibold border-b-2 border-primary"><a class="h-full inline-flex items-center text-on-surface-variant hover:text-on-surface transition-colors font-body-m text-body-m" data-path="ofertas" href="#">Ofertas</a><a aria-current="page" class="h-full inline-flex items-center transition-colors text-primary font-semibold border-b-2 border-primary" data-path="directorio-de-empresas" href="#">Directorio de empresas</a><a class="h-full inline-flex items-center text-on-surface-variant hover:text-on-surface transition-colors font-body-m text-body-m" data-path="instituciones" href="#">Instituciones</a><a class="h-full inline-flex items-center text-on-surface-variant hover:text-on-surface transition-colors font-body-m text-body-m" data-path="para-empresas" href="#">Para empresas</a></nav></div><div class="flex items-center gap-space-sm sm:gap-space-md"><button aria-label="Cambiar tema claro u oscuro" class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">light_mode</span></button><a class="hidden sm:inline-flex items-center justify-center px-space-md py-space-xs rounded-full border-[1.5px] border-outline-variant/60 font-body-m text-body-m font-semibold text-on-surface hover:bg-surface-container-low transition-colors" data-path="login" href="#">Iniciar sesión</a><a class="hidden sm:inline-flex items-center justify-center px-space-lg py-space-xs rounded-full bg-primary text-on-primary font-body-m text-body-m font-semibold shadow-sm hover:bg-primary-container transition-colors" data-path="registro" href="#">Registrarme</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center select-none"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><button aria-label="Abrir menú de navegación" class="lg:hidden w-10 h-10 rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors" id="mobile-nav-toggle" type="button"><span class="material-symbols-outlined text-[24px]">menu</span></button></div></div><div class="hidden lg:hidden w-full bg-surface-light border-b border-outline-variant/40 shadow-lg px-margin py-space-lg flex flex-col gap-space-md" id="mobile-menu"><nav class="flex flex-col gap-space-xs" data-active-classes="text-primary font-bold bg-primary-container-light rounded-lg"><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg font-body-m text-body-m" data-path="ofertas" href="#">Ofertas</a><a aria-current="page" class="px-space-md py-space-sm text-primary font-bold bg-primary-container-light rounded-lg" data-path="directorio-de-empresas" href="#">Directorio de empresas</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg font-body-m text-body-m" data-path="instituciones" href="#">Instituciones</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg font-body-m text-body-m" data-path="para-empresas" href="#">Para empresas</a></nav><div class="flex flex-col gap-space-sm pt-space-sm border-t border-outline-variant/30"><a class="w-full py-space-sm text-center rounded-full border-[1.5px] border-outline-variant/60 font-body-m text-body-m font-semibold text-on-surface hover:bg-surface-container transition-colors" data-path="login" href="#">Iniciar sesión</a><a class="w-full py-space-sm text-center rounded-full bg-primary text-on-primary font-body-m text-body-m font-semibold shadow-sm hover:bg-primary-container transition-colors" data-path="registro" href="#">Registrarme</a></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Sub-Hero & Page Title Header Section -->
+<section class="w-full bg-surface-container-low/70 py-space-xl border-b border-outline-variant/30">
+<div class="max-w-[1200px] mx-auto px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-lg">
+<div class="max-w-[720px] flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-space-xs self-start px-3 py-1 rounded-full bg-primary-container-light text-primary font-label text-label tracking-wider uppercase">
+<span class="material-symbols-outlined text-[14px]">explore</span>
+<span>Ecosistema Laboral Piurano • Región Grau</span>
+</div>
+<h1 class="font-headline-l text-headline-l text-ink-light tracking-tight mt-space-xs">
+            Directorio de empresas
+          </h1>
+<p class="font-body-l text-body-l text-on-surface-variant">
+            Conoce a las empresas que ofrecen prácticas y primer empleo en Piura y la región Grau.
+          </p>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-light px-space-md py-space-sm rounded-xl shadow-sm border border-outline-variant/40 self-start md:self-auto">
+<div class="w-3 h-3 rounded-full bg-primary animate-pulse"></div>
+<div class="flex flex-col">
+<span class="font-headline-s text-headline-s text-primary font-bold tabular-nums leading-none">24</span>
+<span class="font-body-s text-body-s text-ink-secondary-light">empresas activas</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px] ml-1" title="Verificadas en SUNAT / Región Grau">verified</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Filter & Search Interactive Controller -->
+<section class="w-full max-w-[1200px] mx-auto px-margin -mt-6">
+<div class="bg-surface-light rounded-2xl shadow-md p-space-md md:p-space-lg flex flex-col gap-space-md">
+<!-- Search Input & Quick Actions -->
+<div class="flex flex-col md:flex-row gap-space-md items-center justify-between">
+<div class="relative w-full md:max-w-xl">
+<span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full pl-11 pr-space-md py-2.5 rounded-xl border-[1.5px] border-outline-variant/60 focus:border-primary focus:ring-4 focus:ring-primary/10 font-body-m text-body-m text-ink-light placeholder:text-outline outline-none transition-all" id="company-search" placeholder="Buscar por nombre de empresa, rubro o actividad..." type="text"/>
+</div>
+<div class="flex items-center justify-between w-full md:w-auto gap-space-md">
+<span class="font-body-s text-body-s text-ink-secondary-light" id="results-count">Mostrando <strong class="text-ink-light font-semibold tabular-nums">12</strong> empresas</span>
+<button class="inline-flex items-center gap-space-xs font-body-s text-body-s font-semibold text-primary hover:text-on-primary-fixed-variant transition-colors" id="reset-filters" type="button">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span>Limpiar filtros</span>
+</button>
+</div>
+</div>
+<!-- District Filters (Pills) -->
+<div class="flex flex-col gap-space-xs pt-space-xs border-t border-outline-variant/20">
+<span class="font-label text-label uppercase text-ink-secondary-light">Distrito / Localidad:</span>
+<div class="flex flex-wrap items-center gap-space-xs" id="district-chips">
+<button class="filter-chip-district px-3 py-1.5 rounded-full font-body-s text-body-s font-medium transition-all bg-primary text-on-primary shadow-sm" data-district="all" type="button">Todos</button>
+<button class="filter-chip-district px-3 py-1.5 rounded-full font-body-s text-body-s font-medium transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-district="piura" type="button">Piura</button>
+<button class="filter-chip-district px-3 py-1.5 rounded-full font-body-s text-body-s font-medium transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-district="castilla" type="button">Castilla</button>
+<button class="filter-chip-district px-3 py-1.5 rounded-full font-body-s text-body-s font-medium transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-district="veintiseis" type="button">Veintiséis de Octubre</button>
+<button class="filter-chip-district px-3 py-1.5 rounded-full font-body-s text-body-s font-medium transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-district="catacaos" type="button">Catacaos</button>
+<button class="filter-chip-district px-3 py-1.5 rounded-full font-body-s text-body-s font-medium transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-district="sullana" type="button">Sullana</button>
+<button class="filter-chip-district px-3 py-1.5 rounded-full font-body-s text-body-s font-medium transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-district="paita" type="button">Paita</button>
+<button class="filter-chip-district px-3 py-1.5 rounded-full font-body-s text-body-s font-medium transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-district="talara" type="button">Talara</button>
+<button class="filter-chip-district px-3 py-1.5 rounded-full font-body-s text-body-s font-medium transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-district="mancora" type="button">Máncora</button>
+</div>
+</div>
+<!-- Sector Filters (Pills) -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label text-label uppercase text-ink-secondary-light">Sector Productivo:</span>
+<div class="flex flex-wrap items-center gap-space-xs" id="sector-chips">
+<button class="filter-chip-sector px-3 py-1.5 rounded-full font-body-s text-body-s font-medium transition-all bg-primary text-on-primary shadow-sm" data-sector="all" type="button">Todos los sectores</button>
+<button class="filter-chip-sector px-3 py-1.5 rounded-full font-body-s text-body-s font-medium transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-sector="logistica" type="button">Logística y Puertos</button>
+<button class="filter-chip-sector px-3 py-1.5 rounded-full font-body-s text-body-s font-medium transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-sector="retail" type="button">Retail y Comercio</button>
+<button class="filter-chip-sector px-3 py-1.5 rounded-full font-body-s text-body-s font-medium transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-sector="agroindustria" type="button">Agroindustria</button>
+<button class="filter-chip-sector px-3 py-1.5 rounded-full font-body-s text-body-s font-medium transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-sector="banca" type="button">Banca y Finanzas</button>
+<button class="filter-chip-sector px-3 py-1.5 rounded-full font-body-s text-body-s font-medium transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-sector="salud" type="button">Salud</button>
+<button class="filter-chip-sector px-3 py-1.5 rounded-full font-body-s text-body-s font-medium transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-sector="educacion" type="button">Educación</button>
+<button class="filter-chip-sector px-3 py-1.5 rounded-full font-body-s text-body-s font-medium transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-sector="turismo" type="button">Turismo y Hotelería</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Companies Grid Container -->
+<section class="w-full max-w-[1200px] mx-auto px-margin pt-space-xl pb-space-lg">
+<!-- Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg" id="companies-grid">
+<!-- Company 1: Terminal Paita -->
+<article class="company-card group bg-surface-light rounded-2xl p-space-md flex flex-col justify-between shadow-sm hover:shadow-md transition-all duration-200 border-l-[3px] border-accent-light border-y border-r border-outline-variant/30 hover:-translate-y-0.5" data-district="paita" data-name="Terminal Paita S.A." data-sector="logistica">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary-container-light text-primary flex items-center justify-center font-headline-s text-headline-s font-bold">
+                TP
+              </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<h3 class="font-headline-s text-headline-s text-ink-light group-hover:text-primary transition-colors">Terminal Paita S.A.</h3>
+<span class="material-symbols-outlined text-[16px] text-primary" title="Empresa Verificada">verified</span>
+</div>
+<div class="flex items-center gap-space-xs text-ink-secondary-light font-body-s text-body-s">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>Paita, Piura</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs mt-1">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label text-label">LOGÍSTICA Y PUERTOS</span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container/60 text-on-secondary-container font-label text-label">SECTOR MARÍTIMO</span>
+</div>
+<p class="font-body-m text-body-m text-on-surface-variant line-clamp-2 leading-relaxed">
+            Operador portuario líder en el norte peruano con convocatorias activas para prácticas de comercio exterior, operaciones y logística marítima.
+          </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-outline-variant/20 flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container-light text-primary font-body-s text-body-s font-semibold tabular-nums">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+            5 ofertas activas
+          </span>
+<a class="inline-flex items-center gap-1 px-space-md py-1.5 rounded-full border-[1.5px] border-outline-variant/80 font-body-s text-body-s font-semibold text-ink-light group-hover:bg-primary group-hover:text-on-primary group-hover:border-primary transition-all" href="#">
+<span>Ver perfil</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Company 2: Caja Piura -->
+<article class="company-card group bg-surface-light rounded-2xl p-space-md flex flex-col justify-between shadow-sm hover:shadow-md transition-all duration-200 border-l-[3px] border-accent-light border-y border-r border-outline-variant/30 hover:-translate-y-0.5" data-district="piura" data-name="Caja Piura" data-sector="banca">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-accent-container-light text-accent-light flex items-center justify-center font-headline-s text-headline-s font-bold">
+                CP
+              </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<h3 class="font-headline-s text-headline-s text-ink-light group-hover:text-primary transition-colors">Caja Piura</h3>
+<span class="material-symbols-outlined text-[16px] text-primary" title="Empresa Verificada">verified</span>
+</div>
+<div class="flex items-center gap-space-xs text-ink-secondary-light font-body-s text-body-s">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>Piura Centro</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs mt-1">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label text-label">BANCA Y FINANZAS</span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container/60 text-on-secondary-container font-label text-label">MICROFINANZAS</span>
+</div>
+<p class="font-body-m text-body-m text-on-surface-variant line-clamp-2 leading-relaxed">
+            Entidad financiera referente en microfinanzas y servicios bancarios del norte con programas formales de prácticas para analistas de crédito y sistemas.
+          </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-outline-variant/20 flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container-light text-primary font-body-s text-body-s font-semibold tabular-nums">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+            8 ofertas activas
+          </span>
+<a class="inline-flex items-center gap-1 px-space-md py-1.5 rounded-full border-[1.5px] border-outline-variant/80 font-body-s text-body-s font-semibold text-ink-light group-hover:bg-primary group-hover:text-on-primary group-hover:border-primary transition-all" href="#">
+<span>Ver perfil</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Company 3: Agroindustrias del Alto Piura -->
+<article class="company-card group bg-surface-light rounded-2xl p-space-md flex flex-col justify-between shadow-sm hover:shadow-md transition-all duration-200 border-l-[3px] border-accent-light border-y border-r border-outline-variant/30 hover:-translate-y-0.5" data-district="piura" data-name="Agroindustrias del Alto Piura" data-sector="agroindustria">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary-container-light text-primary flex items-center justify-center font-headline-s text-headline-s font-bold">
+                AP
+              </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<h3 class="font-headline-s text-headline-s text-ink-light group-hover:text-primary transition-colors">Agroindustrias del Alto Piura</h3>
+<span class="material-symbols-outlined text-[16px] text-primary" title="Empresa Verificada">verified</span>
+</div>
+<div class="flex items-center gap-space-xs text-ink-secondary-light font-body-s text-body-s">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>Chulucanas / Piura</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs mt-1">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label text-label">AGROINDUSTRIA</span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container/60 text-on-secondary-container font-label text-label">AGROEXPORTACIÓN</span>
+</div>
+<p class="font-body-m text-body-m text-on-surface-variant line-clamp-2 leading-relaxed">
+            Exportación de mango kent, uva de mesa y palta hass con programas de prácticas agrícolas, control de calidad y mantenimiento de planta.
+          </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-outline-variant/20 flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container-light text-primary font-body-s text-body-s font-semibold tabular-nums">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+            4 ofertas activas
+          </span>
+<a class="inline-flex items-center gap-1 px-space-md py-1.5 rounded-full border-[1.5px] border-outline-variant/80 font-body-s text-body-s font-semibold text-ink-light group-hover:bg-primary group-hover:text-on-primary group-hover:border-primary transition-all" href="#">
+<span>Ver perfil</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Company 4: Wong Piura -->
+<article class="company-card group bg-surface-light rounded-2xl p-space-md flex flex-col justify-between shadow-sm hover:shadow-md transition-all duration-200 border-y border-r border-l border-outline-variant/30 hover:-translate-y-0.5" data-district="piura" data-name="Wong Piura" data-sector="retail">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container text-ink-light flex items-center justify-center font-headline-s text-headline-s font-bold">
+                WP
+              </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<h3 class="font-headline-s text-headline-s text-ink-light group-hover:text-primary transition-colors">Wong Piura</h3>
+<span class="material-symbols-outlined text-[16px] text-primary" title="Empresa Verificada">verified</span>
+</div>
+<div class="flex items-center gap-space-xs text-ink-secondary-light font-body-s text-body-s">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>Piura</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs mt-1">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label text-label">RETAIL Y COMERCIO</span>
+</div>
+<p class="font-body-m text-body-m text-on-surface-variant line-clamp-2 leading-relaxed">
+            Cadena de retail y supermercados con posiciones formativas en operaciones comerciales, inventario y gestión de experiencia de tienda.
+          </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-outline-variant/20 flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container-light text-primary font-body-s text-body-s font-semibold tabular-nums">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+            3 ofertas activas
+          </span>
+<a class="inline-flex items-center gap-1 px-space-md py-1.5 rounded-full border-[1.5px] border-outline-variant/80 font-body-s text-body-s font-semibold text-ink-light group-hover:bg-primary group-hover:text-on-primary group-hover:border-primary transition-all" href="#">
+<span>Ver perfil</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Company 5: Clínica de la Costa -->
+<article class="company-card group bg-surface-light rounded-2xl p-space-md flex flex-col justify-between shadow-sm hover:shadow-md transition-all duration-200 border-l-[3px] border-accent-light border-y border-r border-outline-variant/30 hover:-translate-y-0.5" data-district="veintiseis" data-name="Clínica de la Costa" data-sector="salud">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary-container-light text-primary flex items-center justify-center font-headline-s text-headline-s font-bold">
+                CC
+              </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<h3 class="font-headline-s text-headline-s text-ink-light group-hover:text-primary transition-colors">Clínica de la Costa</h3>
+<span class="material-symbols-outlined text-[16px] text-primary" title="Empresa Verificada">verified</span>
+</div>
+<div class="flex items-center gap-space-xs text-ink-secondary-light font-body-s text-body-s">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>Veintiséis de Octubre</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs mt-1">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label text-label">SALUD</span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container/60 text-on-secondary-container font-label text-label">CLÍNICA PRIVADA</span>
+</div>
+<p class="font-body-m text-body-m text-on-surface-variant line-clamp-2 leading-relaxed">
+            Centro médico regional de alta complejidad con pasantías para administración hospitalaria, farmacia clínica y laboratorio biológico.
+          </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-outline-variant/20 flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container-light text-primary font-body-s text-body-s font-semibold tabular-nums">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+            2 ofertas activas
+          </span>
+<a class="inline-flex items-center gap-1 px-space-md py-1.5 rounded-full border-[1.5px] border-outline-variant/80 font-body-s text-body-s font-semibold text-ink-light group-hover:bg-primary group-hover:text-on-primary group-hover:border-primary transition-all" href="#">
+<span>Ver perfil</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Company 6: Universidad Nacional de Piura -->
+<article class="company-card group bg-surface-light rounded-2xl p-space-md flex flex-col justify-between shadow-sm hover:shadow-md transition-all duration-200 border-l-[3px] border-accent-light border-y border-r border-outline-variant/30 hover:-translate-y-0.5" data-district="castilla" data-name="Universidad Nacional de Piura" data-sector="educacion">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-accent-container-light text-accent-light flex items-center justify-center font-headline-s text-headline-s font-bold">
+                UNP
+              </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<h3 class="font-headline-s text-headline-s text-ink-light group-hover:text-primary transition-colors">Univ. Nacional de Piura</h3>
+<span class="material-symbols-outlined text-[16px] text-primary" title="Institución Verificada">verified</span>
+</div>
+<div class="flex items-center gap-space-xs text-ink-secondary-light font-body-s text-body-s">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>Castilla</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs mt-1">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label text-label">EDUCACIÓN</span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container/60 text-on-secondary-container font-label text-label">UNIVERSIDAD PÚBLICA</span>
+</div>
+<p class="font-body-m text-body-m text-on-surface-variant line-clamp-2 leading-relaxed">
+            Principal casa superior de estudios de la región con vacantes en soporte TI, semilleros de investigación científica y gestión pública.
+          </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-outline-variant/20 flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container-light text-primary font-body-s text-body-s font-semibold tabular-nums">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+            6 ofertas activas
+          </span>
+<a class="inline-flex items-center gap-1 px-space-md py-1.5 rounded-full border-[1.5px] border-outline-variant/80 font-body-s text-body-s font-semibold text-ink-light group-hover:bg-primary group-hover:text-on-primary group-hover:border-primary transition-all" href="#">
+<span>Ver perfil</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Company 7: Transportes Piura Bus -->
+<article class="company-card group bg-surface-light rounded-2xl p-space-md flex flex-col justify-between shadow-sm hover:shadow-md transition-all duration-200 border-y border-r border-l border-outline-variant/30 hover:-translate-y-0.5" data-district="sullana" data-name="Transportes Piura Bus" data-sector="logistica">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container text-ink-light flex items-center justify-center font-headline-s text-headline-s font-bold">
+                PB
+              </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<h3 class="font-headline-s text-headline-s text-ink-light group-hover:text-primary transition-colors">Transportes Piura Bus</h3>
+<span class="material-symbols-outlined text-[16px] text-primary" title="Empresa Verificada">verified</span>
+</div>
+<div class="flex items-center gap-space-xs text-ink-secondary-light font-body-s text-body-s">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>Sullana</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs mt-1">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label text-label">LOGÍSTICA Y TRANSPORTE</span>
+</div>
+<p class="font-body-m text-body-m text-on-surface-variant line-clamp-2 leading-relaxed">
+            Línea integral de transporte interprovincial y carga pesada en el eje Panamericana Norte; plazas abiertas en monitoreo y despachos.
+          </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-outline-variant/20 flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container-light text-primary font-body-s text-body-s font-semibold tabular-nums">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+            3 ofertas activas
+          </span>
+<a class="inline-flex items-center gap-1 px-space-md py-1.5 rounded-full border-[1.5px] border-outline-variant/80 font-body-s text-body-s font-semibold text-ink-light group-hover:bg-primary group-hover:text-on-primary group-hover:border-primary transition-all" href="#">
+<span>Ver perfil</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Company 8: Hotel Máncora Village -->
+<article class="company-card group bg-surface-light rounded-2xl p-space-md flex flex-col justify-between shadow-sm hover:shadow-md transition-all duration-200 border-l-[3px] border-accent-light border-y border-r border-outline-variant/30 hover:-translate-y-0.5" data-district="mancora" data-name="Hotel Máncora Village" data-sector="turismo">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-accent-container-light text-accent-light flex items-center justify-center font-headline-s text-headline-s font-bold">
+                MV
+              </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<h3 class="font-headline-s text-headline-s text-ink-light group-hover:text-primary transition-colors">Hotel Máncora Village</h3>
+<span class="material-symbols-outlined text-[16px] text-primary" title="Empresa Verificada">verified</span>
+</div>
+<div class="flex items-center gap-space-xs text-ink-secondary-light font-body-s text-body-s">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>Máncora</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs mt-1">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label text-label">TURISMO Y HOTELERÍA</span>
+</div>
+<p class="font-body-m text-body-m text-on-surface-variant line-clamp-2 leading-relaxed">
+            Resort ecológico costero enfocado en hospitalidad premium, gastronomía piurana y pasantías en dirección de eventos y atención bilingüe.
+          </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-outline-variant/20 flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container-light text-primary font-body-s text-body-s font-semibold tabular-nums">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+            2 ofertas activas
+          </span>
+<a class="inline-flex items-center gap-1 px-space-md py-1.5 rounded-full border-[1.5px] border-outline-variant/80 font-body-s text-body-s font-semibold text-ink-light group-hover:bg-primary group-hover:text-on-primary group-hover:border-primary transition-all" href="#">
+<span>Ver perfil</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Company 9: Confecciones Talara -->
+<article class="company-card group bg-surface-light rounded-2xl p-space-md flex flex-col justify-between shadow-sm hover:shadow-md transition-all duration-200 border-y border-r border-l border-outline-variant/30 hover:-translate-y-0.5" data-district="talara" data-name="Confecciones Talara" data-sector="retail">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container text-ink-light flex items-center justify-center font-headline-s text-headline-s font-bold">
+                CT
+              </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<h3 class="font-headline-s text-headline-s text-ink-light group-hover:text-primary transition-colors">Confecciones Talara</h3>
+<span class="material-symbols-outlined text-[16px] text-primary" title="Empresa Verificada">verified</span>
+</div>
+<div class="flex items-center gap-space-xs text-ink-secondary-light font-body-s text-body-s">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>Talara</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs mt-1">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label text-label">RETAIL / TEXTIL</span>
+</div>
+<p class="font-body-m text-body-m text-on-surface-variant line-clamp-2 leading-relaxed">
+            Fábrica y taller de confección textil con oportunidades activas para egresados de diseño técnico, patronaje y control de aseguramiento de calidad.
+          </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-outline-variant/20 flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container-light text-primary font-body-s text-body-s font-semibold tabular-nums">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+            1 oferta activa
+          </span>
+<a class="inline-flex items-center gap-1 px-space-md py-1.5 rounded-full border-[1.5px] border-outline-variant/80 font-body-s text-body-s font-semibold text-ink-light group-hover:bg-primary group-hover:text-on-primary group-hover:border-primary transition-all" href="#">
+<span>Ver perfil</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Company 10: Frutos del Chira -->
+<article class="company-card group bg-surface-light rounded-2xl p-space-md flex flex-col justify-between shadow-sm hover:shadow-md transition-all duration-200 border-l-[3px] border-accent-light border-y border-r border-outline-variant/30 hover:-translate-y-0.5" data-district="sullana" data-name="Frutos del Chira" data-sector="agroindustria">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary-container-light text-primary flex items-center justify-center font-headline-s text-headline-s font-bold">
+                FC
+              </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<h3 class="font-headline-s text-headline-s text-ink-light group-hover:text-primary transition-colors">Frutos del Chira</h3>
+<span class="material-symbols-outlined text-[16px] text-primary" title="Empresa Verificada">verified</span>
+</div>
+<div class="flex items-center gap-space-xs text-ink-secondary-light font-body-s text-body-s">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>Valle del Chira, Sullana</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs mt-1">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label text-label">AGROINDUSTRIA</span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container/60 text-on-secondary-container font-label text-label">BANANO ORGÁNICO</span>
+</div>
+<p class="font-body-m text-body-m text-on-surface-variant line-clamp-2 leading-relaxed">
+            Consorcio agroexportador especializado en banano orgánico y limón sutil, con pasantías para ingeniería agronómica y certificaciones internacionales.
+          </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-outline-variant/20 flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container-light text-primary font-body-s text-body-s font-semibold tabular-nums">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+            3 ofertas activas
+          </span>
+<a class="inline-flex items-center gap-1 px-space-md py-1.5 rounded-full border-[1.5px] border-outline-variant/80 font-body-s text-body-s font-semibold text-ink-light group-hover:bg-primary group-hover:text-on-primary group-hover:border-primary transition-all" href="#">
+<span>Ver perfil</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Company 11: Banco del Norte -->
+<article class="company-card group bg-surface-light rounded-2xl p-space-md flex flex-col justify-between shadow-sm hover:shadow-md transition-all duration-200 border-l-[3px] border-accent-light border-y border-r border-outline-variant/30 hover:-translate-y-0.5" data-district="piura" data-name="Banco del Norte" data-sector="banca">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary-container-light text-primary flex items-center justify-center font-headline-s text-headline-s font-bold">
+                BN
+              </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<h3 class="font-headline-s text-headline-s text-ink-light group-hover:text-primary transition-colors">Banco del Norte</h3>
+<span class="material-symbols-outlined text-[16px] text-primary" title="Empresa Verificada">verified</span>
+</div>
+<div class="flex items-center gap-space-xs text-ink-secondary-light font-body-s text-body-s">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>Piura</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs mt-1">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label text-label">BANCA Y FINANZAS</span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container/60 text-on-secondary-container font-label text-label">INVERSIÓN</span>
+</div>
+<p class="font-body-m text-body-m text-on-surface-variant line-clamp-2 leading-relaxed">
+            Servicios financieros para corporaciones agropecuarias y proyectos de infraestructura comercial de la macrorregión norte.
+          </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-outline-variant/20 flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container-light text-primary font-body-s text-body-s font-semibold tabular-nums">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+            4 ofertas activas
+          </span>
+<a class="inline-flex items-center gap-1 px-space-md py-1.5 rounded-full border-[1.5px] border-outline-variant/80 font-body-s text-body-s font-semibold text-ink-light group-hover:bg-primary group-hover:text-on-primary group-hover:border-primary transition-all" href="#">
+<span>Ver perfil</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Company 12: Ladrillos Castilla -->
+<article class="company-card group bg-surface-light rounded-2xl p-space-md flex flex-col justify-between shadow-sm hover:shadow-md transition-all duration-200 border-y border-r border-l border-outline-variant/30 hover:-translate-y-0.5" data-district="castilla" data-name="Ladrillos Castilla" data-sector="retail">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container text-ink-light flex items-center justify-center font-headline-s text-headline-s font-bold">
+                LC
+              </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<h3 class="font-headline-s text-headline-s text-ink-light group-hover:text-primary transition-colors">Ladrillos Castilla</h3>
+<span class="material-symbols-outlined text-[16px] text-primary" title="Empresa Verificada">verified</span>
+</div>
+<div class="flex items-center gap-space-xs text-ink-secondary-light font-body-s text-body-s">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>Castilla</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs mt-1">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label text-label">MANUFACTURA Y CONSTRUCCIÓN</span>
+</div>
+<p class="font-body-m text-body-m text-on-surface-variant line-clamp-2 leading-relaxed">
+            Planta industrial de materiales constructivos sostenibles y proyectos de ingeniería mecánica y seguridad industrial en obra.
+          </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-outline-variant/20 flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container-light text-primary font-body-s text-body-s font-semibold tabular-nums">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+            2 ofertas activas
+          </span>
+<a class="inline-flex items-center gap-1 px-space-md py-1.5 rounded-full border-[1.5px] border-outline-variant/80 font-body-s text-body-s font-semibold text-ink-light group-hover:bg-primary group-hover:text-on-primary group-hover:border-primary transition-all" href="#">
+<span>Ver perfil</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+</div>
+<!-- Empty State (Conditional Display via JS) -->
+<div class="hidden w-full py-space-xl flex-col items-center justify-center text-center bg-surface-light rounded-2xl border border-dashed border-outline-variant/80 p-space-xl" id="empty-state">
+<div class="w-16 h-16 rounded-full bg-primary-container-light text-primary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[32px]">domain_disabled</span>
+</div>
+<h3 class="font-headline-s text-headline-s text-ink-light mb-space-xs">No encontramos empresas con esos filtros</h3>
+<p class="font-body-m text-body-m text-on-surface-variant max-w-md mb-space-lg">
+        Prueba cambiando el distrito o el sector de búsqueda para descubrir más organizaciones en Piura y alrededores.
+      </p>
+<button class="inline-flex items-center gap-space-xs px-space-lg py-2.5 rounded-full bg-primary text-on-primary font-body-m text-body-m font-semibold shadow-sm hover:bg-primary-container transition-all" id="empty-reset-button" type="button">
+<span class="material-symbols-outlined text-[18px]">filter_alt_off</span>
+<span>Limpiar filtros de búsqueda</span>
+</button>
+</div>
+<!-- Pagination Component -->
+<nav aria-label="Paginación de resultados" class="w-full flex flex-col sm:flex-row items-center justify-between gap-space-md mt-space-xl pt-space-lg border-t border-outline-variant/30">
+<div class="font-body-s text-body-s text-ink-secondary-light">
+        Mostrando <span class="font-semibold text-ink-light tabular-nums">1</span> - <span class="font-semibold text-ink-light tabular-nums">12</span> de <span class="font-semibold text-ink-light tabular-nums">24</span> empresas
+      </div>
+<div class="flex items-center gap-space-xs">
+<button aria-label="Página anterior" class="inline-flex items-center justify-center w-9 h-9 rounded-xl border border-outline-variant/40 text-outline-variant opacity-50 cursor-not-allowed" disabled="" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<button aria-current="page" class="w-9 h-9 rounded-xl bg-primary text-on-primary font-body-m text-body-m font-semibold flex items-center justify-center shadow-sm" type="button">
+          1
+        </button>
+<button class="w-9 h-9 rounded-xl border border-outline-variant/50 hover:bg-surface-container font-body-m text-body-m font-semibold text-ink-light flex items-center justify-center transition-colors" type="button">
+          2
+        </button>
+<button class="w-9 h-9 rounded-xl border border-outline-variant/50 hover:bg-surface-container font-body-m text-body-m font-semibold text-ink-light flex items-center justify-center transition-colors" type="button">
+          3
+        </button>
+<button aria-label="Página siguiente" class="inline-flex items-center justify-center w-9 h-9 rounded-xl border border-outline-variant/50 hover:bg-surface-container text-ink-light transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</nav>
+</section>
+<!-- Employer Call-To-Action Banner -->
+<section class="w-full max-w-[1200px] mx-auto px-margin py-space-xl mb-space-lg">
+<div class="relative overflow-hidden rounded-3xl bg-surface-elevated-light p-space-lg md:p-space-xl border border-border-light shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="absolute -right-12 -bottom-12 w-64 h-64 rounded-full bg-accent-light/10 pointer-events-none blur-2xl"></div>
+<div class="flex flex-col gap-space-xs max-w-xl z-10 text-center md:text-left">
+<div class="inline-flex items-center gap-space-xs self-center md:self-start px-3 py-1 rounded-full bg-accent-container-light text-on-surface font-label text-label tracking-wide uppercase">
+<span class="material-symbols-outlined text-[14px] text-accent-light">corporate_fare</span>
+<span>¿Eres un empleador en Piura?</span>
+</div>
+<h2 class="font-headline-m text-headline-m text-ink-light tracking-tight">
+          ¿Tu empresa busca practicantes o recién egresados?
+        </h2>
+<p class="font-body-m text-body-m text-on-surface-variant leading-relaxed">
+          Publica tus ofertas de prácticas pre-profesionales y laborales sin costo. Conecta de forma directa con los mejores talentos de las universidades e institutos de Piura.
+        </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-sm z-10 w-full sm:w-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-lg py-3 rounded-full bg-primary text-on-primary font-headline-s text-body-m font-bold shadow-md hover:bg-primary-container transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">add_business</span>
+<span>Publicar ofertas gratis</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-md py-3 rounded-full border-[1.5px] border-outline-variant/80 bg-surface-light text-ink-light font-headline-s text-body-m font-bold hover:bg-surface-container transition-all" href="#">
+<span>Más información</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Interactive Search & Filter Behavior Script -->
+<script>
+    (function() {
+      const searchInput = document.getElementById('company-search');
+      const districtChips = document.querySelectorAll('.filter-chip-district');
+      const sectorChips = document.querySelectorAll('.filter-chip-sector');
+      const cards = document.querySelectorAll('.company-card');
+      const emptyState = document.getElementById('empty-state');
+      const grid = document.getElementById('companies-grid');
+      const resultsCount = document.getElementById('results-count');
+      const resetBtn = document.getElementById('reset-filters');
+      const emptyResetBtn = document.getElementById('empty-reset-button');
+
+      let currentDistrict = 'all';
+      let currentSector = 'all';
+      let searchQuery = '';
+
+      function applyFilters() {
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+          const name = (card.getAttribute('data-name') || '').toLowerCase();
+          const district = card.getAttribute('data-district') || '';
+          const sector = card.getAttribute('data-sector') || '';
+
+          const matchesSearch = name.includes(searchQuery) || sector.includes(searchQuery) || district.includes(searchQuery);
+          const matchesDistrict = (currentDistrict === 'all' || district === currentDistrict);
+          const matchesSector = (currentSector === 'all' || sector === currentSector);
+
+          if (matchesSearch && matchesDistrict && matchesSector) {
+            card.classList.remove('hidden');
+            visibleCount++;
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+
+        if (visibleCount === 0) {
+          emptyState.classList.remove('hidden');
+          emptyState.classList.add('flex');
+        } else {
+          emptyState.classList.add('hidden');
+          emptyState.classList.remove('flex');
+        }
+
+        if (resultsCount) {
+          resultsCount.innerHTML = `Mostrando <strong class="text-ink-light font-semibold tabular-nums">${visibleCount}</strong> empresas`;
+        }
+      }
+
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          searchQuery = e.target.value.toLowerCase().trim();
+          applyFilters();
+        });
+      }
+
+      districtChips.forEach(chip => {
+        chip.addEventListener('click', () => {
+          districtChips.forEach(c => {
+            c.className = 'filter-chip-district px-3 py-1.5 rounded-full font-body-s text-body-s font-medium transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high';
+          });
+          chip.className = 'filter-chip-district px-3 py-1.5 rounded-full font-body-s text-body-s font-medium transition-all bg-primary text-on-primary shadow-sm';
+          currentDistrict = chip.getAttribute('data-district') || 'all';
+          applyFilters();
+        });
+      });
+
+      sectorChips.forEach(chip => {
+        chip.addEventListener('click', () => {
+          sectorChips.forEach(c => {
+            c.className = 'filter-chip-sector px-3 py-1.5 rounded-full font-body-s text-body-s font-medium transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high';
+          });
+          chip.className = 'filter-chip-sector px-3 py-1.5 rounded-full font-body-s text-body-s font-medium transition-all bg-primary text-on-primary shadow-sm';
+          currentSector = chip.getAttribute('data-sector') || 'all';
+          applyFilters();
+        });
+      });
+
+      function resetAll() {
+        if (searchInput) searchInput.value = '';
+        searchQuery = '';
+        currentDistrict = 'all';
+        currentSector = 'all';
+
+        districtChips.forEach((c, idx) => {
+          c.className = idx === 0 
+            ? 'filter-chip-district px-3 py-1.5 rounded-full font-body-s text-body-s font-medium transition-all bg-primary text-on-primary shadow-sm'
+            : 'filter-chip-district px-3 py-1.5 rounded-full font-body-s text-body-s font-medium transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high';
+        });
+
+        sectorChips.forEach((c, idx) => {
+          c.className = idx === 0 
+            ? 'filter-chip-sector px-3 py-1.5 rounded-full font-body-s text-body-s font-medium transition-all bg-primary text-on-primary shadow-sm'
+            : 'filter-chip-sector px-3 py-1.5 rounded-full font-body-s text-body-s font-medium transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high';
+        });
+
+        applyFilters();
+      }
+
+      if (resetBtn) resetBtn.addEventListener('click', resetAll);
+      if (emptyResetBtn) emptyResetBtn.addEventListener('click', resetAll);
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low border-t border-outline-variant/20 pt-space-xl pb-space-lg"><div class="max-w-[1200px] mx-auto px-margin"><div class="grid grid-cols-1 md:grid-cols-4 gap-space-xl mb-space-xl"><div class="md:col-span-1 flex flex-col gap-space-sm"><div class="flex items-center gap-space-xs"><div class="w-7 h-7 rounded-lg bg-primary flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[18px]">school</span></div><span class="font-headline-s text-headline-s text-ink-light">Práctica<span class="text-primary">PE</span></span></div><p class="font-body-s text-body-s text-on-surface-variant leading-relaxed">El punto de encuentro digital para prácticas pre-profesionales y profesionales en Piura y todo el norte peruano.</p><div class="flex items-center gap-space-xs text-ink-secondary-light font-body-s text-body-s mt-space-xs"><span class="material-symbols-outlined text-[16px] text-primary">location_on</span><span>Piura, Perú</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-headline-s text-body-m font-semibold text-on-surface">Plataforma</span><ul class="flex flex-col gap-space-xs font-body-m text-body-m text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="ofertas" href="#">Ofertas laborales</a></li><li><a class="hover:text-primary transition-colors" data-path="directorio-de-empresas" href="#">Directorio de empresas</a></li><li><a class="hover:text-primary transition-colors" data-path="instituciones" href="#">Convenios universitarios</a></li><li><a class="hover:text-primary transition-colors" data-path="para-empresas" href="#">Publicar ofertas</a></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-headline-s text-body-m font-semibold text-on-surface">Legal &amp; Transparencia</span><ul class="flex flex-col gap-space-xs font-body-m text-body-m text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="terminos-y-condiciones" href="#">Términos y Condiciones</a></li><li><a class="hover:text-primary transition-colors" data-path="politica-de-privacidad" href="#">Política de Privacidad</a></li><li><a class="hover:text-primary transition-colors flex items-center gap-space-xs" data-path="libro-de-reclamaciones" href="#"><span class="material-symbols-outlined text-[16px] text-accent-light">menu_book</span>Libro de Reclamaciones</a></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-headline-s text-body-m font-semibold text-on-surface">Contacto Corporativo</span><p class="font-body-s text-body-s text-on-surface-variant">Atención prioritaria para empleadores e instituciones educativas de la región.</p><a class="inline-flex items-center gap-space-xs text-primary font-body-m text-body-m font-semibold hover:underline" data-path="contacto-empresas" href="#"><span class="material-symbols-outlined text-[18px]">mail</span>Contacto Empresas</a></div></div><div class="pt-space-md border-t border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between gap-space-sm font-body-s text-body-s text-on-surface-variant"><span>© 2025 PrácticaPE. Todos los derechos reservados.</span><span>Piura, Perú • Hecho con compromiso universitario</span></div></div></footer><script>const toggle=document.getElementById('mobile-nav-toggle');const menu=document.getElementById('mobile-menu');if(toggle&&menu){toggle.addEventListener('click',()=>{menu.classList.toggle('hidden');});}</script></body></html>

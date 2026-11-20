@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>PrácticaPE | Prácticas y Primer Empleo en Piura</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-container": "#a75748", "tertiary": "#894032", "on-surface": "#181d1b", "surface-container": "#ebefeb", "border-dark": "#243833", "ink-light": "#14201B", "on-primary-fixed-variant": "#005141", "background-light": "#FAF9F4", "background-dark": "#0B1512", "on-secondary-fixed-variant": "#3a4a43", "ink-dark": "#EAF4EF", "surface-container-highest": "#dfe3e0", "accent-dark": "#F2B85C", "on-tertiary-container": "#ffeeea", "inverse-on-surface": "#eef2ee", "surface-container-lowest": "#ffffff", "surface-light": "#FFFFFF", "background": "#f6faf7", "inverse-surface": "#2d312f", "accent-light": "#E8A13A", "primary-container-light": "#D7F0E7", "on-secondary-fixed": "#0f1f19", "on-tertiary-fixed-variant": "#763125", "surface-variant": "#dfe3e0", "surface-bright": "#f6faf7", "border-light": "#E3E0D5", "surface-tint": "#006b57", "surface-elevated-dark": "#1A2E27", "on-secondary-container": "#576860", "ink-secondary-light": "#5A6B63", "primary-container": "#0e7c66", "surface-dim": "#d7dbd8", "primary-deep-dark": "#2E9B85", "on-background": "#181d1b", "on-primary-container": "#bcffe9", "error": "#C0392B", "accent-container-light": "#FBEBCB", "primary-container-dark": "#14382F", "on-tertiary": "#ffffff", "surface-container-high": "#e5e9e6", "primary": "#00614f", "surface-elevated-light": "#F1EFE6", "outline-variant": "#bdc9c4", "ink-secondary-dark": "#9DB3AA", "surface-dark": "#12201B", "surface-container-low": "#f0f5f1", "secondary-fixed": "#d4e7dd", "primary-dark": "#4FC3A7", "on-secondary": "#ffffff", "secondary-fixed-dim": "#b8cbc1", "error-container": "#ffdad6", "inverse-primary": "#7bd7bd", "tertiary-fixed": "#ffdad3", "primary-fixed": "#97f4d9", "on-surface-variant": "#3e4945", "outline": "#6e7a75", "surface": "#f6faf7", "primary-fixed-dim": "#7bd7bd", "on-tertiary-fixed": "#3d0702", "secondary": "#51625a", "on-primary": "#ffffff", "secondary-container": "#d4e7dd", "on-primary-fixed": "#002019", "on-error-container": "#93000a", "on-error": "#ffffff", "tertiary-fixed-dim": "#ffb4a6" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1.5rem", "space-xl": "2.5rem", "space-md": "1rem", "space-sm": "0.5rem", "margin": "1.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem" }, "fontFamily": { "label": ["Inter"], "body-s": ["Inter"], "headline-m": ["Plus Jakarta Sans"], "headline-l": ["Plus Jakarta Sans"], "display": ["Plus Jakarta Sans"], "body-m": ["Inter"], "body-l": ["Inter"], "headline-s": ["Plus Jakarta Sans"] }, "fontSize": { "label": ["11px", { "lineHeight": "1.2", "letterSpacing": "0.06em", "fontWeight": "700" }], "body-s": ["12px", { "lineHeight": "1.4", "fontWeight": "400" }], "headline-m": ["24px", { "lineHeight": "1.3", "fontWeight": "700" }], "headline-l": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }], "display": ["40px", { "lineHeight": "1.05", "fontWeight": "800" }], "body-m": ["14px", { "lineHeight": "1.5", "fontWeight": "400" }], "body-l": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }], "headline-s": ["18px", { "lineHeight": "1.4", "fontWeight": "700" }] } } } };</script></head><body class="bg-background-light text-on-surface font-body-m antialiased min-h-screen flex flex-col"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(20,32,27,0.04)]"><div class="h-16 max-w-[1200px] mx-auto px-margin flex items-center justify-between"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm group" data-path="ofertas" href="#"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[22px]">work</span></div><div class="flex flex-col"><div class="flex items-center leading-none"><span class="font-headline-s text-headline-s text-ink-light tracking-tight">Práctica</span><span class="font-headline-s text-headline-s text-primary font-extrabold">PE</span></div><span class="font-label text-label text-accent-light uppercase tracking-wider">Piura Conecta</span></div></a><nav class="hidden md:flex items-center gap-space-md" data-active-classes="text-primary font-bold"><a class="font-body-m text-body-m text-on-surface-variant hover:text-primary transition-colors py-space-xs px-space-sm" data-path="ofertas" href="#">Ofertas</a><a class="font-body-m text-body-m text-on-surface-variant hover:text-primary transition-colors py-space-xs px-space-sm" data-path="mapa" href="#">Mapa</a><a class="font-body-m text-body-m text-on-surface-variant hover:text-primary transition-colors py-space-xs px-space-sm" data-path="mis-postulaciones" href="#">Mis postulaciones</a></nav></div><div class="flex items-center gap-space-md"><button aria-label="Notificaciones" class="relative p-space-xs rounded-full text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-2.5 h-2.5 bg-accent-light rounded-full"></span></button><button aria-label="Cambiar tema" class="p-space-xs rounded-full text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">light_mode</span></button><div class="relative group"><button class="flex items-center gap-space-sm py-space-xs px-space-xs rounded-full hover:bg-surface-container-low transition-colors" type="button"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden lg:flex flex-col text-left"><span class="font-body-s text-body-s font-semibold text-ink-light leading-tight">Valeria Mendoza</span><span class="font-label text-label text-ink-secondary-light leading-none">Candidata</span></div><span class="material-symbols-outlined text-on-surface-variant text-[18px] hidden lg:block">expand_more</span></button><div class="absolute right-0 mt-2 w-48 bg-surface-container-lowest rounded-xl shadow-[0_8px_24px_rgba(20,32,27,0.08)] py-space-xs hidden group-hover:block"><a class="flex items-center gap-space-sm px-space-md py-space-xs text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface font-body-s text-body-s" data-path="perfil-candidata" href="#"><span class="material-symbols-outlined text-[18px]">account_circle</span>Mi Perfil</a><a class="flex items-center gap-space-sm px-space-md py-space-xs text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface font-body-s text-body-s" data-path="configuracion" href="#"><span class="material-symbols-outlined text-[18px]">tune</span>Configuración</a><div class="h-px bg-surface-container-high my-space-xs"></div><a class="flex items-center gap-space-sm px-space-md py-space-xs text-error hover:bg-error-container/40 font-body-s text-body-s" data-path="login" href="#"><span class="material-symbols-outlined text-[18px]">logout</span>Cerrar Sesión</a></div></div><button aria-label="Abrir menú móvil" class="md:hidden p-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low" type="button"><span class="material-symbols-outlined text-[24px]">menu</span></button></div></div></header><main class="w-full pt-16 bg-background-light flex-1 max-w-[1200px] mx-auto px-margin"><div class="flex flex-col w-full pb-space-xl">
+<!-- BREADCRUMBS & CONVENIO STATUS -->
+<section class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pt-space-md pb-space-lg">
+<nav class="flex items-center gap-space-xs text-body-s font-body-s text-ink-secondary-light">
+<a class="hover:text-primary transition-colors" data-path="ofertas" href="#">Inicio</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-ink-secondary-light">Mi Cuenta</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="font-semibold text-primary">Perfil Profesional</span>
+</nav>
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-primary-container-light text-primary font-label text-label tracking-wide shadow-sm self-start sm:self-auto">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span>Estudiante Verificada UNP • Convenio Marco Ley N° 28518</span>
+</div>
+</section>
+<!-- HERO PROFILE BANNER CARD -->
+<section class="w-full bg-surface-container-lowest rounded-xl shadow-[0_1px_2px_rgba(20,32,27,0.05),0_8px_24px_rgba(20,32,27,0.06)] overflow-hidden relative mb-space-lg">
+<!-- Top Warm Piuran Accent Line -->
+<div class="h-2 w-full bg-gradient-to-r from-primary via-primary-container-light to-accent-light"></div>
+<div class="p-space-lg md:p-space-xl flex flex-col gap-space-lg">
+<!-- Main Profile Info Row -->
+<div class="flex flex-col lg:flex-row items-start justify-between gap-space-lg">
+<div class="flex flex-col sm:flex-row items-start sm:items-center gap-space-lg">
+<!-- Avatar with Status Indicator -->
+<div class="relative">
+<div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-gradient-to-br from-primary via-primary-container to-primary-container-light flex items-center justify-center text-on-primary font-headline-l text-headline-l shadow-md font-bold tracking-tight">
+              VM
+            </div>
+<span class="absolute bottom-1 right-1 flex items-center gap-1 bg-surface-container-lowest py-0.5 px-space-xs rounded-full shadow-sm text-body-s font-body-s font-semibold text-primary">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label text-label">Activa</span>
+</span>
+</div>
+<!-- Name & Role Context -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex flex-wrap items-center gap-space-sm">
+<h1 class="font-headline-l text-headline-l text-ink-light font-bold">Valeria Mendoza Díaz</h1>
+<span class="px-space-sm py-0.5 rounded-full bg-accent-container-light text-tertiary-fixed-variant font-label text-label uppercase">
+                Búsqueda Activa
+              </span>
+</div>
+<p class="font-body-l text-body-l text-ink-secondary-light font-medium">
+              Estudiante de 8vo ciclo de Ingeniería de Sistemas — <span class="text-ink-light font-semibold">Universidad Nacional de Piura (UNP)</span>
+</p>
+<!-- Quick Chips Grid -->
+<div class="flex flex-wrap items-center gap-space-xs pt-space-xs">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container text-ink-light font-body-s text-body-s">
+<span class="material-symbols-outlined text-[16px] text-primary">location_on</span>
+                Piura Centro
+              </span>
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container text-ink-light font-body-s text-body-s">
+<span class="material-symbols-outlined text-[16px] text-accent-light">calendar_today</span>
+                Disponible desde marzo 2026
+              </span>
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container text-ink-light font-body-s text-body-s">
+<span class="material-symbols-outlined text-[16px] text-primary">apartment</span>
+                Híbrido o Presencial
+              </span>
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container text-ink-light font-body-s text-body-s">
+<span class="material-symbols-outlined text-[16px] text-secondary">schedule</span>
+                30h semanales (Formativa)
+              </span>
+</div>
+</div>
+</div>
+<!-- Call to Actions -->
+<div class="flex flex-wrap lg:flex-col items-stretch gap-space-xs w-full lg:w-auto">
+<button class="inline-flex items-center justify-center gap-space-xs px-space-md py-space-xs rounded-full bg-primary hover:bg-primary-container text-on-primary font-headline-s text-body-m font-bold transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+            Editar perfil
+          </button>
+<button class="inline-flex items-center justify-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-lowest hover:bg-surface-container text-primary font-headline-s text-body-m font-bold transition-all shadow-[0_1px_4px_rgba(20,32,27,0.08)]" type="button">
+<span class="material-symbols-outlined text-[18px]">upload_file</span>
+            Subir nuevo CV
+          </button>
+<button class="inline-flex items-center justify-center gap-space-xs px-space-md py-space-xs rounded-full text-ink-secondary-light hover:text-primary font-body-s text-body-s font-semibold transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+            Ver cómo me ven las empresas
+          </button>
+</div>
+</div>
+<!-- Contact Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-md bg-surface-container-low rounded-xl px-space-md py-space-sm text-body-s font-body-s text-ink-light">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">mail</span>
+<span class="text-ink-secondary-light">Institucional:</span>
+<span class="font-semibold">valeria.mendoza@unp.edu.pe</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">call</span>
+<span class="text-ink-secondary-light">WhatsApp:</span>
+<span class="font-semibold">+51 987 654 321</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">pin_drop</span>
+<span class="text-ink-secondary-light">Residencia:</span>
+<span class="font-semibold">Urb. Miraflores, Piura</span>
+</div>
+</div>
+<!-- Profile Progress Bar Section -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-headline-s text-headline-s text-ink-light flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">bolt</span>
+            Fuerza del perfil en PrácticaPE
+          </span>
+<span class="font-headline-s text-headline-s text-primary font-bold tabular-nums">78% completado</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container overflow-hidden p-0.5">
+<div class="h-full rounded-full bg-gradient-to-r from-primary via-primary to-accent-light transition-all duration-700 ease-out" style="width: 78%;"></div>
+</div>
+<p class="font-body-s text-body-s text-ink-secondary-light flex items-center gap-1">
+<span class="material-symbols-outlined text-accent-light text-[16px]">info</span>
+          Completa tus certificaciones técnicas para alcanzar el 100% de visibilidad ante empleadores de Piura, Sullana y Talara.
+        </p>
+</div>
+</div>
+</section>
+<!-- TWO-COLUMN BESPOKE GRID (8 / 4) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- MAIN COLUMN (8 cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- RESUMEN PROFESIONAL -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_1px_2px_rgba(20,32,27,0.05),0_8px_24px_rgba(20,32,27,0.06)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container-light flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+<h2 class="font-headline-m text-headline-m text-ink-light">Resumen Profesional</h2>
+</div>
+<button class="p-space-xs rounded-full text-ink-secondary-light hover:text-primary hover:bg-surface-container transition-colors" title="Editar resumen" type="button">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-sm text-body-m font-body-m text-ink-secondary-light leading-relaxed">
+<p>
+            Estudiante de Ingeniería de Sistemas en la <strong class="text-ink-light font-semibold">Universidad Nacional de Piura (UNP)</strong>, ubicada en el <span class="text-primary font-semibold">tercio superior</span> de la promoción. Con sólida formación en arquitectura de software, bases de datos relacionales, soporte de infraestructura en la nube y optimización de redes empresariales en entornos Windows y Linux.
+          </p>
+<p>
+            Cuento con vocación por la resolución de problemas técnicos y la atención a usuarios operativos. Busco consolidar mis prácticas preprofesionales en empresas del sector agroindustrial, logístico o financiero en la Región Grau, aportando iniciativa, rigurosidad metodológica y rápido aprendizaje bajo el marco de la <strong class="text-ink-light font-semibold">Ley de Modalidades Formativas Laborales N° 28518</strong>.
+          </p>
+</div>
+</section>
+<!-- EXPERIENCIA LABORAL Y VOLUNTARIADOS -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_1px_2px_rgba(20,32,27,0.05),0_8px_24px_rgba(20,32,27,0.06)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container-light flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">work_history</span>
+</div>
+<h2 class="font-headline-m text-headline-m text-ink-light">Experiencia y Voluntariados</h2>
+</div>
+<button class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container text-ink-light font-body-s text-body-s font-semibold hover:bg-primary-container-light hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+            Añadir experiencia
+          </button>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Tarjeta 1 -->
+<article class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-space-xs">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+<h3 class="font-headline-s text-headline-s text-ink-light">Asistente Técnico de Laboratorio y Redes (Prácticas Iniciales)</h3>
+<span class="font-label text-label uppercase px-space-xs py-0.5 rounded bg-primary-container-light text-primary self-start sm:self-auto">Prácticas</span>
+</div>
+<p class="font-body-m text-body-m font-medium text-primary">
+              Universidad Nacional de Piura — Facultad de Ingeniería de Sistemas
+            </p>
+<div class="flex items-center gap-space-xs text-body-s font-body-s text-ink-secondary-light">
+<span class="material-symbols-outlined text-[16px]">date_range</span>
+<span>Agosto 2024 – Diciembre 2024 • 5 meses • Piura, Perú</span>
+</div>
+<p class="font-body-m text-body-m text-ink-secondary-light pt-space-xs">
+              Mantenimiento preventivo y correctivo de 45 estaciones de trabajo, cableado estructurado Cat 6 y soporte a docentes y estudiantes en plataformas virtuales académicas.
+            </p>
+</article>
+<!-- Tarjeta 2 -->
+<article class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-space-xs">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+<h3 class="font-headline-s text-headline-s text-ink-light">Voluntaria de Soporte Tecnológico y Digitalización</h3>
+<span class="font-label text-label uppercase px-space-xs py-0.5 rounded bg-accent-container-light text-tertiary self-start sm:self-auto">Voluntariado</span>
+</div>
+<p class="font-body-m text-body-m font-medium text-primary">
+              Cámara de Comercio y Producción de Piura
+            </p>
+<div class="flex items-center gap-space-xs text-body-s font-body-s text-ink-secondary-light">
+<span class="material-symbols-outlined text-[16px]">date_range</span>
+<span>Enero 2024 – Marzo 2024 • 3 meses • Piura Centro</span>
+</div>
+<p class="font-body-m text-body-m text-ink-secondary-light pt-space-xs">
+              Apoyo en mesas de ayuda para talleres de transformación digital y registro de MYPES agroexportadoras locales.
+            </p>
+</article>
+</div>
+</section>
+<!-- EDUCACIÓN Y CAPACITACIONES -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_1px_2px_rgba(20,32,27,0.05),0_8px_24px_rgba(20,32,27,0.06)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container-light flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">school</span>
+</div>
+<h2 class="font-headline-m text-headline-m text-ink-light">Educación y Capacitaciones</h2>
+</div>
+<button class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container text-ink-light font-body-s text-body-s font-semibold hover:bg-primary-container-light hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+            Añadir educación
+          </button>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Educación 1 -->
+<article class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+<h3 class="font-headline-s text-headline-s text-ink-light">Pregrado en Ingeniería de Sistemas (8vo ciclo en curso)</h3>
+<span class="inline-flex items-center gap-1 text-primary font-label text-label uppercase">
+<span class="material-symbols-outlined text-[14px]">school</span>
+                En Curso
+              </span>
+</div>
+<p class="font-body-m text-body-m font-semibold text-primary">Universidad Nacional de Piura (UNP)</p>
+<p class="font-body-s text-body-s text-ink-secondary-light">2021 – Presente (Graduación estimada: Diciembre 2026)</p>
+<div class="mt-space-xs inline-flex items-center gap-space-xs px-space-sm py-1 rounded-lg bg-primary-container-light text-primary font-body-s text-body-s font-medium w-fit">
+<span class="material-symbols-outlined text-[16px]">military_tech</span>
+<span>Perteneciente al Tercio Superior • Promedio ponderado acumulado: <strong class="tabular-nums font-bold">16.4</strong></span>
+</div>
+</article>
+<!-- Educación 2 -->
+<article class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+<h3 class="font-headline-s text-headline-s text-ink-light">Especialización Técnica en Administración de Servidores y Redes Cisco CCNA</h3>
+<span class="inline-flex items-center gap-1 text-primary font-label text-label uppercase">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+                Certificado
+              </span>
+</div>
+<p class="font-body-m text-body-m font-semibold text-primary">SENATI — Centro de Formación Piura</p>
+<p class="font-body-s text-body-s text-ink-secondary-light">Marzo 2024 – Julio 2024 • 120 horas lectivas</p>
+<p class="font-body-s text-body-s text-ink-secondary-light italic">Certificado emitido con código verificable institucional</p>
+</article>
+</div>
+</section>
+<!-- HABILIDADES Y COMPETENCIAS -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_1px_2px_rgba(20,32,27,0.05),0_8px_24px_rgba(20,32,27,0.06)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container-light flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">psychology</span>
+</div>
+<h2 class="font-headline-m text-headline-m text-ink-light">Habilidades y Competencias</h2>
+</div>
+<button class="p-space-xs rounded-full text-ink-secondary-light hover:text-primary hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+</div>
+<!-- Category: Técnicas -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label text-label uppercase text-ink-secondary-light">Habilidades Técnicas</span>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-sm py-1 rounded-full bg-surface-container text-ink-light font-body-s text-body-s font-medium hover:bg-primary hover:text-on-primary transition-colors cursor-default">Soporte técnico Nivel 1/2</span>
+<span class="px-space-sm py-1 rounded-full bg-surface-container text-ink-light font-body-s text-body-s font-medium hover:bg-primary hover:text-on-primary transition-colors cursor-default">Redes TCP/IP y Cisco</span>
+<span class="px-space-sm py-1 rounded-full bg-surface-container text-ink-light font-body-s text-body-s font-medium hover:bg-primary hover:text-on-primary transition-colors cursor-default">Linux &amp; Windows Server</span>
+<span class="px-space-sm py-1 rounded-full bg-surface-container text-ink-light font-body-s text-body-s font-medium hover:bg-primary hover:text-on-primary transition-colors cursor-default">SQL Server / PostgreSQL</span>
+<span class="px-space-sm py-1 rounded-full bg-surface-container text-ink-light font-body-s text-body-s font-medium hover:bg-primary hover:text-on-primary transition-colors cursor-default">Python básico</span>
+<span class="px-space-sm py-1 rounded-full bg-surface-container text-ink-light font-body-s text-body-s font-medium hover:bg-primary hover:text-on-primary transition-colors cursor-default">Cloud Fundamentals (AWS/GCP)</span>
+</div>
+</div>
+<!-- Category: Blandas -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<span class="font-label text-label uppercase text-ink-secondary-light">Competencias Socioemocionales</span>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-sm py-1 rounded-full bg-accent-container-light text-ink-light font-body-s text-body-s font-medium cursor-default">Trabajo en equipo multidisciplinario</span>
+<span class="px-space-sm py-1 rounded-full bg-accent-container-light text-ink-light font-body-s text-body-s font-medium cursor-default">Atención al cliente y usuarios</span>
+<span class="px-space-sm py-1 rounded-full bg-accent-container-light text-ink-light font-body-s text-body-s font-medium cursor-default">Resolución de incidencias bajo presión</span>
+<span class="px-space-sm py-1 rounded-full bg-accent-container-light text-ink-light font-body-s text-body-s font-medium cursor-default">Proactividad</span>
+</div>
+</div>
+<!-- Category: Idiomas -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<span class="font-label text-label uppercase text-ink-secondary-light">Idiomas</span>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-sm py-1 rounded-full bg-surface-container text-ink-light font-body-s text-body-s font-medium">Español (Nativo)</span>
+<span class="px-space-sm py-1 rounded-full bg-surface-container text-ink-light font-body-s text-body-s font-medium">Inglés intermedio (B1 - Certificado UNP Idiomas)</span>
+</div>
+</div>
+</section>
+<!-- CURRÍCULUM VITAE (CV) DEDICATED CARD -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_1px_2px_rgba(20,32,27,0.05),0_8px_24px_rgba(20,32,27,0.06)] flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container-light flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">description</span>
+</div>
+<h2 class="font-headline-m text-headline-m text-ink-light">Currículum Vitae (CV)</h2>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-error-container text-error flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[28px]">picture_as_pdf</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-s text-headline-s text-ink-light font-bold">CV_Valeria_Mendoza_2025.pdf</span>
+<span class="font-body-s text-body-s text-ink-secondary-light tabular-nums">240 KB • Actualizado el 12 de noviembre de 2025</span>
+<span class="font-label text-label text-primary flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                Documento verificado para postulaciones directas
+              </span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs w-full sm:w-auto">
+<button class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1 px-space-md py-space-xs rounded-full bg-primary-container-light text-primary hover:bg-primary hover:text-on-primary font-body-s text-body-s font-bold transition-all" type="button">
+<span class="material-symbols-outlined text-[16px]">download</span>
+              Descargar CV
+            </button>
+<button class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1 px-space-md py-space-xs rounded-full bg-surface-container text-ink-light hover:bg-surface-container-highest font-body-s text-body-s font-semibold transition-all" type="button">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+              Actualizar
+            </button>
+</div>
+</div>
+</section>
+<!-- POSTULACIONES RECIENTES SUMMARY -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_1px_2px_rgba(20,32,27,0.05),0_8px_24px_rgba(20,32,27,0.06)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container-light flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">send</span>
+</div>
+<h2 class="font-headline-m text-headline-m text-ink-light">Mis Postulaciones Recientes</h2>
+</div>
+<a class="font-body-s text-body-s font-bold text-primary hover:text-primary-container transition-colors inline-flex items-center gap-1" data-path="mis-postulaciones" href="#">
+            Ver todas (3 activas)
+            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<div class="flex flex-col gap-space-xs">
+<!-- Postulación 1 -->
+<article class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<h3 class="font-headline-s text-body-l font-bold text-ink-light">Practicante Preprofesional de Operaciones Logísticas</h3>
+<p class="font-body-s text-body-s text-ink-secondary-light">Terminal Portuario Paita S.A. • Paita, Piura</p>
+<span class="font-body-s text-body-s text-ink-secondary-light text-xs pt-1">Postulado el: 18 Feb 2025</span>
+</div>
+<span class="px-space-md py-1 rounded-full bg-accent-container-light text-tertiary-fixed-variant font-label text-label uppercase font-bold tracking-wider">
+              Revisada
+            </span>
+</article>
+<!-- Postulación 2 -->
+<article class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<h3 class="font-headline-s text-body-l font-bold text-ink-light">Asistente Junior de Facturación y Finanzas</h3>
+<p class="font-body-s text-body-s text-ink-secondary-light">Caja Municipal de Piura • Piura Centro</p>
+<span class="font-body-s text-body-s text-ink-secondary-light text-xs pt-1">Postulado el: 15 Feb 2025</span>
+</div>
+<span class="px-space-md py-1 rounded-full bg-primary-container-light text-primary font-label text-label uppercase font-bold tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">celebration</span>
+              Aceptada
+            </span>
+</article>
+<!-- Postulación 3 -->
+<article class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<h3 class="font-headline-s text-body-l font-bold text-ink-light">Practicante de Sistemas y Soporte Cloud</h3>
+<p class="font-body-s text-body-s text-ink-secondary-light">Grupo H&amp;M Piura S.A.C. • Zona Industrial Piura</p>
+<span class="font-body-s text-body-s text-ink-secondary-light text-xs pt-1">Postulado el: 23 Feb 2025</span>
+</div>
+<span class="px-space-md py-1 rounded-full bg-surface-container-highest text-secondary font-label text-label uppercase font-bold tracking-wider">
+              Aplicada
+            </span>
+</article>
+</div>
+</section>
+</div>
+<!-- SIDEBAR COLUMN (4 cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- FORTALEZAS DEL PERFIL (CHECKLIST) -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_1px_2px_rgba(20,32,27,0.05),0_8px_24px_rgba(20,32,27,0.06)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-s text-headline-s text-ink-light flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">checklist</span>
+            Fortalezas del perfil
+          </h2>
+<span class="px-space-sm py-0.5 rounded-full bg-primary-container-light text-primary font-label text-label font-bold tabular-nums">
+            78%
+          </span>
+</div>
+<ul class="flex flex-col gap-space-sm text-body-s font-body-s">
+<li class="flex items-start gap-space-xs text-ink-light">
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Datos personales y de contacto completados <strong class="text-primary font-semibold">(+25%)</strong></span>
+</li>
+<li class="flex items-start gap-space-xs text-ink-light">
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>CV en formato PDF subido y analizado <strong class="text-primary font-semibold">(+25%)</strong></span>
+</li>
+<li class="flex items-start gap-space-xs text-ink-light">
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Formación académica en UNP validada <strong class="text-primary font-semibold">(+20%)</strong></span>
+</li>
+<li class="flex items-start gap-space-xs text-ink-light">
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Habilidades técnicas y blandas registradas <strong class="text-primary font-semibold">(+8%)</strong></span>
+</li>
+<li class="flex items-start gap-space-xs text-ink-secondary-light">
+<span class="material-symbols-outlined text-accent-light text-[18px]">radio_button_unchecked</span>
+<span>Foto de perfil formal subida <strong class="text-accent-light font-semibold">(+12%)</strong></span>
+</li>
+<li class="flex items-start gap-space-xs text-ink-secondary-light">
+<span class="material-symbols-outlined text-accent-light text-[18px]">radio_button_unchecked</span>
+<span>Adjuntar carta de presentación de facultad <strong class="text-accent-light font-semibold">(+10%)</strong></span>
+</li>
+</ul>
+<button class="w-full py-space-xs px-space-md rounded-full bg-primary-container-light hover:bg-primary text-primary hover:text-on-primary font-body-s text-body-s font-bold transition-all text-center" type="button">
+          Completar tareas pendientes
+        </button>
+</section>
+<!-- CONSEJOS PARA POSTULAR EN PIURA -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_1px_2px_rgba(20,32,27,0.05),0_8px_24px_rgba(20,32,27,0.06)] flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-accent-container-light flex items-center justify-center text-accent-light">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+</div>
+<h2 class="font-headline-s text-headline-s text-ink-light">Consejos para el mercado de Piura</h2>
+</div>
+<div class="flex flex-col gap-space-md text-body-s font-body-s">
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<span class="font-bold text-ink-light flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-accent-light">schedule</span>
+              Destaca tu disponibilidad horaria
+            </span>
+<p class="text-ink-secondary-light leading-relaxed">
+              En Piura, el 84% de convocatorias valoran que tu horario de clases de UNP o UDEP sea compatible con la jornada máxima de 30 horas semanales según ley formativa.
+            </p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<span class="font-bold text-ink-light flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-accent-light">verified_user</span>
+              Convenio Universitario anticipado
+            </span>
+<p class="text-ink-secondary-light leading-relaxed">
+              Las empresas agroindustriales y logísticas requieren la firma del decanato antes de emitir tu carta de aceptación y seguro FOLA.
+            </p>
+</div>
+</div>
+</section>
+<!-- CONFIGURACIÓN DE PRIVACIDAD Y VISIBILIDAD -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_1px_2px_rgba(20,32,27,0.05),0_8px_24px_rgba(20,32,27,0.06)] flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-primary-container-light flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">security</span>
+</div>
+<h2 class="font-headline-s text-headline-s text-ink-light">Privacidad y Visibilidad</h2>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Toggle 1 -->
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-body-s text-body-s font-bold text-ink-light">Visible para empresas verificadas</span>
+<span class="font-body-s text-body-s text-ink-secondary-light text-xs">
+                Activo — Tu perfil aparece en las búsquedas de reclutadores de Piura, Sullana, Talara y Paita.
+              </span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer mt-1">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-6 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-surface-container-highest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Toggle 2 -->
+<div class="flex items-start justify-between gap-space-sm pt-space-xs">
+<div class="flex flex-col">
+<span class="font-body-s text-body-s font-bold text-ink-light">Contacto directo por WhatsApp</span>
+<span class="font-body-s text-body-s text-ink-secondary-light text-xs">
+                Permite que empresas con convenios activos te escriban de inmediato.
+              </span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer mt-1">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-6 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-surface-container-highest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+<p class="font-body-s text-body-s text-ink-secondary-light text-xs pt-space-xs leading-normal">
+          Tus datos están protegidos bajo la <strong>Ley N° 29733</strong> de Protección de Datos Personales de Perú y sólo se comparten con empleadores registrados ante SUNAT.
+        </p>
+</section>
+<!-- SOPORTE Y ASESORÍA DE EMPLEO GRAU -->
+<section class="bg-primary p-space-lg rounded-xl shadow-[0_1px_2px_rgba(20,32,27,0.05),0_8px_24px_rgba(20,32,27,0.06)] text-on-primary flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[24px]">support_agent</span>
+<h2 class="font-headline-s text-headline-s">Soporte Estudiantil UNP</h2>
+</div>
+<p class="font-body-s text-body-s text-primary-fixed-dim leading-relaxed">
+          ¿Tienes dudas sobre la validación de tu convenio FOLA o cómo tramitar tu carta de presentación ante la facultad?
+        </p>
+<a class="mt-space-xs inline-flex items-center justify-center gap-space-xs py-space-xs px-space-md rounded-full bg-surface-container-lowest text-primary font-headline-s text-body-m font-bold hover:bg-surface-container transition-all" href="https://wa.me/51973120440" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+          WhatsApp PrácticaPE (+51 973 120 440)
+        </a>
+</section>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low mt-space-xl pt-space-xl pb-space-lg"><div class="max-w-[1200px] mx-auto px-margin"><div class="grid grid-cols-1 md:grid-cols-4 gap-space-lg pb-space-xl"><div class="flex flex-col gap-space-sm md:col-span-1"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[18px]">work</span></div><div class="flex items-center"><span class="font-headline-s text-headline-s text-ink-light tracking-tight">Práctica</span><span class="font-headline-s text-headline-s text-primary font-bold">PE</span></div></div><p class="font-body-s text-body-s text-ink-secondary-light">Impulsando las prácticas preprofesionales y el primer empleo formal en el departamento de Piura y el norte peruano.</p></div><div class="flex flex-col gap-space-xs"><h4 class="font-label text-label uppercase text-primary mb-space-xs">Plataforma</h4><a class="font-body-s text-body-s text-on-surface-variant hover:text-primary transition-colors" data-path="ofertas" href="#">Ofertas laborales</a><a class="font-body-s text-body-s text-on-surface-variant hover:text-primary transition-colors" data-path="directorio-empresas" href="#">Directorio de empresas</a><a class="font-body-s text-body-s text-on-surface-variant hover:text-primary transition-colors" data-path="mapa" href="#">Mapa geolocalizado</a></div><div class="flex flex-col gap-space-xs"><h4 class="font-label text-label uppercase text-primary mb-space-xs">Comunidad</h4><a class="font-body-s text-body-s text-on-surface-variant hover:text-primary transition-colors" data-path="convenios-universitarios" href="#">Convenios universitarios</a><a class="font-body-s text-body-s text-on-surface-variant hover:text-primary transition-colors" data-path="guias-laborales" href="#">Guías y convocatorias</a></div><div class="flex flex-col gap-space-xs"><h4 class="font-label text-label uppercase text-primary mb-space-xs">Legal</h4><a class="font-body-s text-body-s text-on-surface-variant hover:text-primary transition-colors" data-path="terminos-condiciones" href="#">Términos y Condiciones</a><a class="font-body-s text-body-s text-on-surface-variant hover:text-primary transition-colors" data-path="libro-reclamaciones" href="#">Libro de Reclamaciones</a></div></div><div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm text-center sm:text-left"><p class="font-body-s text-body-s text-ink-secondary-light">© 2025 PrácticaPE. Piura, Región Grau, Perú. Todos los derechos reservados.</p><p class="font-body-s text-body-s text-ink-secondary-light flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-primary">verified</span>Ecosistema de Empleabilidad Regional</p></div></div></footer></body></html>

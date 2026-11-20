@@ -5,5 +5,46 @@
   "visibility": "PRIVATE",
   "designSystem": "assets/145e3a73db4a45a1906045fca09873b9",
   "designMd": ".stitch/DESIGN.md",
-  "screens": {}
+  "screens": {
+    "panel-empresa": {
+      "id": "9881c25e693f482b880402290fb3d5a5",
+      "sourceScreen": "projects/16989794354844657044/screens/9881c25e693f482b880402290fb3d5a5"
+    },
+    "directorio-empresas": {
+      "id": "15b24058d2af48e4b112bc38d2b97d3e",
+      "sourceScreen": "projects/16989794354844657044/screens/15b24058d2af48e4b112bc38d2b97d3e"
+    },
+    "mapa-ofertas": {
+      "id": "758e72d66c2a4b368572eb5d4a473006",
+      "sourceScreen": "projects/16989794354844657044/screens/758e72d66c2a4b368572eb5d4a473006"
+    },
+    "mis-postulaciones": {
+      "id": "48a5125883f24b11837a9bdf2d856bd8",
+      "sourceScreen": "projects/16989794354844657044/screens/48a5125883f24b11837a9bdf2d856bd8"
+    },
+    "panel-administracion": {
+      "id": "d8625e8adc214a528d39b6cff1e8e53d",
+      "sourceScreen": "projects/16989794354844657044/screens/d8625e8adc214a528d39b6cff1e8e53d"
+    },
+    "home": {
+      "id": "e683cb1afab0400da6c67c92eded642d",
+      "sourceScreen": "projects/16989794354844657044/screens/e683cb1afab0400da6c67c92eded642d"
+    },
+    "ofertas": {
+      "id": "8d574ea7519b47b09f8af8a4e9a676f9",
+      "sourceScreen": "projects/16989794354844657044/screens/8d574ea7519b47b09f8af8a4e9a676f9"
+    },
+    "oferta-detalle": {
+      "id": "8acd86be262b4bd8b59c3d58c86a6749",
+      "sourceScreen": "projects/16989794354844657044/screens/8acd86be262b4bd8b59c3d58c86a6749"
+    },
+    "auth-otp": {
+      "id": "b43044e0fcf74fe7bf345f469f9d1c4b",
+      "sourceScreen": "projects/16989794354844657044/screens/b43044e0fcf74fe7bf345f469f9d1c4b"
+    },
+    "perfil-candidato": {
+      "id": "6e6fa2b36a864140a19e194cb4a4bfe4",
+      "sourceScreen": "projects/16989794354844657044/screens/6e6fa2b36a864140a19e194cb4a4bfe4"
+    }
+  }
 }

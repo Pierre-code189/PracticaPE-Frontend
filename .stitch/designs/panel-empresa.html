@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>PrácticaPE - Portal de Empleadores</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-fixed":"#002019","tertiary-fixed-dim":"#ffb4a6","background":"#f6faf7","surface-elevated-dark":"#1A2E27","surface-container-lowest":"#ffffff","primary-container-light":"#D7F0E7","inverse-primary":"#7bd7bd","secondary":"#51625a","primary-dark":"#4FC3A7","on-primary-container":"#bcffe9","tertiary":"#894032","surface-dim":"#d7dbd8","inverse-surface":"#2d312f","surface-elevated-light":"#F1EFE6","error":"#C0392B","background-light":"#FAF9F4","inverse-on-surface":"#eef2ee","surface-container-highest":"#dfe3e0","primary-fixed-dim":"#7bd7bd","on-secondary-fixed-variant":"#3a4a43","on-background":"#181d1b","primary-container":"#0e7c66","surface-light":"#FFFFFF","surface-variant":"#dfe3e0","primary":"#00614f","primary-container-dark":"#14382F","on-tertiary-fixed-variant":"#763125","ink-dark":"#EAF4EF","accent-dark":"#F2B85C","surface-container-high":"#e5e9e6","surface-bright":"#f6faf7","tertiary-fixed":"#ffdad3","on-error":"#ffffff","ink-secondary-light":"#5A6B63","secondary-container":"#d4e7dd","outline":"#6e7a75","surface-tint":"#006b57","on-tertiary-container":"#ffeeea","border-dark":"#243833","secondary-fixed":"#d4e7dd","on-surface":"#181d1b","on-error-container":"#93000a","on-tertiary":"#ffffff","outline-variant":"#bdc9c4","surface-container":"#ebefeb","on-secondary-fixed":"#0f1f19","ink-secondary-dark":"#9DB3AA","primary-fixed":"#97f4d9","surface":"#f6faf7","on-primary":"#ffffff","on-secondary":"#ffffff","secondary-fixed-dim":"#b8cbc1","background-dark":"#0B1512","accent-light":"#E8A13A","primary-deep-dark":"#2E9B85","on-tertiary-fixed":"#3d0702","surface-dark":"#12201B","surface-container-low":"#f0f5f1","on-primary-fixed-variant":"#005141","tertiary-container":"#a75748","border-light":"#E3E0D5","on-surface-variant":"#3e4945","ink-light":"#14201B","error-container":"#ffdad6","on-secondary-container":"#576860","accent-container-light":"#FBEBCB"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"gutter":"1.5rem","space-md":"1rem","space-xl":"2.5rem","space-sm":"0.5rem","margin":"1.5rem","space-lg":"1.5rem","space-xs":"0.25rem"},fontFamily:{"body-m":["Inter"],"display":["Plus Jakarta Sans"],"body-s":["Inter"],"body-l":["Inter"],"headline-l":["Plus Jakarta Sans"],"headline-s":["Plus Jakarta Sans"],"headline-m":["Plus Jakarta Sans"],"label":["Inter"]},fontSize:{"body-m":["14px",{lineHeight:"1.5",fontWeight:"400"}],"display":["40px",{lineHeight:"1.05",fontWeight:"800"}],"body-s":["12px",{lineHeight:"1.4",fontWeight:"400"}],"body-l":["16px",{lineHeight:"1.5",fontWeight:"400"}],"headline-l":["32px",{lineHeight:"1.2",fontWeight:"700"}],"headline-s":["18px",{lineHeight:"1.4",fontWeight:"700"}],"headline-m":["24px",{lineHeight:"1.3",fontWeight:"700"}],"label":["11px",{lineHeight:"1.2",letterSpacing:"0.06em",fontWeight:"700"}]}}}};</script></head><body class="bg-background-light font-body-m text-body-m text-on-surface antialiased min-h-screen flex flex-col justify-between"><header class="fixed top-0 inset-x-0 z-50 bg-surface-light border-b border-border-light"><div class="h-16 max-w-[1200px] mx-auto px-gutter flex items-center justify-between"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-xs text-headline-s font-headline-s text-on-surface tracking-tight focus:outline-none" data-path="resumen" href="#">Práctica<span class="text-primary-container font-headline-s">PE</span><span class="ml-space-sm px-space-xs py-0.5 rounded-full bg-primary-container-light text-primary text-label font-label">EMPRESA</span></a></div><div class="flex items-center gap-space-md"><button aria-label="Cambiar tema" class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">light_mode</span></button><button aria-label="Notificaciones" class="relative w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 flex items-center justify-center min-w-[16px] h-4 px-1 rounded-full bg-accent-light text-on-surface font-label text-[10px] font-bold leading-none">3</span></button><div class="h-6 w-px bg-border-light mx-space-xs hidden sm:block"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="relative flex items-center justify-center"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-primary-container ring-2 ring-surface-light" title="Cuenta activa"></span></div><div class="hidden md:flex flex-col text-left"><span class="font-headline-s text-body-s font-bold text-on-surface truncate max-w-[180px] leading-tight">Grupo Terminal Piura S.A.C.</span><span class="text-label font-label text-ink-secondary-light uppercase tracking-wider">RUC 20489301928</span></div><span class="material-symbols-outlined text-on-surface-variant text-[18px] hidden md:inline-block">expand_more</span></div></div></div><div class="bg-surface-light border-t border-border-light"><div class="max-w-[1200px] mx-auto px-gutter flex items-center overflow-x-auto"><nav class="flex items-center gap-space-xl whitespace-nowrap" data-active-classes="text-primary-container font-bold border-b-2 border-primary-container pb-[10px] pt-3"><a aria-current="page" class="transition-all text-primary-container font-bold border-b-2 border-primary-container pb-[10px] pt-3" data-path="resumen" href="#">Resumen</a><a class="text-body-m font-body-m text-on-surface-variant hover:text-on-surface pb-[10px] pt-3 border-b-2 border-transparent transition-all" data-path="ofertas" href="#">Ofertas</a><a class="text-body-m font-body-m text-on-surface-variant hover:text-on-surface pb-[10px] pt-3 border-b-2 border-transparent transition-all" data-path="postulantes" href="#">Postulantes</a><a class="text-body-m font-body-m text-on-surface-variant hover:text-on-surface pb-[10px] pt-3 border-b-2 border-transparent transition-all" data-path="perfil-de-empresa" href="#">Perfil de empresa</a></nav></div></div></header><main class="w-full pt-28 bg-background-light flex-1"><div class="max-w-[1200px] mx-auto px-gutter py-space-xl"><div class="flex flex-col w-full">
+<!-- Sub-header / Tabbed Section Navigation -->
+<div class="w-full bg-surface-light rounded-2xl shadow-[0_1px_2px_rgba(20,32,27,0.05),0_8px_24px_rgba(20,32,27,0.06)] px-space-md py-space-xs mb-space-xl flex items-center justify-between overflow-x-auto">
+<div class="flex items-center gap-space-sm sm:gap-space-md min-w-max">
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-full bg-primary text-on-primary font-headline-s text-body-s shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">dashboard</span>
+<span>Resumen</span>
+<span class="w-2 h-2 rounded-full bg-primary-fixed ml-1"></span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-headline-s text-body-s transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">work</span>
+<span>Ofertas</span>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label text-[11px] font-bold">6</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-headline-s text-body-s transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">group</span>
+<span>Postulantes</span>
+<span class="px-space-xs py-0.5 rounded-full bg-accent-container-light text-ink-light font-label text-[11px] font-bold">14 nuevos</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-headline-s text-body-s transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">apartment</span>
+<span>Perfil de empresa</span>
+</button>
+</div>
+<div class="hidden lg:flex items-center gap-space-sm pl-space-md text-ink-secondary-light font-body-s">
+<span class="inline-flex w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span>Sede Puerto Paita &amp; Piura Centro activa</span>
+</div>
+</div>
+<!-- Main Hero Context Header -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg mb-space-xl">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs text-primary font-label uppercase tracking-widest text-label mb-1">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>Portal Corporativo Regional • Grau</span>
+</div>
+<h1 class="text-headline-l font-headline-l text-ink-light tracking-tight">Panel de empresa</h1>
+<p class="text-body-l font-body-l text-ink-secondary-light mt-1">
+        Gestiona tus ofertas y revisa postulantes en Piura y la región Grau
+      </p>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-md">
+<button class="flex items-center gap-space-xs px-5 py-3 rounded-full bg-surface-light text-primary font-headline-s text-body-m shadow-[0_1px_2px_rgba(20,32,27,0.05)] hover:bg-surface-container transition-all" id="btn-reporte" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Descargar reporte</span>
+</button>
+<button class="flex items-center gap-space-xs px-6 py-3 rounded-full bg-primary-container text-on-primary font-headline-s text-body-m shadow-md hover:bg-primary transition-all" id="btn-publicar" type="button">
+<span class="material-symbols-outlined text-[20px]" id="btn-icon">add</span>
+<span id="btn-text">Publicar oferta</span>
+</button>
+</div>
+</div>
+<!-- KPI Grid (4 Metrics) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md mb-space-xl">
+<!-- Card 1 -->
+<div class="bg-surface-light rounded-2xl p-space-lg shadow-[0_1px_2px_rgba(20,32,27,0.05),0_8px_24px_rgba(20,32,27,0.06)] relative overflow-hidden transition-all duration-200 hover:-translate-y-0.5">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="text-body-s font-label uppercase tracking-wider text-ink-secondary-light font-bold">Ofertas activas</span>
+<div class="w-8 h-8 rounded-full bg-primary-container-light flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">campaign</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-sm mb-space-xs">
+<span class="text-display font-display text-ink-light tabular-nums">6</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-primary-container-light text-primary text-label font-label font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">trending_up</span>
+          +2 este mes
+        </span>
+<span class="text-body-s font-body-s text-ink-secondary-light">en Piura y Paita</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-light rounded-2xl p-space-lg shadow-[0_1px_2px_rgba(20,32,27,0.05),0_8px_24px_rgba(20,32,27,0.06)] relative overflow-hidden transition-all duration-200 hover:-translate-y-0.5">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="text-body-s font-label uppercase tracking-wider text-ink-secondary-light font-bold">Postulaciones nuevas</span>
+<div class="w-8 h-8 rounded-full bg-accent-container-light flex items-center justify-center text-accent-light">
+<span class="material-symbols-outlined text-[18px]">mark_email_unread</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-sm mb-space-xs">
+<span class="text-display font-display text-ink-light tabular-nums">14</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-accent-container-light text-ink-light text-label font-label font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">priority_high</span>
+          +5 hoy
+        </span>
+<span class="text-body-s font-body-s text-ink-secondary-light">requieren filtro</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-light rounded-2xl p-space-lg shadow-[0_1px_2px_rgba(20,32,27,0.05),0_8px_24px_rgba(20,32,27,0.06)] relative overflow-hidden transition-all duration-200 hover:-translate-y-0.5">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="text-body-s font-label uppercase tracking-wider text-ink-secondary-light font-bold">Postulaciones revisadas</span>
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-sm mb-space-xs">
+<span class="text-display font-display text-ink-light tabular-nums">23</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface text-label font-label font-bold">
+          62% del total
+        </span>
+<span class="text-body-s font-body-s text-ink-secondary-light">ciclo actual</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-light rounded-2xl p-space-lg shadow-[0_1px_2px_rgba(20,32,27,0.05),0_8px_24px_rgba(20,32,27,0.06)] relative overflow-hidden transition-all duration-200 hover:-translate-y-0.5">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="text-body-s font-label uppercase tracking-wider text-ink-secondary-light font-bold">Tasa de aceptación</span>
+<div class="w-8 h-8 rounded-full bg-primary-container-light flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-sm mb-space-xs">
+<span class="text-display font-display text-ink-light tabular-nums">38%</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-primary-container-light text-primary text-label font-label font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">trending_up</span>
+          +4% vs mes anterior
+        </span>
+</div>
+</div>
+</div>
+<!-- Activity & Analytics Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-xl items-stretch">
+<!-- Chart Card -->
+<div class="lg:col-span-8 bg-surface-light rounded-2xl p-space-lg shadow-[0_1px_2px_rgba(20,32,27,0.05),0_8px_24px_rgba(20,32,27,0.06)] flex flex-col justify-between">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm mb-space-lg">
+<div>
+<h2 class="text-headline-s font-headline-s text-ink-light">Postulaciones por semana</h2>
+<p class="text-body-s font-body-s text-ink-secondary-light">Volumen de solicitudes recibidas en las últimas 6 semanas</p>
+</div>
+<div class="flex items-center gap-space-xs text-label font-label bg-surface-container px-3 py-1.5 rounded-full text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">calendar_month</span>
+<span>Ene – Feb 2025</span>
+</div>
+</div>
+<!-- Bar Chart Visualization -->
+<div class="w-full pt-4 pb-2">
+<div class="h-48 flex items-end justify-between gap-2 sm:gap-6 px-2 sm:px-6">
+<!-- Week 06 -->
+<div class="flex-1 flex flex-col items-center gap-2 group">
+<span class="text-body-s font-headline-s text-ink-secondary-light tabular-nums group-hover:text-primary transition-colors">18</span>
+<div class="w-full max-w-[42px] bg-primary-container-light rounded-t-xl group-hover:bg-primary-container transition-all duration-300" style="height: 34%;"></div>
+<span class="text-label font-label text-ink-secondary-light uppercase">Sem 06</span>
+</div>
+<!-- Week 07 -->
+<div class="flex-1 flex flex-col items-center gap-2 group">
+<span class="text-body-s font-headline-s text-ink-secondary-light tabular-nums group-hover:text-primary transition-colors">24</span>
+<div class="w-full max-w-[42px] bg-primary-container-light rounded-t-xl group-hover:bg-primary-container transition-all duration-300" style="height: 45%;"></div>
+<span class="text-label font-label text-ink-secondary-light uppercase">Sem 07</span>
+</div>
+<!-- Week 08 -->
+<div class="flex-1 flex flex-col items-center gap-2 group">
+<span class="text-body-s font-headline-s text-ink-secondary-light tabular-nums group-hover:text-primary transition-colors">31</span>
+<div class="w-full max-w-[42px] bg-primary-container-light rounded-t-xl group-hover:bg-primary-container transition-all duration-300" style="height: 58%;"></div>
+<span class="text-label font-label text-ink-secondary-light uppercase">Sem 08</span>
+</div>
+<!-- Week 09 -->
+<div class="flex-1 flex flex-col items-center gap-2 group">
+<span class="text-body-s font-headline-s text-ink-secondary-light tabular-nums group-hover:text-primary transition-colors">28</span>
+<div class="w-full max-w-[42px] bg-primary-container-light rounded-t-xl group-hover:bg-primary-container transition-all duration-300" style="height: 52%;"></div>
+<span class="text-label font-label text-ink-secondary-light uppercase">Sem 09</span>
+</div>
+<!-- Week 10 -->
+<div class="flex-1 flex flex-col items-center gap-2 group">
+<span class="text-body-s font-headline-s text-ink-secondary-light tabular-nums group-hover:text-primary transition-colors">42</span>
+<div class="w-full max-w-[42px] bg-primary-container-light rounded-t-xl group-hover:bg-primary-container transition-all duration-300" style="height: 78%;"></div>
+<span class="text-label font-label text-ink-secondary-light uppercase">Sem 10</span>
+</div>
+<!-- Week 11 (Current) -->
+<div class="flex-1 flex flex-col items-center gap-2 group">
+<span class="text-body-s font-headline-s text-primary font-bold tabular-nums">53</span>
+<div class="w-full max-w-[42px] bg-primary-container rounded-t-xl shadow-sm transition-all duration-300 hover:bg-primary" style="height: 100%;"></div>
+<span class="text-label font-label text-primary font-bold uppercase">Sem 11</span>
+</div>
+</div>
+</div>
+<!-- Legend and Sub-breakdown -->
+<div class="flex flex-wrap items-center justify-between pt-space-md mt-space-sm bg-surface-container-low p-space-md rounded-xl">
+<div class="flex items-center gap-space-lg">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+<span class="text-body-s font-body-s text-on-surface">Prácticas preprofesionales</span>
+<span class="text-body-s font-headline-s text-ink-light tabular-nums font-bold">74%</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-secondary-fixed-dim"></span>
+<span class="text-body-s font-body-s text-on-surface">Primer empleo</span>
+<span class="text-body-s font-headline-s text-ink-light tabular-nums font-bold">26%</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-primary text-body-s font-headline-s mt-2 sm:mt-0">
+<span class="material-symbols-outlined text-[16px]">school</span>
+<span>UNP • UDEP • UTP Piura</span>
+</div>
+</div>
+</div>
+<!-- Quick Insights / Campus Reach in Piura -->
+<div class="lg:col-span-4 bg-surface-light rounded-2xl p-space-lg shadow-[0_1px_2px_rgba(20,32,27,0.05),0_8px_24px_rgba(20,32,27,0.06)] flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<h2 class="text-headline-s font-headline-s text-ink-light">Cobertura Regional</h2>
+<span class="px-2 py-0.5 rounded-full bg-primary-container-light text-primary font-label text-[10px]">PIURA Y PAITA</span>
+</div>
+<p class="text-body-s font-body-s text-ink-secondary-light mb-space-md">
+          Distribución de candidatos activos por centros universitarios e institutos de la región.
+        </p>
+<!-- Mini Progress List -->
+<div class="space-y-space-md">
+<div>
+<div class="flex justify-between text-body-s font-body-s mb-1">
+<span class="font-medium text-ink-light">Universidad Nacional de Piura (UNP)</span>
+<span class="tabular-nums font-bold text-primary">48%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 48%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-body-s font-body-s mb-1">
+<span class="font-medium text-ink-light">Universidad de Piura (UDEP)</span>
+<span class="tabular-nums font-bold text-primary">31%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 31%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-body-s font-body-s mb-1">
+<span class="font-medium text-ink-light">UTP • Zegel • SENATI Grau</span>
+<span class="tabular-nums font-bold text-primary">21%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary-fixed-dim rounded-full" style="width: 21%;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md bg-surface-container-low p-space-md rounded-xl flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-[24px]">flag</span>
+<div class="flex flex-col">
+<span class="text-body-s font-headline-s text-ink-light">Convenio Portuario y Logístico</span>
+<span class="text-body-s font-body-s text-ink-secondary-light">Reglamento Ley 28518 al día</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Job Offers Table / List View -->
+<div class="w-full bg-surface-light rounded-2xl p-space-lg shadow-[0_1px_2px_rgba(20,32,27,0.05),0_8px_24px_rgba(20,32,27,0.06)] mb-space-xl">
+<!-- Header of the Table: Controls & Filters -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md mb-space-lg">
+<div class="flex items-center gap-space-sm">
+<h2 class="text-headline-m font-headline-m text-ink-light">Ofertas publicadas</h2>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-headline-s text-body-s tabular-nums font-bold">6 ofertas</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Search bar -->
+<div class="relative flex-1 sm:w-64">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-ink-secondary-light text-[18px]">search</span>
+<input class="w-full pl-9 pr-4 py-2 rounded-xl bg-surface-container text-body-s text-ink-light placeholder-ink-secondary-light focus:outline-none focus:bg-surface-light transition-all" placeholder="Buscar por puesto o distrito..." type="text"/>
+</div>
+<!-- Filter tabs pill style -->
+<div class="flex items-center bg-surface-container p-1 rounded-xl text-body-s font-headline-s">
+<button class="px-3 py-1.5 rounded-lg bg-surface-light text-ink-light shadow-sm font-bold" type="button">Todas</button>
+<button class="px-3 py-1.5 rounded-lg text-ink-secondary-light hover:text-ink-light" type="button">Activas</button>
+<button class="px-3 py-1.5 rounded-lg text-ink-secondary-light hover:text-ink-light" type="button">Borradores</button>
+<button class="px-3 py-1.5 rounded-lg text-ink-secondary-light hover:text-ink-light" type="button">Cerradas</button>
+</div>
+</div>
+</div>
+<!-- Responsive Table Wrapper -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left text-body-s">
+<thead>
+<tr class="text-ink-secondary-light font-label uppercase tracking-wider text-[11px] bg-surface-container-low rounded-xl">
+<th class="py-3 px-4 font-bold rounded-l-xl">Puesto</th>
+<th class="py-3 px-3 font-bold">Distrito</th>
+<th class="py-3 px-3 font-bold">Modalidad</th>
+<th class="py-3 px-3 font-bold">Remuneración</th>
+<th class="py-3 px-3 font-bold">Postulantes</th>
+<th class="py-3 px-3 font-bold">Estado</th>
+<th class="py-3 px-4 font-bold text-right rounded-r-xl">Acciones</th>
+</tr>
+</thead>
+<tbody class="divide-y-0">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-4 px-4 font-headline-s text-body-m font-bold text-ink-light">
+<div class="flex items-center gap-space-xs">
+<span class="w-1.5 h-6 rounded-full bg-accent-light shrink-0"></span>
+<span class="group-hover:text-primary transition-colors">Practicante Preprofesional de Operaciones Logísticas</span>
+</div>
+</td>
+<td class="py-4 px-3 text-ink-secondary-light whitespace-nowrap">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+                Paita
+              </span>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-ink-light text-label font-label">Presencial</span>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<span class="px-2.5 py-1 rounded-full bg-accent-container-light text-tertiary font-headline-s text-body-s font-bold tabular-nums">
+                S/ 1,150
+              </span>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<div class="flex items-center gap-1 font-headline-s text-ink-light tabular-nums">
+<span class="material-symbols-outlined text-[16px] text-primary">groups</span>
+<span class="font-bold">18</span> candidatos
+              </div>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<span class="px-2.5 py-1 rounded-full bg-primary-container-light text-primary font-label text-label font-bold flex items-center gap-1 w-max">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                Activa
+              </span>
+</td>
+<td class="py-4 px-4 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-primary hover:bg-primary-container-light transition-colors" title="Ver detalle" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-lg text-ink-secondary-light hover:bg-surface-container transition-colors" title="Editar" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-tertiary hover:bg-error-container transition-colors" title="Cerrar oferta" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-4 px-4 font-headline-s text-body-m font-bold text-ink-light">
+<div class="flex items-center gap-space-xs">
+<span class="w-1.5 h-6 rounded-full bg-accent-light shrink-0"></span>
+<span class="group-hover:text-primary transition-colors">Asistente Junior de Facturación y Finanzas</span>
+</div>
+</td>
+<td class="py-4 px-3 text-ink-secondary-light whitespace-nowrap">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+                Piura (Centro)
+              </span>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-ink-light text-label font-label">Híbrido</span>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<span class="px-2.5 py-1 rounded-full bg-accent-container-light text-tertiary font-headline-s text-body-s font-bold tabular-nums">
+                S/ 1,300
+              </span>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<div class="flex items-center gap-1 font-headline-s text-ink-light tabular-nums">
+<span class="material-symbols-outlined text-[16px] text-primary">groups</span>
+<span class="font-bold">12</span> candidatos
+              </div>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<span class="px-2.5 py-1 rounded-full bg-primary-container-light text-primary font-label text-label font-bold flex items-center gap-1 w-max">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                Activa
+              </span>
+</td>
+<td class="py-4 px-4 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-primary hover:bg-primary-container-light transition-colors" title="Ver detalle" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-lg text-ink-secondary-light hover:bg-surface-container transition-colors" title="Editar" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-tertiary hover:bg-error-container transition-colors" title="Cerrar oferta" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-4 px-4 font-headline-s text-body-m font-bold text-ink-light">
+<div class="flex items-center gap-space-xs">
+<span class="w-1.5 h-6 rounded-full bg-accent-light shrink-0"></span>
+<span class="group-hover:text-primary transition-colors">Practicante de Mantenimiento Electromecánico</span>
+</div>
+</td>
+<td class="py-4 px-3 text-ink-secondary-light whitespace-nowrap">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+                Castilla
+              </span>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-ink-light text-label font-label">Presencial</span>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<span class="px-2.5 py-1 rounded-full bg-accent-container-light text-tertiary font-headline-s text-body-s font-bold tabular-nums">
+                S/ 1,100
+              </span>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<div class="flex items-center gap-1 font-headline-s text-ink-light tabular-nums">
+<span class="material-symbols-outlined text-[16px] text-primary">groups</span>
+<span class="font-bold">9</span> candidatos
+              </div>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<span class="px-2.5 py-1 rounded-full bg-primary-container-light text-primary font-label text-label font-bold flex items-center gap-1 w-max">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                Activa
+              </span>
+</td>
+<td class="py-4 px-4 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-primary hover:bg-primary-container-light transition-colors" title="Ver detalle" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-lg text-ink-secondary-light hover:bg-surface-container transition-colors" title="Editar" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-tertiary hover:bg-error-container transition-colors" title="Cerrar" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-4 px-4 font-headline-s text-body-m font-bold text-ink-light">
+<div class="flex items-center gap-space-xs">
+<span class="w-1.5 h-6 rounded-full bg-accent-light shrink-0"></span>
+<span class="group-hover:text-primary transition-colors">Auxiliar de Atención al Cliente y Balanza</span>
+</div>
+</td>
+<td class="py-4 px-3 text-ink-secondary-light whitespace-nowrap">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+                Veintiséis de Octubre
+              </span>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-ink-light text-label font-label">Presencial</span>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<span class="px-2.5 py-1 rounded-full bg-accent-container-light text-tertiary font-headline-s text-body-s font-bold tabular-nums">
+                S/ 1,025
+              </span>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<div class="flex items-center gap-1 font-headline-s text-ink-light tabular-nums">
+<span class="material-symbols-outlined text-[16px] text-primary">groups</span>
+<span class="font-bold">22</span> candidatos
+              </div>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<span class="px-2.5 py-1 rounded-full bg-primary-container-light text-primary font-label text-label font-bold flex items-center gap-1 w-max">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                Activa
+              </span>
+</td>
+<td class="py-4 px-4 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-primary hover:bg-primary-container-light transition-colors" title="Ver detalle" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-lg text-ink-secondary-light hover:bg-surface-container transition-colors" title="Editar" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-tertiary hover:bg-error-container transition-colors" title="Cerrar" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low transition-colors group opacity-85">
+<td class="py-4 px-4 font-headline-s text-body-m font-bold text-ink-light">
+<div class="flex items-center gap-space-xs">
+<span class="w-1.5 h-6 rounded-full bg-outline-variant shrink-0"></span>
+<span class="group-hover:text-primary transition-colors">Practicante de Seguridad Industrial y Salud Ocupacional</span>
+</div>
+</td>
+<td class="py-4 px-3 text-ink-secondary-light whitespace-nowrap">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+                Catacaos
+              </span>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-ink-light text-label font-label">Semipresencial</span>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-ink-secondary-light font-headline-s text-body-s font-bold tabular-nums">
+                S/ 1,200
+              </span>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<span class="text-ink-secondary-light font-headline-s tabular-nums">0 candidatos</span>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-ink-secondary-light font-label text-label font-bold flex items-center gap-1 w-max">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                Borrador
+              </span>
+</td>
+<td class="py-4 px-4 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-2">
+<button class="text-primary font-headline-s text-body-s font-bold hover:underline" type="button">Completar</button>
+<button class="text-tertiary font-headline-s text-body-s hover:underline" type="button">Eliminar</button>
+</div>
+</td>
+</tr>
+<!-- Row 6 -->
+<tr class="hover:bg-surface-container-low transition-colors group opacity-75">
+<td class="py-4 px-4 font-headline-s text-body-m font-bold text-ink-light">
+<div class="flex items-center gap-space-xs">
+<span class="w-1.5 h-6 rounded-full bg-surface-variant shrink-0"></span>
+<span class="line-through text-ink-secondary-light">Asistente de Sistemas y Soporte TI</span>
+</div>
+</td>
+<td class="py-4 px-3 text-ink-secondary-light whitespace-nowrap">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+                Sullana
+              </span>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<span class="px-2.5 py-1 rounded-full bg-accent-container-light text-ink-light text-label font-label font-bold">Remoto</span>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-ink-secondary-light font-headline-s text-body-s tabular-nums">
+                S/ 1,400
+              </span>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<span class="font-headline-s text-ink-light tabular-nums font-bold">31 candidatos</span>
+</td>
+<td class="py-4 px-3 whitespace-nowrap">
+<span class="px-2.5 py-1 rounded-full bg-error-container text-tertiary font-label text-label font-bold flex items-center gap-1 w-max">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                Cerrada
+              </span>
+</td>
+<td class="py-4 px-4 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-2">
+<button class="text-primary font-headline-s text-body-s font-bold hover:underline" type="button">Republicar</button>
+<button class="text-ink-secondary-light font-headline-s text-body-s hover:underline" type="button">Ver archivo</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Candidates Queue Section -->
+<div class="w-full">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm mb-space-lg">
+<div class="flex items-center gap-space-sm">
+<h2 class="text-headline-m font-headline-m text-ink-light">Postulantes recientes por revisar</h2>
+<span class="px-3 py-1 rounded-full bg-accent-container-light text-ink-light font-headline-s text-body-s font-bold">14 pendientes</span>
+</div>
+<a class="text-primary font-headline-s text-body-m font-bold hover:underline flex items-center gap-1" href="#">
+<span>Ir a la lista completa de postulantes</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- Candidate Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Candidate 1 -->
+<div class="bg-surface-light rounded-2xl p-space-lg shadow-[0_1px_2px_rgba(20,32,27,0.05),0_8px_24px_rgba(20,32,27,0.06)] flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5">
+<div>
+<div class="flex items-start justify-between gap-space-md mb-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-primary-container-light text-primary font-headline-s text-headline-s font-bold flex items-center justify-center shrink-0">
+                VM
+              </div>
+<div class="min-w-0">
+<h3 class="text-headline-s font-headline-s text-ink-light truncate">Valeria Mendoza Chiroque</h3>
+<p class="text-body-s font-body-s text-ink-secondary-light truncate">
+                  Ingeniería Industrial • Univ. Nacional de Piura (UNP)
+                </p>
+<div class="flex items-center gap-space-xs text-label font-label text-ink-secondary-light mt-0.5">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>Castilla, Piura</span>
+<span>•</span>
+<span>Hace 2 horas</span>
+</div>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label text-label font-bold uppercase tracking-wider shrink-0">
+              aplicada
+            </span>
+</div>
+<div class="bg-surface-container-low px-space-md py-space-sm rounded-xl mb-space-md">
+<span class="text-label font-label text-ink-secondary-light uppercase tracking-wider block">Postulación al puesto</span>
+<span class="text-body-s font-headline-s text-ink-light font-bold">Practicante Preprofesional de Operaciones Logísticas</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<button class="flex-1 py-2 px-3 rounded-full bg-primary text-on-primary font-headline-s text-body-s font-bold shadow-sm hover:bg-primary-container transition-all text-center" type="button">
+            Marcar revisada
+          </button>
+<button class="py-2 px-4 rounded-full bg-surface-light text-primary font-headline-s text-body-s font-bold hover:bg-surface-container transition-all" type="button">
+            Aceptar
+          </button>
+<button class="py-2 px-3 rounded-full bg-error-container text-tertiary font-headline-s text-body-s font-bold hover:bg-opacity-80 transition-all" type="button">
+            Rechazar
+          </button>
+</div>
+</div>
+<!-- Candidate 2 -->
+<div class="bg-surface-light rounded-2xl p-space-lg shadow-[0_1px_2px_rgba(20,32,27,0.05),0_8px_24px_rgba(20,32,27,0.06)] flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5">
+<div>
+<div class="flex items-start justify-between gap-space-md mb-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-secondary font-headline-s text-headline-s font-bold flex items-center justify-center shrink-0">
+                RM
+              </div>
+<div class="min-w-0">
+<h3 class="text-headline-s font-headline-s text-ink-light truncate">Renzo Morales Silva</h3>
+<p class="text-body-s font-body-s text-ink-secondary-light truncate">
+                  Contabilidad y Finanzas • Universidad de Piura (UDEP)
+                </p>
+<div class="flex items-center gap-space-xs text-label font-label text-ink-secondary-light mt-0.5">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>Piura Centro</span>
+<span>•</span>
+<span>Hace 4 horas</span>
+</div>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label text-label font-bold uppercase tracking-wider shrink-0">
+              revisada
+            </span>
+</div>
+<div class="bg-surface-container-low px-space-md py-space-sm rounded-xl mb-space-md">
+<span class="text-label font-label text-ink-secondary-light uppercase tracking-wider block">Postulación al puesto</span>
+<span class="text-body-s font-headline-s text-ink-light font-bold">Asistente Junior de Facturación y Finanzas</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<button class="flex-1 py-2 px-3 rounded-full bg-primary text-on-primary font-headline-s text-body-s font-bold shadow-sm hover:bg-primary-container transition-all text-center" type="button">
+            Aceptar a entrevista
+          </button>
+<button class="py-2 px-3 rounded-full bg-error-container text-tertiary font-headline-s text-body-s font-bold hover:bg-opacity-80 transition-all" type="button">
+            Rechazar
+          </button>
+</div>
+</div>
+<!-- Candidate 3 -->
+<div class="bg-surface-light rounded-2xl p-space-lg shadow-[0_1px_2px_rgba(20,32,27,0.05),0_8px_24px_rgba(20,32,27,0.06)] flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5">
+<div>
+<div class="flex items-start justify-between gap-space-md mb-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-primary-container-light text-primary font-headline-s text-headline-s font-bold flex items-center justify-center shrink-0">
+                CZ
+              </div>
+<div class="min-w-0">
+<h3 class="text-headline-s font-headline-s text-ink-light truncate">Camila Zapata Farfán</h3>
+<p class="text-body-s font-body-s text-ink-secondary-light truncate">
+                  Ing. Mecánica Eléctrica • UTP Sede Piura
+                </p>
+<div class="flex items-center gap-space-xs text-label font-label text-ink-secondary-light mt-0.5">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>Sullana</span>
+<span>•</span>
+<span>Ayer</span>
+</div>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-primary-container-light text-primary font-label text-label font-bold uppercase tracking-wider shrink-0 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check</span>
+              aceptada
+            </span>
+</div>
+<div class="bg-surface-container-low px-space-md py-space-sm rounded-xl mb-space-md">
+<span class="text-label font-label text-ink-secondary-light uppercase tracking-wider block">Postulación al puesto</span>
+<span class="text-body-s font-headline-s text-ink-light font-bold">Practicante de Mantenimiento Electromecánico</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="text-body-s font-body-s text-primary font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">phone_in_talk</span>
+            Coordinación pendiente
+          </span>
+<button class="py-2 px-5 rounded-full bg-surface-container text-ink-light font-headline-s text-body-s font-bold hover:bg-surface-variant transition-all" type="button">
+            Ver contacto
+          </button>
+</div>
+</div>
+<!-- Candidate 4 -->
+<div class="bg-surface-light rounded-2xl p-space-lg shadow-[0_1px_2px_rgba(20,32,27,0.05),0_8px_24px_rgba(20,32,27,0.06)] flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 opacity-85">
+<div>
+<div class="flex items-start justify-between gap-space-md mb-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-surface-container text-ink-secondary-light font-headline-s text-headline-s font-bold flex items-center justify-center shrink-0">
+                DC
+              </div>
+<div class="min-w-0">
+<h3 class="text-headline-s font-headline-s text-ink-light truncate">Diego Cruz Seminario</h3>
+<p class="text-body-s font-body-s text-ink-secondary-light truncate">
+                  Administración de Negocios • Zegel IPAE Piura
+                </p>
+<div class="flex items-center gap-space-xs text-label font-label text-ink-secondary-light mt-0.5">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>Veintiséis de Octubre</span>
+<span>•</span>
+<span>Hace 2 días</span>
+</div>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-error-container text-tertiary font-label text-label font-bold uppercase tracking-wider shrink-0">
+              rechazada
+            </span>
+</div>
+<div class="bg-surface-container-low px-space-md py-space-sm rounded-xl mb-space-md">
+<span class="text-label font-label text-ink-secondary-light uppercase tracking-wider block">Postulación al puesto</span>
+<span class="text-body-s font-headline-s text-ink-light font-bold">Auxiliar de Atención al Cliente y Balanza</span>
+</div>
+</div>
+<div class="flex items-center justify-end pt-space-xs">
+<button class="py-2 px-4 rounded-full bg-surface-light text-ink-secondary-light hover:text-ink-light font-headline-s text-body-s hover:bg-surface-container transition-all" type="button">
+            Ver ficha y feedback
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Feedback Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const btnPublicar = document.getElementById('btn-publicar');
+      const btnIcon = document.getElementById('btn-icon');
+      const btnText = document.getElementById('btn-text');
+
+      if (btnPublicar) {
+        btnPublicar.addEventListener('click', () => {
+          btnPublicar.disabled = true;
+          btnPublicar.classList.add('opacity-80', 'cursor-not-allowed');
+          btnIcon.textContent = 'sync';
+          btnIcon.classList.add('animate-spin');
+          btnText.textContent = 'Abriendo editor...';
+
+          setTimeout(() => {
+            btnIcon.classList.remove('animate-spin');
+            btnIcon.textContent = 'check';
+            btnText.textContent = 'Listo';
+
+            setTimeout(() => {
+              btnPublicar.disabled = false;
+              btnPublicar.classList.remove('opacity-80', 'cursor-not-allowed');
+              btnIcon.textContent = 'add';
+              btnText.textContent = 'Publicar oferta';
+            }, 1200);
+          }, 800);
+        });
+      }
+
+      const btnReporte = document.getElementById('btn-reporte');
+      if (btnReporte) {
+        btnReporte.addEventListener('click', () => {
+          const originalText = btnReporte.innerHTML;
+          btnReporte.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">progress_activity</span> Generando PDF...';
+          setTimeout(() => {
+            btnReporte.innerHTML = '<span class="material-symbols-outlined text-[18px] text-primary">download_done</span> ¡Reporte Piura descargado!';
+            setTimeout(() => {
+              btnReporte.innerHTML = originalText;
+            }, 2000);
+          }, 1000);
+        });
+      }
+    });
+  </script>
+</div></div></main><footer class="w-full bg-surface-light border-t border-border-light mt-auto"><div class="max-w-[1200px] mx-auto px-gutter py-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg text-body-s font-body-s text-on-surface-variant"><div class="flex items-center gap-space-sm"><span class="font-headline-s text-body-s font-bold text-on-surface">PrácticaPE</span><span>•</span><span>Piura, Perú</span><span>•</span><span>© 2025 Todos los derechos reservados.</span></div><nav class="flex flex-wrap items-center justify-center gap-space-lg" data-active-classes="text-primary font-bold"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="terminos-y-condiciones" href="#">Términos y Condiciones</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="politica-de-privacidad" href="#">Privacidad y Datos</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="soporte-piura" href="#">Centro de Ayuda Piura</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="contacto" href="#">Contacto Empresa</a></nav></div></footer></body></html>
