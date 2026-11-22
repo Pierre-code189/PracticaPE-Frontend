@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg:      #0B0B0F;
+  --surface: #121218;
+  --border:  rgba(255,255,255,0.12);
+  --ink:     #FFFFFF;
+  --muted:   #A0A4B0;
+  --cyan:    #0CE0E5;
+  --violet:  #5B2EFF;
+}
+
+* { box-sizing: border-box; border-radius: 0 !important; }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Inter', system-ui, sans-serif;
+  margin: 0;
+}
+
+.grad {
+  background: linear-gradient(90deg, var(--cyan), var(--violet));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, var(--cyan), var(--violet));
+  color: #fff;
+  font-weight: 800;
+  padding: 11px 22px;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: filter 0.15s;
+}
+.btn-primary:hover { filter: brightness(1.15); }
+
+.btn-outline {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.28);
+  font-weight: 700;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+.btn-outline:hover { border-color: var(--cyan); color: var(--cyan); }
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 20px;
+}
+
+.pp-toast {
+  position: fixed; bottom: 24px; right: 24px; z-index: 9999;
+  background: var(--surface); border: 1px solid var(--border);
+  color: var(--ink); padding: 12px 20px;
+  transform: translateY(80px); opacity: 0;
+  transition: transform 0.3s, opacity 0.3s; pointer-events: none;
+}
+.pp-toast.pp-show { transform: translateY(0); opacity: 1; }
+.pp-toast[data-kind='error'] { border-color: #FF5A5A; color: #FF5A5A; }
+.pp-toast[data-kind='success'] { border-color: var(--cyan); color: var(--cyan); }

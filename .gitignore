@@ -1,7 +1,26 @@
-.venv/
+# Python
 __pycache__/
 *.pyc
+.pytest_cache/
+backend/.venv/
+backend/data/
 data/
+
+# Node
+frontend-react/node_modules/
+frontend-dist/
+*.local
+
+# Env / secretos
 .env
+.env.local
+
+# SQLite
 *.db
-.DS_Store
+*.db-shm
+*.db-wal
+*.secret
+
+# Uploads y logs
+data/uploads/
+*.log
