@@ -16,7 +16,9 @@ export default defineConfig({
       '/intake':    'http://localhost:8000',
     },
   },
-  build: { outDir: '../frontend-dist', emptyOutDir: true },
+  // El build queda dentro del repo (dist/), listo para montarlo en el backend
+  // (PRACTICAPE_FRONTEND_DIR) o servirlo con nginx.
+  build: { outDir: 'dist', emptyOutDir: true },
   test: {
     environment: 'jsdom',
     globals: true,
