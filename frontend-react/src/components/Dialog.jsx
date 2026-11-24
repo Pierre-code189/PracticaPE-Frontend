@@ -25,13 +25,13 @@ export default function Dialog({ open, onClose, title, children }) {
         role="dialog"
         aria-modal="true"
         aria-label={title}
-        className="bg-surface border border-white/10 w-full max-w-md p-6 shadow-2xl outline-none"
+        className="bg-surface border border-black/10 w-full max-w-md p-6 shadow-2xl outline-none"
       >
         <div className="flex justify-between items-center mb-4">
           <h2 className="font-display font-bold text-xl tracking-tight">{title}</h2>
           <button
             onClick={onClose}
-            className="text-muted hover:text-ink border border-white/20 px-3 py-1 text-sm"
+            className="text-muted hover:text-ink border border-[#E3E0D5] px-3 py-1 text-sm"
             aria-label="Cerrar"
           >✕</button>
         </div>

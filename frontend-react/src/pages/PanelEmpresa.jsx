@@ -99,12 +99,12 @@ export default function PanelEmpresa() {
           <div className="flex flex-col gap-1">
             <label className="text-xs font-bold uppercase tracking-widest text-muted">Descripción</label>
             <textarea value={job.description} onChange={e => setJob(j => ({ ...j, description: e.target.value }))}
-              className="bg-white/5 border border-white/10 text-ink px-4 py-3 text-sm focus:outline-none focus:border-cyan h-24 resize-none" />
+              className="bg-black/[0.04] border border-black/10 text-ink px-4 py-3 text-sm focus:outline-none focus:border-cyan h-24 resize-none" />
           </div>
           <div className="flex flex-col gap-1">
             <label className="text-xs font-bold uppercase tracking-widest text-muted">Modalidad</label>
             <select value={job.modality} onChange={e => setJob(j => ({ ...j, modality: e.target.value }))}
-              className="bg-surface border border-white/10 text-ink px-4 py-3 text-sm focus:outline-none focus:border-cyan">
+              className="bg-surface border border-black/10 text-ink px-4 py-3 text-sm focus:outline-none focus:border-cyan">
               <option value="medio tiempo">Medio tiempo</option>
               <option value="tiempo completo">Tiempo completo</option>
               <option value="cachuelo">Cachuelo</option>

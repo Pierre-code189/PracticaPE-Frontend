@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { useJobs, useDistricts } from '../hooks/useJobs';
 import JobCard from '../components/JobCard';
@@ -8,6 +8,8 @@ import { api } from '../api/client';
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../hooks/useToast';
 
+const PAGE = 12;
+
 export default function Ofertas() {
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
@@ -15,12 +17,22 @@ export default function Ofertas() {
   const toast = useToast();
   const [q, setQ] = useState(searchParams.get('q') || '');
   const [modalidad, setModalidad] = useState(searchParams.get('modalidad') || '');
+  const [page, setPage] = useState(1);
   const [applyJob, setApplyJob] = useState(null);
 
-  const { data, isLoading } = useJobs({ q, modality: modalidad, status: 'published', limit: 30 });
+  // Al cambiar la búsqueda o el filtro se vuelve a la primera página.
+  useEffect(() => { setPage(1); }, [q, modalidad]);
+
+  const { data, isLoading } = useJobs({
+    q, modality: modalidad, status: 'published', limit: PAGE, offset: (page - 1) * PAGE,
+  });
   const { data: districts } = useDistricts();
 
   const jobs = data?.items || [];
+  const total = Number(data?.total ?? 0);
+  const nPag = Math.max(1, Math.ceil(total / PAGE));
+  const desde = total === 0 ? 0 : (page - 1) * PAGE + 1;
+  const hasta = (page - 1) * PAGE + jobs.length;
 
   const handleApply = async (job) => {
     if (!isAuth) { navigate('/auth'); return; }
@@ -37,6 +49,25 @@ export default function Ofertas() {
     }
   };
 
+  const pgBtn = (label, destino, activa = false, disabled = false) => (
+    <button
+      key={label}
+      type="button"
+      disabled={disabled}
+      onClick={() => setPage(destino)}
+      aria-current={activa ? 'page' : undefined}
+      className={
+        'min-w-9 h-9 px-2 text-sm font-semibold rounded-lg border transition-colors ' +
+        (activa
+          ? 'bg-primary text-white border-primary'
+          : 'bg-surface text-ink border-black/10 hover:border-primary hover:text-primary') +
+        (disabled ? ' opacity-40 cursor-not-allowed hover:border-black/10 hover:text-ink' : '')
+      }
+    >
+      {label}
+    </button>
+  );
+
   return (
     <main className="max-w-5xl mx-auto px-4 py-10">
       <h1 className="font-display font-bold text-3xl uppercase tracking-tight mb-6">Ofertas</h1>
@@ -47,12 +78,12 @@ export default function Ofertas() {
           value={q}
           onChange={e => setQ(e.target.value)}
           placeholder="Buscar..."
-          className="bg-white/5 border border-white/10 text-ink px-4 py-2 text-sm focus:outline-none focus:border-cyan flex-1 min-w-48"
+          className="bg-surface border border-black/10 text-ink px-4 py-2 text-sm focus:outline-none focus:border-primary flex-1 min-w-48"
         />
         <select
           value={modalidad}
           onChange={e => setModalidad(e.target.value)}
-          className="bg-surface border border-white/10 text-ink px-4 py-2 text-sm focus:outline-none focus:border-cyan"
+          className="bg-surface border border-black/10 text-ink px-4 py-2 text-sm focus:outline-none focus:border-primary"
         >
           <option value="">Todas las modalidades</option>
           <option value="medio tiempo">Medio tiempo</option>
@@ -68,12 +99,22 @@ export default function Ofertas() {
         <p className="text-muted">No se encontraron ofertas.</p>
       ) : (
         <>
-          <p className="text-muted text-sm mb-4">{jobs.length} oferta{jobs.length !== 1 ? 's' : ''} encontrada{jobs.length !== 1 ? 's' : ''}</p>
+          <p className="text-muted text-sm mb-4">
+            Mostrando {desde} - {hasta} de {total}
+          </p>
           <div className="grid md:grid-cols-2 gap-4">
             {jobs.map(j => (
               <JobCard key={j.id} job={j} onApply={handleApply} />
             ))}
           </div>
+
+          {nPag > 1 && (
+            <nav className="flex flex-wrap items-center justify-center gap-1.5 mt-8" aria-label="Paginación">
+              {pgBtn('Anterior', page - 1, false, page <= 1)}
+              {Array.from({ length: nPag }, (_, i) => i + 1).map(n => pgBtn(String(n), n, n === page))}
+              {pgBtn('Siguiente', page + 1, false, page >= nPag)}
+            </nav>
+          )}
         </>
       )}
 

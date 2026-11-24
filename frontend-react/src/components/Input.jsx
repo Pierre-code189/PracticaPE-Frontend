@@ -9,11 +9,11 @@ export default function Input({ label, error, className = '', ...props }) {
       )}
       <input
         id={id}
-        className="bg-white/5 border border-white/10 text-ink px-4 py-3 text-sm
+        className="bg-black/[0.04] border border-black/10 text-ink px-4 py-3 text-sm
                    focus:outline-none focus:border-cyan placeholder-muted w-full"
         {...props}
       />
-      {error && <span className="text-red-400 text-xs">{error}</span>}
+      {error && <span className="text-error text-xs">{error}</span>}
     </div>
   );
 }

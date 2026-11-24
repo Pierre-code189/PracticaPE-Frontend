@@ -24,9 +24,9 @@ describe('Button', () => {
     expect(screen.getByRole('button')).toHaveClass('bg-transparent');
   });
 
-  it('variante danger aplica text-red-400', () => {
+  it('variante danger aplica text-error', () => {
     render(<Button variant="danger">Borrar</Button>);
-    expect(screen.getByRole('button')).toHaveClass('text-red-400');
+    expect(screen.getByRole('button')).toHaveClass('text-error');
   });
 
   it('variante secondary aplica bg-ink', () => {

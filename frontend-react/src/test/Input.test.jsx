@@ -36,15 +36,15 @@ describe('Input', () => {
     expect(screen.getByText('Campo requerido')).toBeInTheDocument();
   });
 
-  it('el error tiene clase text-red-400', () => {
+  it('el error tiene clase text-error', () => {
     render(<Input name="email" error="Error!" />);
-    expect(screen.getByText('Error!')).toHaveClass('text-red-400');
+    expect(screen.getByText('Error!')).toHaveClass('text-error');
   });
 
   it('no renderiza span de error cuando no hay error', () => {
     const { container } = render(<Input name="email" />);
-    // ningún span con clase text-red-400
-    expect(container.querySelector('.text-red-400')).toBeNull();
+    // ningún span con clase text-error
+    expect(container.querySelector('.text-error')).toBeNull();
   });
 
   // ── props pasadas al input ─────────────────────────────────────────────────

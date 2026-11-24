@@ -35,7 +35,7 @@ export default function Auth() {
     try {
       const user = await login(email, otp);
       toast('¡Bienvenido, ' + (user?.name || user?.email) + '!', 'success');
-      navigate(user?.role === 'admin' ? '/admin' : user?.role === 'negocio' ? '/panel-empresa' : '/panel');
+      navigate('/ofertas');
     } catch (e) {
       toast(e.message || 'Código incorrecto', 'error');
     } finally { setLoading(false); }
@@ -49,7 +49,7 @@ export default function Auth() {
         </h1>
 
         {/* Tabs */}
-        <div className="flex border-b border-white/10 mb-8">
+        <div className="flex border-b border-black/10 mb-8">
           {[['login','Ya tengo cuenta'],['register','Crear cuenta']].map(([t, label]) => (
             <button
               key={t}
@@ -81,7 +81,7 @@ export default function Auth() {
                 <select
                   value={role}
                   onChange={e => setRole(e.target.value)}
-                  className="bg-white/5 border border-white/10 text-ink px-4 py-3 text-sm focus:outline-none focus:border-cyan"
+                  className="bg-black/[0.04] border border-black/10 text-ink px-4 py-3 text-sm focus:outline-none focus:border-cyan"
                 >
                   <option value="candidato">Candidato / Practicante</option>
                   <option value="negocio">Negocio / Empresa</option>

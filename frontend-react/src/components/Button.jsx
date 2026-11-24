@@ -16,7 +16,7 @@ export default function Button({
     primary:  'btn-primary',
     outline:  'btn-outline',
     ghost:    'bg-transparent text-muted hover:text-ink border-0',
-    danger:   'bg-transparent text-red-400 border border-red-400/50 hover:border-red-400 px-6 py-3',
+    danger:   'bg-transparent text-error border border-red-400/50 hover:border-red-400 px-6 py-3',
     secondary:'bg-ink text-bg font-extrabold px-6 py-3',
   };
   return (

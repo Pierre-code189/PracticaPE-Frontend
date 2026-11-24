@@ -15,7 +15,7 @@ export function CardContent({ children, className = '' }) {
 }
 export function CardFooter({ children, className = '' }) {
   return (
-    <div className={`flex flex-wrap gap-2 mt-4 pt-4 border-t border-white/10 ${className}`}>
+    <div className={`flex flex-wrap gap-2 mt-4 pt-4 border-t border-black/10 ${className}`}>
       {children}
     </div>
   );

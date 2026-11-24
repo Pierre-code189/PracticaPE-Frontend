@@ -30,7 +30,7 @@ export default function Mapa() {
     }).addTo(map);
     const icon = L.divIcon({
       className: '',
-      html: '<div style="width:28px;height:28px;background:linear-gradient(90deg,#0CE0E5,#5B2EFF);display:flex;align-items:center;justify-content:center;font-size:14px;">📍</div>',
+      html: '<div style="width:28px;height:28px;background:linear-gradient(90deg,#0E7C66,#4FC3A7);display:flex;align-items:center;justify-content:center;font-size:14px;">📍</div>',
       iconSize: [28, 28], iconAnchor: [14, 28],
     });
     items.forEach(j => {
@@ -59,7 +59,7 @@ export default function Mapa() {
           value={q}
           onChange={e => setQ(e.target.value)}
           placeholder="Buscar puesto o distrito..."
-          className="bg-white/5 border border-white/10 text-ink px-4 py-2 text-sm focus:outline-none focus:border-cyan w-full md:w-64"
+          className="bg-black/[0.04] border border-black/10 text-ink px-4 py-2 text-sm focus:outline-none focus:border-cyan w-full md:w-64"
         />
       </div>
 
@@ -67,11 +67,11 @@ export default function Mapa() {
         {/* Mapa */}
         <div className="lg:col-span-2">
           {isLoading ? (
-            <div className="h-96 bg-surface border border-white/10 flex items-center justify-center text-muted">
+            <div className="h-96 bg-surface border border-black/10 flex items-center justify-center text-muted">
               Cargando mapa…
             </div>
           ) : (
-            <div ref={mapRef} className="w-full h-96 lg:h-[520px] border border-white/10" />
+            <div ref={mapRef} className="w-full h-96 lg:h-[520px] border border-black/10" />
           )}
         </div>
 

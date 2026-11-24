@@ -66,10 +66,10 @@ export default function Perfil() {
     <main className="max-w-3xl mx-auto px-4 py-10">
       {/* Portada + Avatar */}
       <div className="mb-6">
-        <div className="h-32" style={{ background: 'linear-gradient(90deg,#0CE0E5,#5B2EFF)' }} />
+        <div className="h-32" style={{ background: 'linear-gradient(90deg,#0E7C66,#4FC3A7)' }} />
         <div className="flex items-end gap-4 px-4 -mt-10">
           <div className="w-20 h-20 rounded-full flex items-center justify-center font-extrabold text-2xl border-4 border-bg"
-            style={{ background: 'linear-gradient(90deg,#0CE0E5,#5B2EFF)' }}>
+            style={{ background: 'linear-gradient(90deg,#0E7C66,#4FC3A7)' }}>
             {initials(user?.name || user?.email)}
           </div>
           <div className="flex-1 pb-2">
@@ -105,14 +105,14 @@ export default function Perfil() {
             ) : (
               <ul className="flex flex-col gap-3">
                 {list.map(item => (
-                  <li key={item.id} className="flex justify-between gap-2 border-t border-white/10 pt-3 first:border-0 first:pt-0">
+                  <li key={item.id} className="flex justify-between gap-2 border-t border-black/10 pt-3 first:border-0 first:pt-0">
                     <div>
                       <p className="font-semibold text-sm">{item.titulo}</p>
                       {item.subtitulo && <p className="text-muted text-xs">{item.subtitulo}</p>}
                       {item.fecha_inicio && <p className="text-muted text-xs">{fecha(item.fecha_inicio)}{item.fecha_fin ? ` → ${fecha(item.fecha_fin)}` : ' · Actual'}</p>}
                       {item.descripcion && <p className="text-xs mt-1 leading-relaxed">{item.descripcion}</p>}
                     </div>
-                    <button onClick={() => deleteItem.mutate(item.id)} className="text-red-400 text-xs shrink-0 hover:underline">✕</button>
+                    <button onClick={() => deleteItem.mutate(item.id)} className="text-error text-xs shrink-0 hover:underline">✕</button>
                   </li>
                 ))}
               </ul>
@@ -128,7 +128,7 @@ export default function Perfil() {
           <div className="flex flex-col gap-1">
             <label className="text-xs font-bold uppercase tracking-widest text-muted">Acerca de</label>
             <textarea value={form?.bio || ''} onChange={e => setForm(f => ({ ...f, bio: e.target.value }))}
-              className="bg-white/5 border border-white/10 text-ink px-4 py-3 text-sm focus:outline-none focus:border-cyan h-24 resize-none" />
+              className="bg-black/[0.04] border border-black/10 text-ink px-4 py-3 text-sm focus:outline-none focus:border-cyan h-24 resize-none" />
           </div>
           <Input label="Ciudad" value={form?.city || ''} onChange={e => setForm(f => ({ ...f, city: e.target.value }))} placeholder="Piura" />
           <div className="flex gap-2">
@@ -149,7 +149,7 @@ export default function Perfil() {
           <div className="flex flex-col gap-1">
             <label className="text-xs font-bold uppercase tracking-widest text-muted">Descripción</label>
             <textarea value={newItem.descripcion} onChange={e => setNewItem(i => ({ ...i, descripcion: e.target.value }))}
-              className="bg-white/5 border border-white/10 text-ink px-4 py-3 text-sm focus:outline-none focus:border-cyan h-20 resize-none" />
+              className="bg-black/[0.04] border border-black/10 text-ink px-4 py-3 text-sm focus:outline-none focus:border-cyan h-20 resize-none" />
           </div>
           <div className="flex gap-2">
             <Button onClick={() => addItem.mutate(newItem)} disabled={!newItem.titulo || addItem.isPending}>

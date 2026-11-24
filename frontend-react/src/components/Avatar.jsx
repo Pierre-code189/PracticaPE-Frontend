@@ -16,7 +16,7 @@ export default function Avatar({ name, src, size = 48 }) {
       style={{ width: size, height: size, fontSize: size * 0.4 }}
       className="rounded-full flex items-center justify-center font-extrabold"
       style={{ width: size, height: size, fontSize: size * 0.4,
-               background: 'linear-gradient(90deg,#0CE0E5,#5B2EFF)' }}
+               background: 'linear-gradient(90deg,#0E7C66,#4FC3A7)' }}
     >
       {initials(name)}
     </div>

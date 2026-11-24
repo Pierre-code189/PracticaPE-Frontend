@@ -34,7 +34,7 @@ export default function Home() {
             value={q}
             onChange={e => setQ(e.target.value)}
             placeholder="Buscar puesto, empresa..."
-            className="flex-1 min-w-0 bg-white/5 border border-white/10 text-ink px-4 py-3
+            className="flex-1 min-w-0 bg-black/[0.04] border border-black/10 text-ink px-4 py-3
                        focus:outline-none focus:border-cyan placeholder-muted"
           />
           <Button type="submit">Buscar</Button>
@@ -42,7 +42,7 @@ export default function Home() {
         <div className="flex gap-2 flex-wrap mt-4">
           {['Medio tiempo','Cachuelos','Tiempo completo'].map(m => (
             <Link key={m} to={`/ofertas?modalidad=${encodeURIComponent(m)}`}>
-              <span className="border border-white/20 px-4 py-2 text-sm font-semibold hover:border-cyan hover:text-cyan transition-colors cursor-pointer">
+              <span className="border border-[#E3E0D5] px-4 py-2 text-sm font-semibold hover:border-cyan hover:text-cyan transition-colors cursor-pointer">
                 {m}
               </span>
             </Link>

@@ -31,7 +31,7 @@ export default function Contacto() {
         <div className="flex flex-col gap-1">
           <label className="text-xs font-bold uppercase tracking-widest text-muted">Mensaje</label>
           <textarea value={form.message} onChange={e => setForm(f => ({ ...f, message: e.target.value }))}
-            className="bg-white/5 border border-white/10 text-ink px-4 py-3 text-sm focus:outline-none focus:border-cyan h-32 resize-none"
+            className="bg-black/[0.04] border border-black/10 text-ink px-4 py-3 text-sm focus:outline-none focus:border-cyan h-32 resize-none"
             required />
         </div>
         <Button type="submit" disabled={sending}>

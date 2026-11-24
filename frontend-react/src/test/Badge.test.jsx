@@ -33,9 +33,9 @@ describe('Badge', () => {
     expect(screen.getByText('OK')).toHaveClass('text-green-400');
   });
 
-  it('variante danger aplica text-red-400', () => {
+  it('variante danger aplica text-error', () => {
     render(<Badge variant="danger">Error</Badge>);
-    expect(screen.getByText('Error')).toHaveClass('text-red-400');
+    expect(screen.getByText('Error')).toHaveClass('text-error');
   });
 
   it('variante inválida cae en default (text-muted)', () => {

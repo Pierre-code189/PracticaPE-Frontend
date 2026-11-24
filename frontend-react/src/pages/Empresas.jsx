@@ -20,7 +20,7 @@ export default function Empresas() {
         value={q}
         onChange={e => setQ(e.target.value)}
         placeholder="Buscar empresa..."
-        className="bg-white/5 border border-white/10 text-ink px-4 py-3 text-sm focus:outline-none focus:border-cyan w-full mb-6"
+        className="bg-black/[0.04] border border-black/10 text-ink px-4 py-3 text-sm focus:outline-none focus:border-cyan w-full mb-6"
       />
       {isLoading ? (
         <p className="text-muted">Cargando…</p>
@@ -33,7 +33,7 @@ export default function Empresas() {
               <article className="card hover:border-cyan/40 transition-colors h-full">
                 <div className="flex gap-3 items-center mb-3">
                   <div className="w-12 h-12 shrink-0 flex items-center justify-center font-extrabold text-sm"
-                    style={{ background: 'linear-gradient(90deg,#0CE0E5,#5B2EFF)' }}>
+                    style={{ background: 'linear-gradient(90deg,#0E7C66,#4FC3A7)' }}>
                     {initials(c.name)}
                   </div>
                   <div className="min-w-0">

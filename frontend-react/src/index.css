@@ -1,19 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Paleta clara del design system (ver tailwind.config.js). */
 :root {
-  --bg:      #0B0B0F;
-  --surface: #121218;
-  --border:  rgba(255,255,255,0.12);
-  --ink:     #FFFFFF;
-  --muted:   #A0A4B0;
-  --cyan:    #0CE0E5;
-  --violet:  #5B2EFF;
+  --bg:      #FAF9F4;
+  --surface: #FFFFFF;
+  --border:  #E3E0D5;
+  --ink:     #14201B;
+  --muted:   #5A6B63;
+  --cyan:    #0E7C66;
+  --violet:  #0A5C4D;
 }
 
-* { box-sizing: border-box; border-radius: 0 !important; }
+* { box-sizing: border-box; }
 
 body {
   background: var(--bg);
@@ -22,15 +23,16 @@ body {
   margin: 0;
 }
 
+/* Marca en dos tonos de esmeralda. */
 .grad {
-  background: linear-gradient(90deg, var(--cyan), var(--violet));
+  background: linear-gradient(90deg, #0E7C66, #4FC3A7);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 .btn-primary {
-  background: linear-gradient(90deg, var(--cyan), var(--violet));
+  background: #0E7C66;
   color: #fff;
   font-weight: 800;
   padding: 11px 22px;
@@ -41,12 +43,12 @@ body {
   gap: 8px;
   transition: filter 0.15s;
 }
-.btn-primary:hover { filter: brightness(1.15); }
+.btn-primary:hover { filter: brightness(1.1); }
 
 .btn-outline {
   background: transparent;
-  color: #fff;
-  border: 1px solid rgba(255,255,255,0.28);
+  color: #14201B;
+  border: 1px solid #BDC9C4;
   font-weight: 700;
   padding: 10px 20px;
   cursor: pointer;
@@ -68,5 +70,5 @@ body {
   transition: transform 0.3s, opacity 0.3s; pointer-events: none;
 }
 .pp-toast.pp-show { transform: translateY(0); opacity: 1; }
-.pp-toast[data-kind='error'] { border-color: #FF5A5A; color: #FF5A5A; }
+.pp-toast[data-kind='error'] { border-color: #C0392B; color: #C0392B; }
 .pp-toast[data-kind='success'] { border-color: var(--cyan); color: var(--cyan); }

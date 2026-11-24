@@ -1,26 +1,30 @@
 import Badge from './Badge';
 import Button from './Button';
+import FuenteLink from './FuenteLink';
 import { salario, fecha } from '../api/utils';
 
 const modalidadVariant = { 'medio tiempo': 'cyan', 'tiempo completo': 'violet', cachuelo: 'default' };
 
 export default function JobCard({ job, onApply, onSave, saved }) {
   if (!job) return null;
-  const initials = (job.business_name || '?').trim().split(/\s+/).slice(0, 2)
+  // La API pública devuelve company_name; las ofertas scrapeadas pueden no tener
+  // empresa asignada, así que se resuelve a una denominación honesta.
+  const empresa = (job.company_name || '').trim() || 'Anuncio externo';
+  const initials = empresa.split(/\s+/).slice(0, 2)
     .map(w => w[0] || '').join('').toUpperCase();
 
   return (
-    <article className="card flex flex-col gap-3">
+    <article className="card flex flex-col gap-3 min-w-0 overflow-hidden">
       <div className="flex gap-3 items-start">
         <div
           className="w-12 h-12 shrink-0 flex items-center justify-center font-extrabold text-sm"
-          style={{ background: 'linear-gradient(90deg,#0CE0E5,#5B2EFF)' }}
+          style={{ background: 'linear-gradient(90deg,#0E7C66,#4FC3A7)' }}
         >
           {initials}
         </div>
         <div className="flex-1 min-w-0">
           <h3 className="font-display font-bold text-base leading-tight truncate">{job.title}</h3>
-          <p className="text-muted text-sm truncate">{job.business_name} · {job.district}</p>
+          <p className="text-muted text-sm truncate">{empresa} · {job.district}</p>
         </div>
       </div>
 
@@ -42,7 +46,7 @@ export default function JobCard({ job, onApply, onSave, saved }) {
         <p className="text-muted text-sm line-clamp-2">{job.description}</p>
       )}
 
-      <div className="flex gap-2 flex-wrap mt-auto pt-3 border-t border-white/10">
+      <div className="flex gap-2 flex-wrap items-center mt-auto pt-3 border-t border-black/10">
         {onApply && (
           <Button size="sm" onClick={() => onApply(job)}>Postularme →</Button>
         )}
@@ -51,7 +55,8 @@ export default function JobCard({ job, onApply, onSave, saved }) {
             {saved ? '✓ Guardada' : '+ Guardar'}
           </Button>
         )}
-        <span className="text-muted text-xs ml-auto self-center">{fecha(job.created_at)}</span>
+        <span className="ml-auto self-center"><FuenteLink url={job.source_url} compacto /></span>
+        <span className="text-muted text-xs self-center">{fecha(job.created_at)}</span>
       </div>
     </article>
   );

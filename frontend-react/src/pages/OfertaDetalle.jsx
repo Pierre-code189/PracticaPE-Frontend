@@ -8,6 +8,7 @@ import { salario, fecha } from '../api/utils';
 import Badge from '../components/Badge';
 import Button from '../components/Button';
 import Dialog from '../components/Dialog';
+import FuenteLink from '../components/FuenteLink';
 
 const modalidadVariant = { 'medio tiempo': 'cyan', 'tiempo completo': 'violet', cachuelo: 'default' };
 
@@ -28,7 +29,8 @@ export default function OfertaDetalle() {
     </main>
   );
 
-  const initials = (job.business_name || '?').trim().split(/\s+/).slice(0, 2)
+  const empresa = (job.company_name || '').trim() || 'Anuncio externo';
+  const initials = empresa.split(/\s+/).slice(0, 2)
     .map(w => w[0] || '').join('').toUpperCase();
 
   const handleApply = () => {
@@ -62,12 +64,12 @@ export default function OfertaDetalle() {
       <div className="card mb-6">
         <div className="flex gap-4 items-start mb-4">
           <div className="w-16 h-16 shrink-0 flex items-center justify-center font-extrabold text-lg"
-            style={{ background: 'linear-gradient(90deg,#0CE0E5,#5B2EFF)' }}>
+            style={{ background: 'linear-gradient(90deg,#0E7C66,#4FC3A7)' }}>
             {initials}
           </div>
           <div className="flex-1">
             <h1 className="font-display font-bold text-2xl tracking-tight mb-1">{job.title}</h1>
-            <p className="text-muted">{job.business_name} · {job.district}, Piura</p>
+            <p className="text-muted">{empresa} · {job.district}, Piura</p>
           </div>
         </div>
 
@@ -78,15 +80,19 @@ export default function OfertaDetalle() {
           <span className="text-muted text-xs ml-auto self-center">Publicado {fecha(job.created_at)}</span>
         </div>
 
+        <div className="mb-6">
+          <FuenteLink url={job.source_url} />
+        </div>
+
         {job.description && (
-          <div className="border-t border-white/10 pt-4 mb-6">
+          <div className="border-t border-black/10 pt-4 mb-6">
             <h2 className="font-display font-bold text-sm uppercase tracking-widest text-muted mb-2">Descripción</h2>
             <p className="text-sm leading-relaxed whitespace-pre-line">{job.description}</p>
           </div>
         )}
 
         {job.requirements && (
-          <div className="border-t border-white/10 pt-4 mb-6">
+          <div className="border-t border-black/10 pt-4 mb-6">
             <h2 className="font-display font-bold text-sm uppercase tracking-widest text-muted mb-2">Requisitos</h2>
             <p className="text-sm leading-relaxed whitespace-pre-line">{job.requirements}</p>
           </div>
@@ -94,7 +100,7 @@ export default function OfertaDetalle() {
 
         {/* Contacto solo si ya postulé o soy empresa/admin */}
         {(isAuth && (user?.role === 'business' || user?.role === 'admin')) && job.contact && (
-          <div className="border-t border-white/10 pt-4 mb-6">
+          <div className="border-t border-black/10 pt-4 mb-6">
             <h2 className="font-display font-bold text-sm uppercase tracking-widest text-muted mb-2">Contacto</h2>
             <p className="text-sm">{job.contact}</p>
           </div>
@@ -108,7 +114,7 @@ export default function OfertaDetalle() {
 
       <Dialog open={applyOpen} onClose={() => setApplyOpen(false)} title="Confirmar postulación">
         <p className="text-muted mb-6">
-          ¿Confirmas tu postulación a <strong className="text-ink">{job.title}</strong> en {job.business_name}?
+          ¿Confirmas tu postulación a <strong className="text-ink">{job.title}</strong> en {empresa}?
         </p>
         <div className="flex gap-2">
           <Button onClick={confirmApply} disabled={saving}>
